@@ -46,7 +46,7 @@ public:
 	{
 		if (!head)
 		{
-			return false
+			return false;
 		}
 		else
 		{
@@ -61,7 +61,7 @@ public:
 	{
 		if (!head)
 		{
-			return false
+			return false;
 		}
 		else
 		{
