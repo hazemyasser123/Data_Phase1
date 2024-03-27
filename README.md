@@ -5,7 +5,7 @@ step 1: Go to location you want folder to exist in.
 
 step 2: Right click >> open in terminal.
 
-step 3: type "git clone https://github.com/ellethy-omar/Phase1_DS"  (ps ignore the "" copy only what's inside the "").
+step 3: type "git clone https://github.com/hazemyasser123/Data_Phase1"  (ps ignore the "" copy only what's inside the "").
 
 step 4: after the cloning type "cd Phase1_DS".
 
