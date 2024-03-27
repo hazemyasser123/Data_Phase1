@@ -1,0 +1,22 @@
+﻿  Source.cpp
+D:\Data_Project\Data_Phase1\Project1\Node.h(22,10): error C2995: 'Node<T>::Node(void)': function template has already been defined
+D:\Data_Project\Data_Phase1\Project1\Node.h(11,2): message : see declaration of 'Node<T>::Node'
+D:\Data_Project\Data_Phase1\Project1\Node.h(28,10): error C2995: 'Node<T>::Node(const T &)': function template has already been defined
+D:\Data_Project\Data_Phase1\Project1\Node.h(12,2): message : see declaration of 'Node<T>::Node'
+D:\Data_Project\Data_Phase1\Project1\Node.h(35,10): error C2995: 'Node<T>::Node(const T &,Node<T> *)': function template has already been defined
+D:\Data_Project\Data_Phase1\Project1\Node.h(13,2): message : see declaration of 'Node<T>::Node'
+D:\Data_Project\Data_Phase1\Project1\Node.h(41,15): error C2995: 'void Node<T>::setItem(const T &)': function template has already been defined
+D:\Data_Project\Data_Phase1\Project1\Node.h(14,7): message : see declaration of 'Node<T>::setItem'
+D:\Data_Project\Data_Phase1\Project1\Node.h(47,15): error C2995: 'void Node<T>::setNext(Node<T> *)': function template has already been defined
+D:\Data_Project\Data_Phase1\Project1\Node.h(15,7): message : see declaration of 'Node<T>::setNext'
+D:\Data_Project\Data_Phase1\Project1\Node.h(53,12): error C2995: 'T Node<T>::getItem(void) const': function template has already been defined
+D:\Data_Project\Data_Phase1\Project1\Node.h(16,4): message : see declaration of 'Node<T>::getItem'
+D:\Data_Project\Data_Phase1\Project1\Node.h(59,19): error C2995: 'Node<T> *Node<T>::getNext(void) const': function template has already been defined
+D:\Data_Project\Data_Phase1\Project1\Node.h(17,11): message : see declaration of 'Node<T>::getNext'
+D:\Data_Project\Data_Phase1\Project1\Node.h(23,1): error C2447: '{': missing function header (old-style formal list?)
+D:\Data_Project\Data_Phase1\Project1\Node.h(29,1): error C2447: '{': missing function header (old-style formal list?)
+D:\Data_Project\Data_Phase1\Project1\Node.h(36,1): error C2447: '{': missing function header (old-style formal list?)
+D:\Data_Project\Data_Phase1\Project1\Node.h(42,1): error C2447: '{': missing function header (old-style formal list?)
+D:\Data_Project\Data_Phase1\Project1\Node.h(48,1): error C2447: '{': missing function header (old-style formal list?)
+D:\Data_Project\Data_Phase1\Project1\Node.h(54,1): error C2447: '{': missing function header (old-style formal list?)
+D:\Data_Project\Data_Phase1\Project1\Node.h(60,1): error C2447: '{': missing function header (old-style formal list?)
