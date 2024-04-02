@@ -1,29 +1,39 @@
 #include <iostream>
 #include "Array_Of_Pointers.h"
 #include "LinkedQueue.h"
-#include "Node.h"
-#include "priNode.h"
 #include "priQueue.h"
-#include "QueueADT.h"
 #include "StacksList.h"
+#include "ArrayStack.h"
 using namespace std;
+
+
 
 int main()
 {
-	Array_Of_Pointers <int> a1;
-	int* p = nullptr;
-	int x = 5;
-	int y = 6;
-	int* q = nullptr;
-	p = &x;
-	q = &y;
-	a1.insert(p);
-	a1.insert(q);
-	a1.Delete(1);
-	a1.ChangeVal(q , 0);
-	cout << a1.GetCount() << endl;
-	a1.clear();
-	cout << a1.GetCount() << endl;
-	a1.PrintAll();
+	/*ArrayStack<int> s1;
+	s1.push(7);
+	s1.push(2);
+	s1.push(8);
+	s1.push(9);
+	s1.push(4);
+	s1.push(13);
+	s1.push(7);
+	s1.push(1);
+	s1.push(9);
+	s1.push(10);
+	s1.PrintStack();
+	s1.PrintStack();*/
+
+	LinkedQueue <int> Q1;
+	Q1.enqueue(5);
+	Q1.enqueue(212);
+	Q1.enqueue(1);
+	Q1.enqueue(54);
+	Q1.enqueue(41);
+	Q1.enqueue(156);
+	Q1.enqueue(15);
+	Q1.enqueue(8);
+	Q1.PrintQueue();
+	Q1.PrintQueue();
 	return 0;
 }
