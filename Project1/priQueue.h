@@ -17,6 +17,33 @@ public:
         while (dequeue(tmp,p));
     }
 
+
+    priQueue(const priQueue<T>& LQ)
+    {
+        head = nullptr;
+        priNode<T>* NodePtr = LQ.head;	//start at the front node in LQ
+        int dummy;
+        while (NodePtr)
+        {
+            enqueue(NodePtr->getItem(dummy), NodePtr->getPri());	//get data of each node and enqueue it in this queue 
+            NodePtr = NodePtr->getNext();
+        }
+    }
+
+
+    void PrintPriQueue()
+    {
+        //For this function to work properly, the LikedQueue class MUST
+        //have  a copy constructor (pass by value)
+        T K;
+        int dummy;
+        priQueue <T> Qcopy(*this);
+        while (Qcopy.dequeue(K, dummy))
+            cout << K << " ";
+        cout << endl;
+
+    }
+
     //insert the new node in its correct position according to its priority
     void enqueue(const T& data, int priority) {
         priNode<T>* newNode = new priNode<T>(data, priority);
