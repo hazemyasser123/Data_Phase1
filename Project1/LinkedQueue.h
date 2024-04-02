@@ -62,7 +62,8 @@ public :
 	bool dequeue(T& frntEntry);  
 	bool peek(T& frntEntry)  const;	
 	~LinkedQueue();
-
+	void PrintQueue();
+	
 	//copy constructor
 	LinkedQueue(const LinkedQueue<T> & LQ);
 };
@@ -178,6 +179,18 @@ LinkedQueue<T>::~LinkedQueue()
 	//Free all nodes in the queue
 	T temp;
 	while(dequeue(temp));
+}
+template<typename T>
+inline void LinkedQueue<T>::PrintQueue()
+{
+		//For this function to work properly, the LikedQueue class MUST
+		//have  a copy constructor (pass by value)
+	T K;
+	LinkedQueue <T> Qcopy(*this);
+	while (Qcopy.dequeue(K))
+		cout << K << " ";
+	cout << endl;
+
 }
 /////////////////////////////////////////////////////////////////////////////////////////
 /*

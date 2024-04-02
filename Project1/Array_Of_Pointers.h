@@ -18,17 +18,6 @@ public:
 	bool Delete(int index);
 	void clear();
 	int GetCount();
-	/*T& operator[](int index)
-	{
-		if (index < count)
-		{
-			return items[index];
-		}
-		else
-		{
-			return NULL;
-		}
-	}*/
 };
 
 template<class T, int size>
