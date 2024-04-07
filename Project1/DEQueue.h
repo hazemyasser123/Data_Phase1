@@ -88,25 +88,6 @@ bool DEQueue<T>::dequeue(T& frntEntry)
 
 }
 
-template <typename T>
-bool DEQueue<T>::dequeue(T& frntEntry)
-{
-	if (isEmpty())
-		return false;
-
-	Node<T>* nodeToDeletePtr = frontPtr;
-	frntEntry = frontPtr->getItem();
-	frontPtr = frontPtr->getNext();
-	// Queue is not empty; remove front
-	if (nodeToDeletePtr == backPtr)	 // Special case: last node in the queue
-		backPtr = nullptr;
-
-	// Free memory reserved for the dequeued node
-	delete nodeToDeletePtr;
-
-	return true;
-
-}
 
 template <typename T>
 bool DEQueue<T>::dequeueback(T& backEntry)
@@ -116,7 +97,7 @@ bool DEQueue<T>::dequeueback(T& backEntry)
 
 	Node<T>* nodeToDeletePtr = frontPtr;
 	backEntry = frontPtr->getItem();
-	backptr = frontPtr->getNext();
+	backPtr = frontPtr->getNext();
 	// Queue is not empty; remove front
 	if (nodeToDeletePtr == backPtr)	 // Special case: last node in the queue
 		backPtr = nullptr;
