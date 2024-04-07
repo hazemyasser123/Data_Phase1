@@ -11,5 +11,6 @@ using namespace std;
 int main()
 {
 	cout << "Edited by zuma beeh el gamed neek" << endl;
+
 	return 0;
 }
