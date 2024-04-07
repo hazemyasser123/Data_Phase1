@@ -187,8 +187,24 @@ inline void LinkedQueue<T>::PrintQueue()
 		//have  a copy constructor (pass by value)
 	T K;
 	LinkedQueue <T> Qcopy(*this);
+	Node<T>* follow = frontPtr;
+	cout << "[";
 	while (Qcopy.dequeue(K))
-		cout << K << " ";
+	{
+		/*cout << K << " ";*/
+		if (follow->getNext() == nullptr )
+		{
+			cout << K;
+			cout << "]" << endl;
+		}
+		else
+		{
+			cout << K << ", ";
+
+		}
+		follow = follow->getNext();
+
+	}
 	cout << endl;
 
 }
