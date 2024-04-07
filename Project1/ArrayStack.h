@@ -62,8 +62,22 @@ public:
 		ArrayStack <T> Scopy;
 		Scopy = *this;
 		T x;
+		cout << "[";
+		int count = 0;
 		while (Scopy.pop(x))
-			cout << x << " ";
+		{
+			count++;
+			if (count == top + 1)
+			{
+				cout << x;
+				cout << "]" << endl;
+			}
+			else
+			{
+				cout << x << ", ";
+
+			}
+		}
 
 		cout << endl;
 	}
