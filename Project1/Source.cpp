@@ -4,6 +4,7 @@
 #include "priQueue.h"
 #include "StacksList.h"
 #include "ArrayStack.h"
+#include "DEQueue.h"
 using namespace std;
 
 
