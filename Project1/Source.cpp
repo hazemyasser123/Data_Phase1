@@ -6,6 +6,7 @@
 #include "ArrayStack.h"
 #include "DEQueue.h"
 #include "Unit.h"
+#include "Alien_Monster.h"
 using namespace std;
 
 
@@ -18,20 +19,14 @@ ostream& operator << (ostream& os, const Unit& unit)
 
 int main()
 {
-	//cout << "Edited by zuma beeh el gamed neek" << endl;
-	Unit * u1 = new Unit(5, "zuma", 5.2, 2, 45, 84);
-	Array_Of_Pointers <Unit> a1;
-	a1.insert(u1);
-	ArrayStack <int> s1;
-	LinkedQueue <int> q1;
-	
-	q1.enqueue(5);
-	q1.enqueue(5);
-	q1.enqueue(5);
-	q1.enqueue(5);
-	q1.enqueue(5);
-	q1.enqueue(5);
-	q1.PrintQueue();
+	Alien_Monster* a1;
+	a1 = new Alien_Monster(5, 2, 5, 5, 5);
+	Array_Of_Pointers <Alien_Monster> p1;
+	p1.insert(a1);
+	p1.PrintAll();
+	Unit* u;
+	u = new Alien_Monster(5, 2, 5, 5, 5);
+	cout << u->GetType() << endl;
 
 	return 0;
 }
