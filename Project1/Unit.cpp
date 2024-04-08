@@ -5,17 +5,15 @@ using namespace std;
 Unit::Unit()
 {
 	SetID(0);
-	SetType("unknown");
 	SetTj(0);
 	SetHealth(0);
 	SetPower(0);
 	SetAttackCap(0);
 }
 
-Unit::Unit(int id, string t, double tj, int h, int p, int ac)
+Unit::Unit(int id, double tj, int h, int p, int ac)
 {
 	SetID(id);
-	SetType(t);
 	SetTj(tj);
 	SetHealth(h);
 	SetPower(p);
