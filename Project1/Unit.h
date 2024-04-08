@@ -3,7 +3,7 @@
 using namespace std;
 class Unit
 {
-private:
+protected:
 	// TO DO : there will be a pointer to class game here (when class game is made)
 	int ID;
 	string Type; // IMPORTANT : this should have a default value in each of the derived classes

@@ -24,6 +24,9 @@
     <ClCompile Include="Alien_Monster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Earth_Gunnery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array_Of_Pointers.h">
@@ -57,6 +60,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Alien_Monster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Earth_Gunnery.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -10,10 +10,10 @@
 using namespace std;
 
 
-ostream& operator << (ostream& os, const Unit& unit)
+ostream& operator << (ostream& out, const Unit& unit)
 {
 	unit.Print();
-	return os;
+	return out;
 }
 
 
