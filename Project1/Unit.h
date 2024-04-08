@@ -5,7 +5,7 @@ class Unit
 {
 protected:
 	int ID;
-	string Type;
+	string Type;  // IMPORTANT : this should have a default value in each of the derived classes
 	double Tj; // Shows the timeskip when this unit joined the battle (Join Time)
 	int Health;
 	int Power;
