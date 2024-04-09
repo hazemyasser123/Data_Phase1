@@ -21,10 +21,10 @@
     <ClCompile Include="Unit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ES.cpp">
+    <ClCompile Include="Alien_Monster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Drones.cpp">
+    <ClCompile Include="Earth_Gunnery.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -59,16 +59,10 @@
     <ClInclude Include="Unit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ES.h">
+    <ClInclude Include="Alien_Monster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DEQueue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Drones.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AS.h">
+    <ClInclude Include="Earth_Gunnery.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
