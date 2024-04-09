@@ -13,12 +13,12 @@ private:
 	T *items[size];
 	/******************************************************************************************************************/
 	//	------------        /\    /\        | )    :   when using this class you declare it like this " Array_Of_Pointers<int> "                                                                        
-	//            |		   /  \  /  \       |   )  :   and the class will make it an array of pointers from this data type in other words you can only                                                                       
-	//            |           /    \/    \      |   )  :   insert in this form " int* " (Replace int with whatever data type you are using)                                                                                     
-	//            |          /            \     |  )   :   (IF YOU DON'T UNDERSTAND WHAT I WROTE CONTACT ME)                                                                        
-	//            |         /              \    | )    :    ZUMA BEEH                                                                      
-	//      ------------   /                \   |    
-	//                                                                                         
+	//        |		       /  \  /  \       |   )  :   and the class will make it an array of pointers from this data type in other words you can only                                                                       
+	//        |           /    \/    \      |   )  :   insert in this form " int* " (Replace int with whatever data type you are using)                                                                                     
+	//        |          /            \     |  )   :   (IF YOU DON'T UNDERSTAND WHAT I WROTE CONTACT ME)                                                                        
+	//        |         /              \    | )    :    ZUMA BEEH                                                                      
+	//  ------------   /                \   |    
+	//                                      |                                                   
 	/******************************************************************************************************************/
 	int count;
 public:
