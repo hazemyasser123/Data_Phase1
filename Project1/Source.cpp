@@ -19,14 +19,6 @@ ostream& operator << (ostream& out, const Unit& unit)
 
 int main()
 {
-	Alien_Monster* a1;
-	a1 = new Alien_Monster(5, 2, 5, 5, 5);
-	Array_Of_Pointers <Alien_Monster> p1;
-	p1.insert(a1);
-	p1.PrintAll();
-	Unit* u;
-	u = new Alien_Monster(5, 2, 5, 5, 5);
-	cout << u->GetType() << endl;
-
+		
 	return 0;
 }

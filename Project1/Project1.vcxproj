@@ -128,7 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Alien_Monster.cpp" />
+    <ClCompile Include="Drones.cpp" />
     <ClCompile Include="Earth_Gunnery.cpp" />
+    <ClCompile Include="ES.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
@@ -136,7 +138,11 @@
     <ClInclude Include="Alien_Monster.h" />
     <ClInclude Include="ArrayStack.h" />
     <ClInclude Include="Array_Of_Pointers.h" />
+    <ClInclude Include="AS.h" />
+    <ClInclude Include="DEQueue.h" />
+    <ClInclude Include="Drones.h" />
     <ClInclude Include="Earth_Gunnery.h" />
+    <ClInclude Include="ES.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="priNode.h" />
