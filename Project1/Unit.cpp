@@ -11,7 +11,7 @@ Unit::Unit()
 	SetAttackCap(0);
 }
 
-Unit::Unit(int id, string t, double tj, int h, int p, int ac)
+Unit::Unit(int id, double tj, int h, int p, int ac)
 {
 	SetID(id);
 	SetTj(tj);
