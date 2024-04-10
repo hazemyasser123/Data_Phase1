@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Alien_Monster.cpp" />
+    <ClCompile Include="AS.cpp" />
     <ClCompile Include="Drones.cpp" />
     <ClCompile Include="Earth_Gunnery.cpp" />
     <ClCompile Include="ES.cpp" />
