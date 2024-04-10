@@ -36,5 +36,4 @@ void Game::ReadParameters()
 	PowerMaxA = -PowerMaxA;
 	HealthMaxA = -HealthMaxA;
 	AttackCapMaxA = -AttackCapMaxA;
-	cout << line << endl;
 }
