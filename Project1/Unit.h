@@ -1,4 +1,5 @@
 #pragma once
+#include "Game.h"
 #include <iostream>
 using namespace std;
 class Unit
@@ -11,7 +12,7 @@ protected:
 	int Health;
 	int Power;
 	int Attack_Capacity;
-	
+	Game* PtrGame;
 public:
 	Unit();
 
@@ -40,6 +41,10 @@ public:
 	double GetTj() const;
 	
 	string GetType() const;
+
+	void SetGamePtr(Game* pg);
+
+	Game* GetGamePtr() const;
 	
 	bool IsAlive();
 	

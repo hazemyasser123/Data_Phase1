@@ -131,6 +131,7 @@
     <ClCompile Include="Drones.cpp" />
     <ClCompile Include="Earth_Gunnery.cpp" />
     <ClCompile Include="ES.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
@@ -143,6 +144,7 @@
     <ClInclude Include="Drones.h" />
     <ClInclude Include="Earth_Gunnery.h" />
     <ClInclude Include="ES.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="priNode.h" />
