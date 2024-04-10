@@ -9,6 +9,10 @@ public:
 
 	Drone(int id, double tj, int h, int p, int ac);
 
+<<<<<<< HEAD
 	void Attack();
+=======
+	attack();
+>>>>>>> f78a463a7ed9c704d7002260332083c025743a3b
 };
 
