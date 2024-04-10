@@ -23,6 +23,10 @@ git push origin main    (Main can be any branch depending on what branch you're 
 
 git switch "branch name"    (Switches the branch name making changes with git add . will be recorded in branch name not main for example)
 
+IN CASE OF CONFLICT:
+LOOK FOR CONFLICTED FILES, OPEN THE FILE, DELETE THE SECTION WHICH YOU DON'T WANT, (Either the incoming change or yours), THEN TYPE git add "FILENAME WITH LOCATION IF INSIDE A FOLDER"
+
+IN CASE YOU WANT TO OVERWRITE YOUR CHANGES WITH PULLING
 git add .
 git stash
 git pull origin main    (In order to get the changes from the main *in case you get untracked working tree*)
@@ -35,6 +39,6 @@ git rebase --continue   (Continues the rebase)
 git rebase --skip       (Skips files that conflict)
 git rebase --abort      (Aborts the merge)
 
-git mege "branch name"  (Usually I get conflict errors until then I use the website for merging)
+git merge "branch name"  (Usually I get conflict errors until then I use the website for merging)
 
 git "insert command" -h (Displays help for any command you asked for in this case "insert command" also igonre "" when typing).
