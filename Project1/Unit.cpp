@@ -81,6 +81,16 @@ string Unit::GetType() const
 	return Type;
 }
 
+void Unit::SetGamePtr(Game* pg)
+{
+	PtrGame = pg;
+}
+
+Game* Unit::GetGamePtr() const
+{
+	return PtrGame;
+}
+
 bool Unit::IsAlive()
 {
 	return (Health <= 0);
