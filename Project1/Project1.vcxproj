@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\DS project\Data_Phase1\Project1</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,9 +128,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="alienArmy.cpp" />
     <ClCompile Include="Alien_Monster.cpp" />
     <ClCompile Include="AS.cpp" />
     <ClCompile Include="Drones.cpp" />
+    <ClCompile Include="earthArmy.cpp" />
     <ClCompile Include="Earth_Gunnery.cpp" />
     <ClCompile Include="ES.cpp" />
     <ClCompile Include="Game.cpp" />
@@ -137,12 +140,14 @@
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="alienArmy.h" />
     <ClInclude Include="Alien_Monster.h" />
     <ClInclude Include="ArrayStack.h" />
     <ClInclude Include="Array_Of_Pointers.h" />
     <ClInclude Include="AS.h" />
     <ClInclude Include="DEQueue.h" />
     <ClInclude Include="Drones.h" />
+    <ClInclude Include="earthArmy.h" />
     <ClInclude Include="Earth_Gunnery.h" />
     <ClInclude Include="ES.h" />
     <ClInclude Include="Game.h" />

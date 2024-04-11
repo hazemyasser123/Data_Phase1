@@ -82,6 +82,11 @@ public:
 		cout << endl;
 	}
 
+	int gettop()
+	{
+		return top;
+	}
+
 }; // end ArrayStack
 
 #endif
