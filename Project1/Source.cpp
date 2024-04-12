@@ -12,11 +12,11 @@
 using namespace std;
 
 
-//ostream& operator << (ostream& out, const Unit& unit)
-//{
-//	unit.Print();
-//	return out;
-//}
+ostream& operator << (ostream& out, const Unit& unit)
+{
+	unit.Print();
+	return out;
+}
 
 
 
