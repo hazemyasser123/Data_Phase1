@@ -5,6 +5,7 @@ template <class T>
 class StacksList
 {
 	Node<T>* head;
+	int count=0;
 public:
 	StacksList()
 	{
@@ -32,13 +33,14 @@ public:
 		else
 		{
 			Node<T>* ptr = head;
-			while (ptr->getnext())
+			while (ptr->getNext())
 			{
 				ptr = ptr->getNext();
 			}
-			Node<T> p = new Node(newEntry);
+			Node<T>* p = new Node(newEntry);
 			ptr->setNext(p);
 		}
+		count++;
 		return true;
 	}
 
@@ -53,6 +55,7 @@ public:
 			Node<T>* ptr = head;
 			TopEntry = ptr->getItem();
 			head = ptr->getNext();
+			count--;
 			return true;
 		}
 	}
@@ -81,6 +84,12 @@ public:
 		}
 		cout << endl;
 	}
+
+	int getcount()
+	{
+		return count;
+	}
+
 	~StacksList()
 	{
 
