@@ -22,8 +22,5 @@ ostream& operator << (ostream& out, const Unit& unit)
 
 int main()
 {
-	Alien_Monster a1(5,5,5,5,5);
-	a1.Print();
-	return 0;
-
+return 0;
 }
