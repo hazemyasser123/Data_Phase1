@@ -51,6 +51,7 @@ bool DEQueue<T>::enqueueboth(T& backEntry,T& frntEntry)
 	return (this->enqueue(backEntry) || this->enqueuefront(frntEntry));
 }
 
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
