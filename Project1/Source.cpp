@@ -12,18 +12,19 @@
 using namespace std;
 
 
-ostream& operator << (ostream& out, const Unit& unit)
-{
-	unit.Print();
-	return out;
-}
+//ostream& operator << (ostream& out, const Unit& unit)
+//{
+//	unit.Print();
+//	return out;
+//}
+
 
 
 
 int main()
 {
-	Game g1;
-	
-		
+	Alien_Monster a1(5,5,5,5,5);
+	a1.Print();
 	return 0;
+
 }
