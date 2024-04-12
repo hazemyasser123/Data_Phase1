@@ -1,6 +1,6 @@
-#include "Unit_Generator.h"
+#include "randGen.h"
 
-Unit_Generator::Unit_Generator(Game* GamePtr)
+randGen::randGen(Game* GamePtr)
 {
 	
 	srand(time(0));
@@ -127,7 +127,7 @@ Unit_Generator::Unit_Generator(Game* GamePtr)
 	}
 }
 
-Unit* Unit_Generator::GetGeneratedUnits()
+Unit* randGen::GetGeneratedUnits()
 {
 	return GeneratedUnits;
 }

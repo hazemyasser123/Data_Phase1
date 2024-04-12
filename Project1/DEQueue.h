@@ -46,7 +46,7 @@ bool DEQueue<T>::enqueuefront(T& frntEntry)
 
 
 template <typename T>
-bool DEQueue<T>::enqueuefront(T& backEntry,T& frntEntry)
+bool DEQueue<T>::enqueueboth(T& backEntry,T& frntEntry)
 {
 	return (this->enqueue(backEntry) || this->enqueuefront(frntEntry));
 }
