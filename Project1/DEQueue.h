@@ -30,18 +30,14 @@ DEQueue<T>::DEQueue() : LinkedQueue<T>()
 template <typename T>
 bool DEQueue<T>::enqueuefront(T& frntEntry)
 {
-	LinkedQueue<T> y;
-	T x;
-	y.enqueue(frntEntry);
-	while (this->dequeue(x))
+	if (frontPtr == nullptr)
 	{
-		y.enqueue(x);
+		this->enqueue(frntEntry);
 	}
-	while (y.dequeue(x))
-	{
-		this->enqueue(x);
-	}
-	return true;
+	Node<T>* x(frntEntry);
+	frontPtr->setnext(x);
+	frontPtr = frontPtr->getnext();
+	frontPtr->setnext(nullptr);
 }
 
 
@@ -59,22 +55,10 @@ bool DEQueue<T>::dequeueback(T& backEntry)
 {
 	if (this->isEmpty())
 		return false;
-	LinkedQueue<T> y;
-	T x,z;
-
-	while (this->dequeue(x))
-	{
-		y.enqueue(x);
-	}
-	backEntry = x;
-	while (y.dequeue(x))
-	{
-		if (backEntry != x)
-		{
-			this->enqueue(x);
-		}
-	}
-	return true;
+	backEntry = backPtr->getitem();
+	Node<T>* x = backPtr;
+	backPtr = backPtr->getnext();
+	delete x;
 }
 
 template <typename T>
@@ -90,17 +74,7 @@ bool DEQueue<T>::peekback(T& backEntry)
 {
 	if (this->isEmpty())
 		return false;
-	LinkedQueue<T> y;
-	T x;
-	while (this->dequeue(x))
-	{
-		y.enqueue(x);
-	}
-	backEntry = x;
-	while (y.dequeue(x))
-	{
-		this->enqueue(x);
-	}
+	backEntry = backPtr->getitem();
 }
 
 template <typename T>

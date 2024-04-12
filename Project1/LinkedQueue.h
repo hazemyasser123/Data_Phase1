@@ -51,7 +51,7 @@ using namespace std;
 template <typename T>
 class LinkedQueue:public QueueADT<T>
 {
-private :
+protected :
 	int count=0;
 	Node<T>* backPtr;
 	Node<T>* frontPtr;
