@@ -10,6 +10,8 @@ class DEQueue :public LinkedQueue<T>
 {
 public:
 	DEQueue();
+	bool enqueuefront(T& frntEntry);
+	bool enqueueboth(T& backEntry, T& frntEntry);
 	bool dequeueback(T& backEntry);
 	bool dequeueboth(T& backEntry, T& frntEntry);
 	bool peekback(T& backEntry);
@@ -20,18 +22,34 @@ public:
 };
 /////////////////////////////////////////////////////////////////////////////////////////
 
-/*
-Function: Queue()
-The constructor of the Queue class.
-
-*/
-
 template <typename T>
 DEQueue<T>::DEQueue() : LinkedQueue<T>()
 {}
 
 /////////////////////////////////////////////////////////////////////////////////////////
+template <typename T>
+bool DEQueue<T>::enqueuefront(T& frntEntry)
+{
+	LinkedQueue<T> y;
+	T x;
+	y.enqueue(frntEntry);
+	while (this->dequeue(x))
+	{
+		y.enqueue(x);
+	}
+	while (y.dequeue(x))
+	{
+		this->enqueue(x);
+	}
+	return true;
+}
 
+
+template <typename T>
+bool DEQueue<T>::enqueuefront(T& backEntry,T& frntEntry)
+{
+	return (this->enqueue(backEntry) || this->enqueuefront(frntEntry));
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
