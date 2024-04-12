@@ -22,5 +22,8 @@ ostream& operator << (ostream& out, const Unit& unit)
 
 int main()
 {
-return 0;
+	Game g1;
+	
+		
+	return 0;
 }
