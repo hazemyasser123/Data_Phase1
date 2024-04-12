@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="AlienArmyHeaders">
+      <UniqueIdentifier>{f3616114-355e-4f15-b738-0176d0ceca7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DS">
+      <UniqueIdentifier>{668ec86b-9b06-491b-a747-d22d9bbce11b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{a88b6b31-7607-40f6-862b-73c5ceebe954}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -33,64 +42,87 @@
     <ClCompile Include="ES.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="AS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="alienArmy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="earthArmy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="randGen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Array_Of_Pointers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LinkedQueue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="priNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="priQueue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="QueueADT.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StacksList.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Node.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ArrayStack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StackADT.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Unit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Alien_Monster.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Earth_Gunnery.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AS.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DEQueue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Drones.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ES.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="earthArmy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="randGen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Alien_Monster.h">
+      <Filter>AlienArmyHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="alienArmy.h">
+      <Filter>AlienArmyHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Drones.h">
+      <Filter>AlienArmyHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="AS.h">
+      <Filter>AlienArmyHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedQueue.h">
+      <Filter>DS</Filter>
+    </ClInclude>
+    <ClInclude Include="priNode.h">
+      <Filter>DS</Filter>
+    </ClInclude>
+    <ClInclude Include="priQueue.h">
+      <Filter>DS</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueADT.h">
+      <Filter>DS</Filter>
+    </ClInclude>
+    <ClInclude Include="StackADT.h">
+      <Filter>DS</Filter>
+    </ClInclude>
+    <ClInclude Include="StacksList.h">
+      <Filter>DS</Filter>
+    </ClInclude>
+    <ClInclude Include="DEQueue.h">
+      <Filter>DS</Filter>
+    </ClInclude>
+    <ClInclude Include="Array_Of_Pointers.h">
+      <Filter>DS</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayStack.h">
+      <Filter>DS</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Input.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

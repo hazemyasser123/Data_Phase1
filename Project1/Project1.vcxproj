@@ -138,6 +138,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="randGen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="alienArmy.h" />
@@ -159,6 +160,10 @@
     <ClInclude Include="StackADT.h" />
     <ClInclude Include="StacksList.h" />
     <ClInclude Include="Unit.h" />
+    <ClInclude Include="randGen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
