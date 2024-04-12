@@ -4,12 +4,10 @@
 #include "Unit.h"
 using namespace std;
 
-class ES : public Unit
+class ET : public Unit
 {
 public:
-	ES();
+	ET();
 
-	ES(int id, double tj, int h, int p, int ac);
-
-	void Attack();
+	ET(int id, double tj, int h, int p, int ac);
 };

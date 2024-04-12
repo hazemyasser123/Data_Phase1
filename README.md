@@ -21,6 +21,24 @@ git commit -m "what is a potato?"   (If the you don't want a pop up of typing to
 
 git push origin main    (Main can be any branch depending on what branch you're working on).
 
-git pull                (I don't know the exact syntax but it essentially puts a request to put your branch back in the main branch).
+git switch "branch name"    (Switches the branch name making changes with git add . will be recorded in branch name not main for example)
+
+IN CASE OF CONFLICT:
+LOOK FOR CONFLICTED FILES, OPEN THE FILE, DELETE THE SECTION WHICH YOU DON'T WANT, (Either the incoming change or yours), THEN TYPE git add "FILENAME WITH LOCATION IF INSIDE A FOLDER"
+
+IN CASE YOU WANT TO OVERWRITE YOUR CHANGES WITH PULLING
+git add .
+git stash
+git pull origin main    (In order to get the changes from the main *in case you get untracked working tree*)
+
+git switch "branch name"
+git rebase "source"     (In order to rebase your branch with respect to source).
+
+git add "filename and sometimes path if inside foldedr not direct"  (commit changes in this file in case the conflict happens)
+git rebase --continue   (Continues the rebase)
+git rebase --skip       (Skips files that conflict)
+git rebase --abort      (Aborts the merge)
+
+git merge "branch name"  (Usually I get conflict errors until then I use the website for merging)
 
 git "insert command" -h (Displays help for any command you asked for in this case "insert command" also igonre "" when typing).

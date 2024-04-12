@@ -2,6 +2,7 @@
 class Game
 {
 private:
+	double CurrentTime;
 	int N;
 	int ESper;
 	int ETper;
@@ -21,9 +22,30 @@ private:
 	int HealthMinA;
 	int HealthMaxA;
 	int AttackCapMinA;
-	int AttackCapMaxA;                                                         
+	int AttackCapMaxA;                                                    
 public:
 	Game();
 	void ReadParameters();
+	int getN();
+	int getESper();
+	int getETper();
+	int getEGper();
+	int getASper();
+	int getAMper();
+	int getADper();
+	int getProb();
+	int getPowerMinE();
+	int getPowerMaxE();
+	int getHealthMinE();
+	int getHealthMaxE();
+	int getAttackCapMinE();
+	int getAttackCapMaxE();
+	int getPowerMinA();
+	int getPowerMaxA();
+	int getHealthMinA();
+	int getHealthMaxA();
+	int getAttackCapMinA();
+	int getAttackCapMaxA();
+	double getCurrentTime();
 };
 

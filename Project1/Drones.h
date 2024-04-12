@@ -8,5 +8,7 @@ public:
 	Drone();
 
 	Drone(int id, double tj, int h, int p, int ac);
+
+	void Attack();
 };
 
