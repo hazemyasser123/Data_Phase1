@@ -8,6 +8,7 @@
 #include "Unit.h"
 #include "Alien_Monster.h"
 #include "Game.h"
+#include "alienArmy.h"
 using namespace std;
 
 
@@ -18,6 +19,7 @@ ostream& operator << (ostream& out, const Unit& unit)
 }
 
 
+
 int main()
 {
 	Game g1;
@@ -25,4 +27,3 @@ int main()
 		
 	return 0;
 }
-
