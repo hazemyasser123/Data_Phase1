@@ -1,4 +1,13 @@
+#include <iostream>
 #include "alienArmy.h"
+#include "Array_Of_Pointers.h"
+using namespace std;
+
+ostream& operator << (ostream& out, const Alien_Monster& unit)
+{
+	unit.Print();
+	return out;
+}
 
 void alienArmy::Attack()
 {
@@ -32,3 +41,5 @@ bool alienArmy::addUnit(Unit* armyunit)  // add unit to appropiate list
 	}
 	else return false;
 }
+
+
