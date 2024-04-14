@@ -2,11 +2,14 @@
 #include <fstream>
 #include <string>
 #include <iostream>
+
 using namespace std;
 
 Game::Game()
 {
+	gen = new randGen(this);
 	ReadParameters();
+	
 }
 
 void Game::ReadParameters()
@@ -140,6 +143,20 @@ int Game::getAttackCapMaxA()
 double Game::getCurrentTime()
 {
 	return CurrentTime;
+}
+
+alienArmy* Game::GetAlienArmy()
+{
+	alienArmy* Aptr;
+	Aptr = &AlienArmy;
+	return Aptr;
+}
+
+earthArmy* Game::GetEarthArmy()
+{
+	earthArmy* Eptr;
+	Eptr = &EarthArmy;
+	return Eptr;
 }
 
 

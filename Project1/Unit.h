@@ -1,7 +1,8 @@
 #pragma once
-#include "Game.h"
+//#include "Game.h"
 #include <iostream>
 using namespace std;
+class Game;
 class Unit
 {
 protected:
