@@ -83,7 +83,7 @@
     <ClInclude Include="alienArmy.h">
       <Filter>AlienArmyHeaders</Filter>
     </ClInclude>
-    <ClInclude Include="Drones.h">
+    <ClInclude Include="Drone.h">
       <Filter>AlienArmyHeaders</Filter>
     </ClInclude>
     <ClInclude Include="AS.h">

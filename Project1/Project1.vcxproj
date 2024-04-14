@@ -147,7 +147,7 @@
     <ClInclude Include="Array_Of_Pointers.h" />
     <ClInclude Include="AS.h" />
     <ClInclude Include="DEQueue.h" />
-    <ClInclude Include="Drones.h" />
+    <ClInclude Include="Drone.h" />
     <ClInclude Include="earthArmy.h" />
     <ClInclude Include="Earth_Gunnery.h" />
     <ClInclude Include="ES.h" />
