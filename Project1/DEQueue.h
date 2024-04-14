@@ -30,30 +30,23 @@ DEQueue<T>::DEQueue() : LinkedQueue<T>()
 template <typename T>
 bool DEQueue<T>::enqueuefront(T& frntEntry)
 {
-	if (frontPtr == nullptr)
+	if (this->frontPtr == nullptr)
 	{
 		this->enqueue(frntEntry);
 	}
 	Node<T>* x(frntEntry);
-	frontPtr->setnext(x);
-	frontPtr = frontPtr->getnext();
-	frontPtr->setnext(nullptr);
+	this->frontPtr->setnext(x);
+	this->frontPtr = this->frontPtr->getnext();
+	this->frontPtr->setnext(nullptr);
+
 }
 
 
-<<<<<<< HEAD
 template <typename T>
 bool DEQueue<T>::enqueueboth(T& backEntry,T& frntEntry)
 {
 	return (this->enqueue(backEntry) || this->enqueuefront(frntEntry));
 }
-=======
-//template <typename T>
-//bool DEQueue<T>::enqueuefront(T& backEntry,T& frntEntry)
-//{
-//	return (this->enqueue(backEntry) || this->enqueuefront(frntEntry));
-//}
->>>>>>> 5cbe45c (solved some problems)
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -64,16 +57,16 @@ bool DEQueue<T>::dequeueback(T& backEntry)
 {
 	if (this->isEmpty())
 		return false;
-	backEntry = backPtr->getitem();
-	Node<T>* x = backPtr;
-	backPtr = backPtr->getnext();
+	backEntry = this->backPtr->getitem();
+	Node<T>* x = this->backPtr;
+	this->backPtr = this->backPtr->getnext();
 	delete x;
 }
 
 template <typename T>
 bool DEQueue<T>::dequeueboth(T& backEntry, T& frntEntry)
 {
-	return (dedequeueback(backEntry) || this->dequeue(frntEntry));
+	return (dedequeueback(backEntry) && this->dequeue(frntEntry));
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -83,13 +76,13 @@ bool DEQueue<T>::peekback(T& backEntry)
 {
 	if (this->isEmpty())
 		return false;
-	backEntry = backPtr->getitem();
+	backEntry = this->backPtr->getitem();
 }
 
 template <typename T>
 bool DEQueue<T>::peekboth(T& backEntry, T&frntEntry)
 {
-	return(peekback(backEntry) || this->peek(frntEntry));
+	return(peekback(backEntry) && this->peek(frntEntry));
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
