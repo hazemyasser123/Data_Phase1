@@ -135,10 +135,15 @@
     <ClCompile Include="earthArmy.cpp" />
     <ClCompile Include="Earth_Gunnery.cpp" />
     <ClCompile Include="ES.cpp" />
+    <ClCompile Include="ET.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Unit.cpp" />
     <ClCompile Include="randGen.cpp" />
+    <ClCompile Include="UnitAOP.cpp" />
+    <ClCompile Include="UnitpriQueue.cpp" />
+    <ClCompile Include="UnitQueue.cpp" />
+    <ClCompile Include="UnitStack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="alienArmy.h" />
@@ -151,6 +156,7 @@
     <ClInclude Include="earthArmy.h" />
     <ClInclude Include="Earth_Gunnery.h" />
     <ClInclude Include="ES.h" />
+    <ClInclude Include="ET.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="Node.h" />
@@ -161,6 +167,10 @@
     <ClInclude Include="StacksList.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="randGen.h" />
+    <ClInclude Include="UnitAOP.h" />
+    <ClInclude Include="UnitpriQueue.h" />
+    <ClInclude Include="UnitQueue.h" />
+    <ClInclude Include="UnitStack.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input.txt" />

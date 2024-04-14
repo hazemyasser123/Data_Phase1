@@ -9,23 +9,19 @@
 #include "Alien_Monster.h"
 #include "Game.h"
 #include "alienArmy.h"
+#include "UnitAOP.h"
+#include "UnitQueue.h"
+#include "UnitStack.h"
+#include "UnitpriQueue.h"
+#include "Earth_Gunnery.h"
 using namespace std;
-
-
-ostream& operator << (ostream& out, const Unit& unit)
-{
-	unit.Print();
-	return out;
-}
 
 
 
 
 int main()
 {
-	Game g1;
-
-
+	
 	return 0;
 
 }

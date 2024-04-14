@@ -5,13 +5,16 @@
 #include "ET.h"
 #include "priQueue.h"
 #include "Earth_Gunnery.h"
-
+#include "UnitAOP.h"
+#include "UnitQueue.h"
+#include "UnitStack.h"
+#include "UnitpriQueue.h"
 class earthArmy
 {
 private:
-	LinkedQueue<ES*> ES_List;
-	ArrayStack<ET*> ET_List;
-	priQueue<Earth_Gunnery*> EG_List;
+	UnitQueue ES_List;
+	UnitStack ET_List;
+	UnitpriQueue EG_List;
 
 public:
 	void Attack();
