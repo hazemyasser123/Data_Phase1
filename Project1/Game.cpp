@@ -48,12 +48,12 @@ int Game::getN()
 
 int Game::getESper()
 {
-	return 0;
+	return ESper;
 }
 
 int Game::getETper()
 {
-	return ESper;
+	return ETper;
 }
 
 int Game::getEGper()
@@ -73,12 +73,12 @@ int Game::getAMper()
 
 int Game::getADper()
 {
-	return 0;
+	return ADper;
 }
 
 int Game::getProb()
 {
-	return ADper;
+	return Prob;
 }
 
 int Game::getPowerMinE()
