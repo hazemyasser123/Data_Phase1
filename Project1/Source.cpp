@@ -20,10 +20,12 @@ ostream& operator << (ostream& out, const Unit& unit)
 
 
 
+
 int main()
 {
 	Game g1;
-	
-		
+
+
 	return 0;
+
 }
