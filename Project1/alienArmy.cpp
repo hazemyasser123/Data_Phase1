@@ -3,11 +3,6 @@
 #include "Array_Of_Pointers.h"
 using namespace std;
 
-ostream& operator << (ostream& out, const Alien_Monster& unit)
-{
-	unit.Print();
-	return out;
-}
 
 void alienArmy::Attack()
 {

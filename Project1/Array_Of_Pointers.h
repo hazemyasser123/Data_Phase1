@@ -11,7 +11,7 @@ using namespace std;
 template <class T, int size = DefSize>
 class Array_Of_Pointers
 {
-private:
+protected:
 	T * items[size];
 	/******************************************************************************************************************/
 	//  ------------        /\    /\        | )    :   when using this class you declare it like this " Array_Of_Pointers<int> "                                                                        
@@ -80,11 +80,11 @@ inline void Array_Of_Pointers<T, size>::PrintAll()
 	{
 		if (i != count - 1)
 		{
-			cout << *items[i] << ", ";
+			cout << items[i] << ", ";
 		}
 		else
 		{
-			cout << *items[i];
+			cout << items[i];
 		}
 	}
 	cout << "]" << endl;;

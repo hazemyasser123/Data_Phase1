@@ -5,14 +5,17 @@
 #include "Alien_Monster.h"
 #include "DEQueue.h"
 #include "Drone.h"
+#include "UnitAOP.h"
+#include "UnitQueue.h"
+#include "UnitStack.h"
 #include <iostream>
 using namespace std;
 
 class alienArmy
 {
 private:
-	LinkedQueue<AS*> AS_List;
-	Array_Of_Pointers<Alien_Monster> AM_List;
+	UnitQueue AS_List;
+	UnitAOP AM_List;
 	DEQueue<Drone*> AD_List;
 
 public:

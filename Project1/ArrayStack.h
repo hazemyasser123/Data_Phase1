@@ -4,12 +4,11 @@
 
 /** ADT stack: Array-based implementation.
  @file ArrayStack.h */
-
-#ifndef ARRAY_STACK_
-#define ARRAY_STACK_
+#pragma once
 
 #include "StackADT.h"
-
+#include <iostream>
+using namespace std;
  //Unless spesificed by the stack user, the default size is 100
 template<typename T>
 class ArrayStack : public StackADT<T>
@@ -89,4 +88,4 @@ public:
 
 }; // end ArrayStack
 
-#endif
+

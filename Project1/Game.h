@@ -22,7 +22,7 @@ private:
 	int HealthMinA;
 	int HealthMaxA;
 	int AttackCapMinA;
-	int AttackCapMaxA;                                                    
+	int AttackCapMaxA;
 public:
 	Game();
 	void ReadParameters();

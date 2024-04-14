@@ -1,5 +1,7 @@
 #pragma once
 #include "priNode.h"
+#include <iostream>
+using namespace std;
 
 
 //This class impelements the priority queue as a sorted list (Linked List)
@@ -32,7 +34,7 @@ public:
     }
 
 
-    void PrintPriQueue()
+    virtual void PrintPriQueue()
     {
         //For this function to work properly, the LikedQueue class MUST
         //have  a copy constructor (pass by value)
@@ -42,7 +44,6 @@ public:
         while (Qcopy.dequeue(K, dummy))
             cout << K << " ";
         cout << endl;
-
     }
 
     //insert the new node in its correct position according to its priority
