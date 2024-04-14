@@ -2,13 +2,13 @@
 
 randGen::randGen(Game* Gp)
 {
-	GamePtr = Gp;
-	
+	GamePtr = Gp;	
 }
 
-void randGen::GenerateUnits()
+
+void randGen::CreateUnits()
 {
-	Unit* UnitToinsert; 
+	Unit* UnitToinsert;
 	srand(time(0));
 
 	//For Earth Army
@@ -32,7 +32,7 @@ void randGen::GenerateUnits()
 				//Generate its ID
 				int ID = 1 + rand() % 999;
 				UnitToinsert = new ES(ID, GamePtr->getCurrentTime(), SoldierHP, SoldierPower, SoldierCapacity);
-				EarthGenerated.enqueue(UnitToinsert);
+				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 
 			}
 			else if (B <= (GamePtr->getETper() + GamePtr->getESper()))
@@ -48,7 +48,7 @@ void randGen::GenerateUnits()
 				//Generate its ID
 				int ID = 1 + rand() % 999;
 				UnitToinsert = new ET(ID, GamePtr->getCurrentTime(), TankHP, TankPower, TankCapacity);
-				EarthGenerated.enqueue(UnitToinsert);
+				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 			}
 			else
 			{
@@ -63,7 +63,7 @@ void randGen::GenerateUnits()
 				//Generate its ID
 				int ID = 1 + rand() % 999;
 				UnitToinsert = new Earth_Gunnery(ID, GamePtr->getCurrentTime(), GunneryHP, GunneryPower, GunneryCapacity);
-				EarthGenerated.enqueue(UnitToinsert);
+				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 			}
 		}
 	}
@@ -88,7 +88,7 @@ void randGen::GenerateUnits()
 				//Generate its ID
 				int ID = 2000 + rand() % 1000;
 				UnitToinsert = new AS(ID, GamePtr->getCurrentTime(), SoldierHP, SoldierPower, SoldierCapacity);
-				AlienGenerated.enqueue(UnitToinsert);
+				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
 			else if (B <= (GamePtr->getAMper() + GamePtr->getASper()))
 			{
@@ -103,7 +103,7 @@ void randGen::GenerateUnits()
 				//Generate its ID
 				int ID = 1 + rand() % 999;
 				UnitToinsert = new Alien_Monster(ID, GamePtr->getCurrentTime(), MonsterHP, MonsterPower, MonsterCapacity);
-				AlienGenerated.enqueue(UnitToinsert);
+				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
 			else
 			{
@@ -118,21 +118,12 @@ void randGen::GenerateUnits()
 				//Generate its ID
 				int ID = 1 + rand() % 999;
 				UnitToinsert = new Drone(ID, GamePtr->getCurrentTime(), DroneHP, DronePower, DroneCapacity);
-				AlienGenerated.enqueue(UnitToinsert);
-				
+				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
 		}
 		
 	}
 }
 
-UnitQueue& randGen::Get_EarthGenerated_Queue()
-{
-	return EarthGenerated;
-}
 
-UnitQueue& randGen::Get_AlienGenerated_Queue()
-{
-	return AlienGenerated;
-}
 

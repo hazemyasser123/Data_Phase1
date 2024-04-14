@@ -1,7 +1,14 @@
 #pragma once
+#include "alienArmy.h"
+#include "earthArmy.h"
+#include "randGen.h"
+
 class Game
 {
 private:
+	randGen* gen;
+	alienArmy AlienArmy;
+	earthArmy EarthArmy;
 	double CurrentTime;
 	int N;
 	int ESper;
@@ -47,5 +54,7 @@ public:
 	int getAttackCapMinA();
 	int getAttackCapMaxA();
 	double getCurrentTime();
+	alienArmy* GetAlienArmy();
+	earthArmy* GetEarthArmy();
 };
 
