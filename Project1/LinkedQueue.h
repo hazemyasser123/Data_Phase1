@@ -52,7 +52,7 @@ template <typename T>
 class LinkedQueue:public QueueADT<T>
 {
 private :
-	int count=0;
+	int count = 0;
 	Node<T>* backPtr;
 	Node<T>* frontPtr;
 public :

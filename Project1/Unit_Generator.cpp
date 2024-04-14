@@ -115,9 +115,7 @@ Unit_Generator::Unit_Generator(Game* GamePtr)
 				int DroneCapacity = GamePtr->getAttackCapMinA() + rand() % (GamePtr->getAttackCapMaxA() - GamePtr->getAttackCapMinA() + 1);
 				//Generate its ID
 				int ID = 1 + rand() % 999;
-				GeneratedUnits[1] = Unit(ID, GamePtr->getCurrentTime(), DroneHP, DronePower, DroneCapacity);
-
-				
+				GeneratedUnits[1] = Unit(ID, GamePtr->getCurrentTime(), DroneHP, DronePower, DroneCapacity);	
 			}
 		}
 		else
