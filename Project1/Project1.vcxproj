@@ -135,11 +135,10 @@
     <ClCompile Include="earthArmy.cpp" />
     <ClCompile Include="Earth_Gunnery.cpp" />
     <ClCompile Include="ES.cpp" />
-    <ClCompile Include="ET.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Unit.cpp" />
-    <ClCompile Include="Unit_Generator.cpp" />
+    <ClCompile Include="randGen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="alienArmy.h" />
@@ -148,11 +147,10 @@
     <ClInclude Include="Array_Of_Pointers.h" />
     <ClInclude Include="AS.h" />
     <ClInclude Include="DEQueue.h" />
-    <ClInclude Include="Drones.h" />
+    <ClInclude Include="Drone.h" />
     <ClInclude Include="earthArmy.h" />
     <ClInclude Include="Earth_Gunnery.h" />
     <ClInclude Include="ES.h" />
-    <ClInclude Include="ET.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="Node.h" />
@@ -162,7 +160,10 @@
     <ClInclude Include="StackADT.h" />
     <ClInclude Include="StacksList.h" />
     <ClInclude Include="Unit.h" />
-    <ClInclude Include="Unit_Generator.h" />
+    <ClInclude Include="randGen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

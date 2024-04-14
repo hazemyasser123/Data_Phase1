@@ -6,12 +6,12 @@
 #include <random>
 using namespace std;
 
-class Unit_Generator
+class randGen
 {
 protected:
 	Unit GeneratedUnits[2];
 public:
-	Unit_Generator(Game* Gameptr);
+	randGen(Game* Gameptr);
 	
 	Unit* GetGeneratedUnits();
 

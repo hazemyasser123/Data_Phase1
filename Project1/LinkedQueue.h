@@ -51,13 +51,13 @@ using namespace std;
 template <typename T>
 class LinkedQueue:public QueueADT<T>
 {
-private :
-	int count = 0;
+protected :
+	int count=0;
 	Node<T>* backPtr;
 	Node<T>* frontPtr;
 public :
 	LinkedQueue();	
-	bool isEmpty() const ;
+	bool isEmpty() const;
 	bool enqueue(const T& newEntry);
 	bool dequeue(T& frntEntry);  
 	bool peek(T& frntEntry)  const;	
@@ -87,7 +87,6 @@ LinkedQueue<T>::LinkedQueue()
 {
 	backPtr=nullptr;
 	frontPtr=nullptr;
-
 }
 /////////////////////////////////////////////////////////////////////////////////////////
 
