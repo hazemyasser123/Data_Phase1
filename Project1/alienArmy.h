@@ -26,6 +26,5 @@ public:
 	Unit* PickAS();
 	void pickDrones(Unit*& frntDrone, Unit*& backDrone);
 	bool addUnit(Unit* armyunit);
-	bool KillUnit(Unit* Killedunit);
 };
 
