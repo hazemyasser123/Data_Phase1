@@ -13,23 +13,23 @@ void randGen::CreateUnits()
 {
 	Unit* UnitToinsert;
 	//For Earth Army
-	for (int i = 0; i < GamePtr->getN(); i++)
+	for (int i = 0; i < N; i++)
 	{
 		int A = rand() % 100 + 1; //To get chance between 1 and 100
-		if (A <= GamePtr->getProb())
+		if (A <= Prob)
 		{
 			int B = rand() % 100 + 1; //To determine which type of unit 
 			//This section checks for value of B to determine its type.
-			if (B <= GamePtr->getESper())
+			if (B <= ESper)
 			{
 				// Generate Earth Soldier
 
 				//Generate its hp
-				int SoldierHP = GamePtr->getHealthMinE() + rand() % (GamePtr->getHealthMaxE() - GamePtr->getHealthMinE() + 1);
+				int SoldierHP = HealthMinE + rand() % (HealthMaxE - HealthMinE + 1);
 				//Generate its power
-				int SoldierPower = GamePtr->getPowerMinE() + rand() % (GamePtr->getPowerMaxE() - GamePtr->getPowerMinE() + 1);
+				int SoldierPower = PowerMinE + rand() % (PowerMaxE - PowerMinE + 1);
 				//Generate its capcity
-				int SoldierCapacity = GamePtr->getAttackCapMinE() + rand() % (GamePtr->getAttackCapMaxE() - GamePtr->getAttackCapMinE() + 1);
+				int SoldierCapacity = AttackCapMinE + rand() % (AttackCapMaxE - AttackCapMinE + 1);
 				//Generate its ID
 				int ID = Earth;
 				Earth++;
@@ -37,16 +37,16 @@ void randGen::CreateUnits()
 				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 
 			}
-			else if (B <= (GamePtr->getETper() + GamePtr->getESper()))
+			else if (B <= (ETper + ESper))
 			{
 				// Generate Earth Tank
 
 				//Generate its hp
-				int TankHP = GamePtr->getHealthMinE() + rand() % (GamePtr->getHealthMaxE() - GamePtr->getHealthMinE() + 1);
+				int TankHP = HealthMinE + rand() % (HealthMaxE - HealthMinE + 1);
 				//Generate its power
-				int TankPower = GamePtr->getPowerMinE() + rand() % (GamePtr->getPowerMaxE() - GamePtr->getPowerMinE() + 1);
+				int TankPower = PowerMinE + rand() % (PowerMaxE - PowerMinE + 1);
 				//Generate its capcity
-				int TankCapacity = GamePtr->getAttackCapMinE() + rand() % (GamePtr->getAttackCapMaxE() - GamePtr->getAttackCapMinE() + 1);
+				int TankCapacity =AttackCapMinE + rand() % (AttackCapMaxE - AttackCapMinE + 1);
 				//Generate its ID
 				int ID = Earth;
 				Earth++;
@@ -58,11 +58,11 @@ void randGen::CreateUnits()
 				// Generate Earth Gunnery
 
 				//Generate its hp
-				int GunneryHP = GamePtr->getHealthMinE() + rand() % (GamePtr->getHealthMaxE() - GamePtr->getHealthMinE() + 1);
+				int GunneryHP = HealthMinE + rand() % (HealthMaxE - HealthMinE + 1);
 				//Generate its power
-				int GunneryPower = GamePtr->getPowerMinE() + rand() % (GamePtr->getPowerMaxE() - GamePtr->getPowerMinE() + 1);
+				int GunneryPower = PowerMinE + rand() % (PowerMaxE - PowerMinE + 1);
 				//Generate its capcity
-				int GunneryCapacity = GamePtr->getAttackCapMinE() + rand() % (GamePtr->getAttackCapMaxE() - GamePtr->getAttackCapMinE() + 1);
+				int GunneryCapacity = AttackCapMinE + rand() % (AttackCapMaxE - AttackCapMinE + 1);
 				//Generate its ID
 				int ID = Earth;
 				Earth++;
@@ -72,39 +72,39 @@ void randGen::CreateUnits()
 		}
 	}
 	//For Alien Army
-	for (int i = 0; i < GamePtr->getN(); i++)
+	for (int i = 0; i < N; i++)
 	{
 		int A = rand() % 100 + 1; //To get chance between 1 and 100
-		if (A <= GamePtr->getProb())
+		if (A <= Prob)
 		{
 			int B = rand() % 100 + 1; //To determine which type of unit 
 			//This section checks for value of B to determine its type.
-			if (B <= GamePtr->getASper())
+			if (B <= ASper)
 			{
 				// Generate Alien Soldier
 
 				//Generate its hp
-				int SoldierHP = GamePtr->getHealthMinA() + rand() % (GamePtr->getHealthMaxA() - GamePtr->getHealthMinA() + 1);
+				int SoldierHP = HealthMinA + rand() % (HealthMaxA - HealthMinA + 1);
 				//Generate its power
-				int SoldierPower = GamePtr->getPowerMinA() + rand() % (GamePtr->getPowerMaxA() - GamePtr->getPowerMinA() + 1);
+				int SoldierPower = PowerMinA + rand() % (PowerMaxA - PowerMinA + 1);
 				//Generate its capcity
-				int SoldierCapacity = GamePtr->getAttackCapMinA() + rand() % (GamePtr->getAttackCapMaxA() - GamePtr->getAttackCapMinA() + 1);
+				int SoldierCapacity = AttackCapMinA + rand() % (AttackCapMaxA - AttackCapMinA + 1);
 				//Generate its ID
 				int ID = Aliens;
 				Aliens++;
 				UnitToinsert = new AS(ID, GamePtr->getCurrentTime(), SoldierHP, SoldierPower, SoldierCapacity);
 				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
-			else if (B <= (GamePtr->getAMper() + GamePtr->getASper()))
+			else  if (B <= (AMper + ASper))
 			{
 				// Generate Alien Monster
 
 				//Generate its hp
-				int MonsterHP = GamePtr->getHealthMinA() + rand() % (GamePtr->getHealthMaxA() - GamePtr->getHealthMinA() + 1);
+				int MonsterHP = HealthMinA + rand() % (HealthMaxA - HealthMinA + 1);
 				//Generate its power
-				int MonsterPower = GamePtr->getPowerMinA() + rand() % (GamePtr->getPowerMaxA() - GamePtr->getPowerMinA() + 1);
+				int MonsterPower = PowerMinA + rand() % (PowerMaxA - PowerMinA + 1);
 				//Generate its capcity
-				int MonsterCapacity = GamePtr->getAttackCapMinA() + rand() % (GamePtr->getAttackCapMaxA() - GamePtr->getAttackCapMinA() + 1);
+				int MonsterCapacity = AttackCapMinA + rand() % (AttackCapMaxA - AttackCapMinA + 1);
 				//Generate its ID
 				int ID = Aliens;
 				Aliens++;
@@ -116,11 +116,11 @@ void randGen::CreateUnits()
 				// Generate Alien Drone
 
 				//Generate its hp
-				int DroneHP = GamePtr->getHealthMinA() + rand() % (GamePtr->getHealthMaxA() - GamePtr->getHealthMinA() + 1);
+				int DroneHP = HealthMinA + rand() % (HealthMaxA - HealthMinA + 1);
 				//Generate its power
-				int DronePower = GamePtr->getPowerMinA() + rand() % (GamePtr->getPowerMaxA() - GamePtr->getPowerMinA() + 1);
+				int DronePower = PowerMinA + rand() % (PowerMaxA - PowerMinA + 1);
 				//Generate its capcity
-				int DroneCapacity = GamePtr->getAttackCapMinA() + rand() % (GamePtr->getAttackCapMaxA() - GamePtr->getAttackCapMinA() + 1);
+				int DroneCapacity = AttackCapMinA + rand() % (AttackCapMaxA - AttackCapMinA + 1);
 				//Generate its ID
 				int ID = Aliens;
 				Aliens++;
@@ -128,9 +128,107 @@ void randGen::CreateUnits()
 				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
 		}
-		
 	}
 }
 
+void randGen::setN(int input)
+{
+	N = input;
+}
+
+void randGen::setESper(int input)
+{
+	ESper = input;
+}
+
+void randGen::setETper(int input)
+{
+	ETper = input;
+}
+
+void randGen::setEGper(int input)
+{
+	EGper = input;
+}
+
+void randGen::setASper(int input)
+{
+	ASper = input;
+}
+
+void randGen::setAMper(int input)
+{
+	AMper = input;
+}
+
+void randGen::setADper(int input)
+{
+	ADper = input;
+}
+
+void randGen::setProb(int input)
+{
+	Prob = input;
+}
+
+void randGen::setPowerMinE(int input)
+{
+	PowerMinE = input;
+}
+
+void randGen::setPowerMaxE(int input)
+{
+	PowerMaxE = input;
+}
+
+void randGen::SetHealthMinE(int index)
+{
+	HealthMinE = index;
+}
+
+void randGen::SetHealthMaxE(int index)
+{
+	HealthMaxE = index;
+}
+
+void randGen::SetAttackCapMinE(int index)
+{
+	AttackCapMinE = index;
+}
+
+void randGen::SetAttackCapMaxE(int index)
+{
+	AttackCapMaxE = index;
+}
+
+void randGen::SetPowerMinA(int index)
+{
+	PowerMinA = index;
+}
+
+void randGen::SetPowerMaxA(int index)
+{
+	PowerMaxA = index;
+}
+
+void randGen::SetHealthMinA(int index)
+{
+	HealthMinA = index;
+}
+
+void randGen::SetHealthMaxA(int index)
+{
+	HealthMaxA = index;
+}
+
+void randGen::SetAttackCapMinA(int index)
+{
+	AttackCapMinA = index;
+}
+
+void randGen::SetAttackCapMaxA(int index)
+{
+	AttackCapMaxA = index;
+}
 
 
