@@ -19,6 +19,10 @@ void UnitAOP::PrintAll()
 	}
 	cout << "]" << endl;
 }
+
+
+
+
 bool UnitAOP::Delete(Unit*& data)
 {
 	if (count == 0)

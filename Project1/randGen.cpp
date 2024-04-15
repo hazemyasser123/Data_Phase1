@@ -5,14 +5,13 @@ randGen::randGen(Game* Gp)
 	GamePtr = Gp;
 	Earth = 1;
 	Aliens = 2000;
+	srand(time(0));
 }
 
 
 void randGen::CreateUnits()
 {
 	Unit* UnitToinsert;
-	srand(time(0));
-
 	//For Earth Army
 	for (int i = 0; i < GamePtr->getN(); i++)
 	{

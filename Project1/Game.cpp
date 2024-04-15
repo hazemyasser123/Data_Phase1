@@ -50,7 +50,9 @@ void Game::print()
 	g2->CreateUnits();
 	cout << "Current Timestep " << CurrentTime << endl;
 	EarthArmy.Print();
+	cout << endl;
 	AlienArmy.Print();
+	cout << endl;
 
 	cout << "============== Killed/Destructed Units ==============" << endl;
 	cout<< KilledList.getcount() << " units ";
@@ -141,8 +143,6 @@ void Game::Test()
 			AlienArmy.pickDrones(Drone3, Drone4);
 			if (!Drone3)
 			{
-				AlienArmy.KillUnit(Drone1);
-				AlienArmy.KillUnit(Drone2);
 				KilledList.enqueue(Drone1);
 				KilledList.enqueue(Drone2);
 				return;
@@ -152,10 +152,6 @@ void Game::Test()
 
 			if (!Drone5)
 			{
-				AlienArmy.KillUnit(Drone1);
-				AlienArmy.KillUnit(Drone2);
-				AlienArmy.KillUnit(Drone3);
-				AlienArmy.KillUnit(Drone4);
 				KilledList.enqueue(Drone1);
 				KilledList.enqueue(Drone2);
 				KilledList.enqueue(Drone3);
@@ -166,12 +162,6 @@ void Game::Test()
 			{
 				if (!Drone6)
 				{
-					AlienArmy.KillUnit(Drone1);
-					AlienArmy.KillUnit(Drone2);
-					AlienArmy.KillUnit(Drone3);
-					AlienArmy.KillUnit(Drone4);
-					AlienArmy.KillUnit(Drone5);
-					AlienArmy.KillUnit(Drone6);
 					KilledList.enqueue(Drone1);
 					KilledList.enqueue(Drone2);
 					KilledList.enqueue(Drone3);
@@ -180,11 +170,6 @@ void Game::Test()
 				}
 				else
 				{
-					AlienArmy.KillUnit(Drone1);
-					AlienArmy.KillUnit(Drone2);
-					AlienArmy.KillUnit(Drone3);
-					AlienArmy.KillUnit(Drone4);
-					AlienArmy.KillUnit(Drone5);
 					KilledList.enqueue(Drone1);
 					KilledList.enqueue(Drone2);
 					KilledList.enqueue(Drone3);
