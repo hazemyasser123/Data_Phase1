@@ -9,6 +9,7 @@ using namespace std;
 template <typename T>
 class priQueue
 {
+protected:
     priNode<T>* head;
     int count=0;
 public:

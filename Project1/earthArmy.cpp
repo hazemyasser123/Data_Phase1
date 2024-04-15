@@ -9,12 +9,39 @@ void earthArmy::Print()
 {
 	cout << "============== Earth Army Alive Units ==============" << endl;
 	cout << ES_List.getcount() << " ES "; ES_List.PrintQueue();            // eg: 55 ES [1, 2, 3, 4, ...]
-	cout << ET_List.gettop() << " ET "; ET_List.PrintStack();
+	cout << ET_List.gettop() + 1 << " ET "; ET_List.PrintStack();
 	cout << EG_List.getcount() << " EG "; EG_List.PrintPriQueue();
+}
+
+bool earthArmy::pick(Unit*& take, string x)
+{
+	if (x == "ET")
+	{
+		bool truth = ET_List.pop(take);
+		if (truth)
+			return true;
+	}
+	else
+	{
+		if (x == "ES")
+		{
+			if (ES_List.dequeue(take) == true)
+				return true;
+		}
+		else
+		{
+			int y;
+			if (EG_List.dequeue(take,y) == true)
+				return true;
+		}
+	}
+	return false;
 }
 
 bool earthArmy::addUnit(Unit* armyunit)  // add unit to appropiate list 
 {
+	if (armyunit == nullptr)
+		return false;
 	if (armyunit->GetType() == "ES")
 	{
 		ES_List.enqueue((ES*)armyunit);

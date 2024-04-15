@@ -113,7 +113,7 @@ Output: True if the operation is successful; otherwise false.
 */
 
 template <typename T>
-bool LinkedQueue<T>::enqueue( const T& newEntry)
+bool LinkedQueue<T>::enqueue(const T& newEntry)
 {
 	Node<T>* newNodePtr = new Node<T>(newEntry);
 	// Insert the new node
@@ -124,7 +124,7 @@ bool LinkedQueue<T>::enqueue( const T& newEntry)
 
 	backPtr = newNodePtr; // New node is the last node now
 	count++;
-	return true ;
+	return true;
 } // end enqueue
 
 
@@ -139,9 +139,9 @@ Output: True if the operation is successful; otherwise false.
 */
 
 template <typename T>
-bool LinkedQueue<T>:: dequeue(T& frntEntry)  
+bool LinkedQueue<T>::dequeue(T& frntEntry)
 {
-	if(isEmpty())
+	if (isEmpty())
 		return false;
 
 	Node<T>* nodeToDeletePtr = frontPtr;
@@ -149,8 +149,8 @@ bool LinkedQueue<T>:: dequeue(T& frntEntry)
 	frontPtr = frontPtr->getNext();
 	// Queue is not empty; remove front
 	if (nodeToDeletePtr == backPtr)	 // Special case: last node in the queue
-		backPtr = nullptr ;	
-		
+		backPtr = nullptr;
+
 	// Free memory reserved for the dequeued node
 	delete nodeToDeletePtr;
 	count--;
@@ -201,8 +201,7 @@ inline void LinkedQueue<T>::PrintQueue()
 		/*cout << K << " ";*/
 		if (follow->getNext() == nullptr )
 		{
-			cout << K;
-			cout << "]" << endl;
+			cout << K;	
 		}
 		else
 		{
@@ -212,7 +211,7 @@ inline void LinkedQueue<T>::PrintQueue()
 		follow = follow->getNext();
 
 	}
-	cout << endl;
+	cout << "]" << endl;
 
 }
 /////////////////////////////////////////////////////////////////////////////////////////

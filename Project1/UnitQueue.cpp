@@ -11,11 +11,10 @@ void UnitQueue::PrintQueue()
 	cout << "[";
 	while (Qcopy.dequeue(K))
 	{
-		/*cout << K << " ";*/
 		if (follow->getNext() == nullptr)
 		{
 			K->Print();
-			cout << "]" << endl;
+			
 		}
 		else
 		{
@@ -26,6 +25,6 @@ void UnitQueue::PrintQueue()
 		follow = follow->getNext();
 
 	}
-	cout << endl;
+	cout << "]" << endl;
 
 }

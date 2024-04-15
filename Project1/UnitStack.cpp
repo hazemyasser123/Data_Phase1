@@ -13,7 +13,7 @@ void UnitStack::PrintStack()
 		if (count == this->gettop() + 1)
 		{
 			x->Print();
-			cout << "]" << endl;
+			
 		}
 		else
 		{
@@ -22,6 +22,5 @@ void UnitStack::PrintStack()
 
 		}
 	}
-
-	cout << endl;
+	cout << "]" << endl;
 }
