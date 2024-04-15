@@ -32,7 +32,7 @@ bool DEQueue<T>::enqueuefront(T& frntEntry)
 {
 	if (this->frontPtr == nullptr)
 	{
-		count++;
+		this->count++;
 		this->enqueue(frntEntry);
 		return true;
 	}
