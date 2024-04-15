@@ -16,7 +16,9 @@ using namespace std;
 class randGen
 {
 protected:
-	Game* GamePtr;	  
+	Game* GamePtr;
+	int Earth;
+	int Aliens;
 public:
 	randGen(Game* Gp);
 	void CreateUnits();

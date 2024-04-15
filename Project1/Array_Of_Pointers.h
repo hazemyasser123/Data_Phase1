@@ -2,7 +2,7 @@
 #include <iostream>
 #include "Unit.h"
 using namespace std;
-#define DefSize 100
+#define DefSize 999
 
 
 
@@ -28,7 +28,7 @@ public:
 	bool insert(T* data);
 	bool ChangeVal(T* data, int index);
 	void PrintAll();
-	bool Delete(int index);
+	virtual bool Delete(T* data);
 	void clear();
 	int GetCount();
 };
@@ -87,23 +87,13 @@ inline void Array_Of_Pointers<T, size>::PrintAll()
 			cout << items[i];
 		}
 	}
-	cout << "]" << endl;;
+	cout << "]" << endl;
 }
 
 template<class T, int size>
-inline bool Array_Of_Pointers<T, size>::Delete(int index)
+inline bool Array_Of_Pointers<T, size>::Delete(T* data)
 {
-	if (index < count)
-	{
-		items[index] = items[count - 1];
-		items[count - 1] = nullptr;
-		count--;
-		return true;
-	}
-	else
-	{
-		return false;
-	}
+	return true;
 }
 
 template<class T, int size>
@@ -122,7 +112,3 @@ inline int Array_Of_Pointers<T, size>::GetCount()
 {
 	return count;
 }
-
-
-
-

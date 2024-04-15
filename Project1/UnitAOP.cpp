@@ -19,3 +19,19 @@ void UnitAOP::PrintAll()
 	}
 	cout << "]" << endl;
 }
+bool UnitAOP::Delete(Unit*& data)
+{
+	if (count == 0)
+		return false;
+	if (count ==1)
+	{
+		data = items[0];
+		count--;
+		return true;
+	}
+	int c = rand() % (count - 1);
+	data = items[c];
+	items[c] = items[count - 1];
+	count--;
+	return false;
+}

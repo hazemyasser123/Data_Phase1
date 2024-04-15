@@ -8,6 +8,7 @@
 #include "UnitAOP.h"
 #include "UnitQueue.h"
 #include "UnitStack.h"
+#include "UnitDEQueue.h"
 #include <iostream>
 using namespace std;
 
@@ -16,11 +17,15 @@ class alienArmy
 private:
 	UnitQueue AS_List;
 	UnitAOP AM_List;
-	DEQueue<Drone*> AD_List;
+	UnitDEQueue AD_List;
 
 public:
 	void Attack();
 	void Print();
+	Unit* PickAM();
+	Unit* PickAS();
+	void pickDrones(Unit*& frntDrone, Unit*& backDrone);
 	bool addUnit(Unit* armyunit);
+	bool KillUnit(Unit* Killedunit);
 };
 

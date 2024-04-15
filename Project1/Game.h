@@ -6,9 +6,10 @@
 class Game
 {
 private:
-	randGen* gen;
+	randGen* g2;
 	alienArmy AlienArmy;
 	earthArmy EarthArmy;
+	UnitQueue KilledList;
 	double CurrentTime;
 	int N;
 	int ESper;
@@ -56,5 +57,7 @@ public:
 	double getCurrentTime();
 	alienArmy* GetAlienArmy();
 	earthArmy* GetEarthArmy();
+	void print();
+	void Test();
 };
 

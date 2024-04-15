@@ -32,20 +32,22 @@ bool DEQueue<T>::enqueuefront(T& frntEntry)
 {
 	if (this->frontPtr == nullptr)
 	{
+		count++;
 		this->enqueue(frntEntry);
+		return true;
 	}
 	Node<T>* x(frntEntry);
-	this->frontPtr->setnext(x);
-	this->frontPtr = this->frontPtr->getnext();
-	this->frontPtr->setnext(nullptr);
-
+	x->setNext(this->frontPtr);
+	this->frontPtr = x;
+	this->count++;
+	return true;
 }
 
 
 template <typename T>
 bool DEQueue<T>::enqueueboth(T& backEntry,T& frntEntry)
 {
-	return (this->enqueue(backEntry) || this->enqueuefront(frntEntry));
+	return (this->enqueue(backEntry) && this->enqueuefront(frntEntry));
 }
 
 
@@ -57,16 +59,46 @@ bool DEQueue<T>::dequeueback(T& backEntry)
 {
 	if (this->isEmpty())
 		return false;
-	backEntry = this->backPtr->getitem();
-	Node<T>* x = this->backPtr;
-	this->backPtr = this->backPtr->getnext();
-	delete x;
+	if (this->count == 1)
+	{
+		backEntry = this->backPtr->getItem();
+		delete this->backPtr;
+		this->backPtr = this->frontPtr = nullptr;
+		this->count--;
+		return true;
+	}
+	Node<T>* mover = this->frontPtr;
+	if (this->count == 2)
+	{
+		backEntry = this->backPtr->getItem();
+		this->backPtr = this->frontPtr;
+		this->frontPtr->setNext(nullptr);
+		this->count--;
+		return true;
+	}
+	while (mover->getNext()->getNext() != nullptr)
+	{
+		mover = mover->getNext();
+	}
+	backEntry = this->backPtr->getItem();
+	delete this->backPtr;
+	this->backPtr = mover;
+	this->backPtr->setNext(nullptr);
+	this->count--;
+	return true;
 }
 
 template <typename T>
 bool DEQueue<T>::dequeueboth(T& backEntry, T& frntEntry)
 {
-	return (dedequeueback(backEntry) && this->dequeue(frntEntry));
+	if (this->count < 2)
+	{
+		return false;
+	}
+	bool x = dequeueback(backEntry);
+	bool y = this->dequeue(frntEntry);
+
+	return (x && y);
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -102,11 +134,17 @@ template <typename T>
 DEQueue<T>::DEQueue(DEQueue<T>& LQ)
 {
 	T x;
+	LinkedQueue<T> y;
 	while (this->dequeue(x))
 	{}
 	while (LQ.dequeue(x))
 	{
 		this->enqueue(x);
+		y.enqueue(x);
+	}
+	while (y.dequeue(x))
+	{
+		LQ.enqueue(x);
 	}
 }
 
