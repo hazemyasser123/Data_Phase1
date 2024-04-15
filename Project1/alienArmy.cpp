@@ -60,24 +60,4 @@ bool alienArmy::addUnit(Unit* armyunit)  // add unit to appropiate list
 	else return false;
 }
 
-bool alienArmy::KillUnit(Unit* Killedunit)
-{
-	if (Killedunit->GetType() == "AS")
-	{
-		AS_List.dequeue(Killedunit);
-		return true;
-	}
-	else if (Killedunit->GetType() == "Alien_Monster")
-	{
-		AM_List.Delete(Killedunit);
-		return true;
-	}
-	else if (Killedunit->GetType() == "Drone")
-	{
-		AD_List.enqueue(Killedunit);
-		return true;
-	}
-	else return false;
-}
-
 

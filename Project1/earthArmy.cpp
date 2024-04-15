@@ -59,28 +59,3 @@ bool earthArmy::addUnit(Unit* armyunit)  // add unit to appropiate list
 	}
 	else return false;
 }
-
-bool earthArmy::KillUnit(Unit* Killedunit)
-{
-	if (!Killedunit)
-	{
-		return false;
-	}
-	if (Killedunit->GetType() == "ES")
-	{
-		ES_List.dequeue(Killedunit);
-		return true;
-	}
-	else if (Killedunit->GetType() == "ET")
-	{
-		ET_List.pop(Killedunit);
-		return true;
-	}
-	else if (Killedunit->GetType() == "Earth_Gunnery")
-	{
-		int x;
-		EG_List.dequeue(Killedunit,x);
-		return true;
-	}
-	else return false;
-}
