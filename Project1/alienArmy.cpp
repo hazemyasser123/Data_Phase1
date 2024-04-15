@@ -17,8 +17,31 @@ void alienArmy::Print()
 	cout << AD_List.getcount() << " AD "; AD_List.PrintQueue();
 }
 
+Unit* alienArmy::PickAM()
+{
+	Unit* Monster = nullptr;
+	AM_List.Delete(Monster);
+	return Monster;
+}
+
+Unit* alienArmy::PickAS()
+{
+	Unit* AlienSolider = nullptr;
+	AS_List.dequeue(AlienSolider);
+	return AlienSolider;
+}
+
+void alienArmy::pickDrones(Unit*& frntDrone, Unit*& backDrone)
+{
+	AD_List.dequeueboth(frntDrone, backDrone);
+}
+
 bool alienArmy::addUnit(Unit* armyunit)  // add unit to appropiate list
 {
+	if (armyunit == nullptr)
+	{
+		return false;
+	}
 	if (armyunit->GetType() == "AS")
 	{
 		AS_List.enqueue((AS*)armyunit);
@@ -32,6 +55,26 @@ bool alienArmy::addUnit(Unit* armyunit)  // add unit to appropiate list
 	else if (armyunit->GetType() == "Drone")
 	{
 		AD_List.enqueue((Drone*)armyunit);
+		return true;
+	}
+	else return false;
+}
+
+bool alienArmy::KillUnit(Unit* Killedunit)
+{
+	if (Killedunit->GetType() == "AS")
+	{
+		AS_List.dequeue(Killedunit);
+		return true;
+	}
+	else if (Killedunit->GetType() == "Alien_Monster")
+	{
+		AM_List.Delete(Killedunit);
+		return true;
+	}
+	else if (Killedunit->GetType() == "Drone")
+	{
+		AD_List.enqueue(Killedunit);
 		return true;
 	}
 	else return false;

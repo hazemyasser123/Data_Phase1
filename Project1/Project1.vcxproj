@@ -141,6 +141,7 @@
     <ClCompile Include="Unit.cpp" />
     <ClCompile Include="randGen.cpp" />
     <ClCompile Include="UnitAOP.cpp" />
+    <ClCompile Include="UnitDEQueue.cpp" />
     <ClCompile Include="UnitpriQueue.cpp" />
     <ClCompile Include="UnitQueue.cpp" />
     <ClCompile Include="UnitStack.cpp" />
@@ -168,6 +169,7 @@
     <ClInclude Include="Unit.h" />
     <ClInclude Include="randGen.h" />
     <ClInclude Include="UnitAOP.h" />
+    <ClInclude Include="UnitDEQueue.h" />
     <ClInclude Include="UnitpriQueue.h" />
     <ClInclude Include="UnitQueue.h" />
     <ClInclude Include="UnitStack.h" />

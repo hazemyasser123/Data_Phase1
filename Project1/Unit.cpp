@@ -95,7 +95,7 @@ bool Unit::IsAlive()
 {
 	return (Health <= 0);
 }
-
+	
 void Unit::Print() const
 {
 	cout << ID;

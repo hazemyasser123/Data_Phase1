@@ -2,7 +2,9 @@
 
 randGen::randGen(Game* Gp)
 {
-	GamePtr = Gp;	
+	GamePtr = Gp;
+	Earth = 1;
+	Aliens = 2000;
 }
 
 
@@ -30,7 +32,8 @@ void randGen::CreateUnits()
 				//Generate its capcity
 				int SoldierCapacity = GamePtr->getAttackCapMinE() + rand() % (GamePtr->getAttackCapMaxE() - GamePtr->getAttackCapMinE() + 1);
 				//Generate its ID
-				int ID = 1 + rand() % 999;
+				int ID = Earth;
+				Earth++;
 				UnitToinsert = new ES(ID, GamePtr->getCurrentTime(), SoldierHP, SoldierPower, SoldierCapacity);
 				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 
@@ -46,7 +49,8 @@ void randGen::CreateUnits()
 				//Generate its capcity
 				int TankCapacity = GamePtr->getAttackCapMinE() + rand() % (GamePtr->getAttackCapMaxE() - GamePtr->getAttackCapMinE() + 1);
 				//Generate its ID
-				int ID = 1 + rand() % 999;
+				int ID = Earth;
+				Earth++;
 				UnitToinsert = new ET(ID, GamePtr->getCurrentTime(), TankHP, TankPower, TankCapacity);
 				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 			}
@@ -61,7 +65,8 @@ void randGen::CreateUnits()
 				//Generate its capcity
 				int GunneryCapacity = GamePtr->getAttackCapMinE() + rand() % (GamePtr->getAttackCapMaxE() - GamePtr->getAttackCapMinE() + 1);
 				//Generate its ID
-				int ID = 1 + rand() % 999;
+				int ID = Earth;
+				Earth++;
 				UnitToinsert = new Earth_Gunnery(ID, GamePtr->getCurrentTime(), GunneryHP, GunneryPower, GunneryCapacity);
 				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 			}
@@ -86,7 +91,8 @@ void randGen::CreateUnits()
 				//Generate its capcity
 				int SoldierCapacity = GamePtr->getAttackCapMinA() + rand() % (GamePtr->getAttackCapMaxA() - GamePtr->getAttackCapMinA() + 1);
 				//Generate its ID
-				int ID = 2000 + rand() % 1000;
+				int ID = Aliens;
+				Aliens++;
 				UnitToinsert = new AS(ID, GamePtr->getCurrentTime(), SoldierHP, SoldierPower, SoldierCapacity);
 				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
@@ -101,7 +107,8 @@ void randGen::CreateUnits()
 				//Generate its capcity
 				int MonsterCapacity = GamePtr->getAttackCapMinA() + rand() % (GamePtr->getAttackCapMaxA() - GamePtr->getAttackCapMinA() + 1);
 				//Generate its ID
-				int ID = 1 + rand() % 999;
+				int ID = Aliens;
+				Aliens++;
 				UnitToinsert = new Alien_Monster(ID, GamePtr->getCurrentTime(), MonsterHP, MonsterPower, MonsterCapacity);
 				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
@@ -116,7 +123,8 @@ void randGen::CreateUnits()
 				//Generate its capcity
 				int DroneCapacity = GamePtr->getAttackCapMinA() + rand() % (GamePtr->getAttackCapMaxA() - GamePtr->getAttackCapMinA() + 1);
 				//Generate its ID
-				int ID = 1 + rand() % 999;
+				int ID = Aliens;
+				Aliens++;
 				UnitToinsert = new Drone(ID, GamePtr->getCurrentTime(), DroneHP, DronePower, DroneCapacity);
 				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}

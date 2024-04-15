@@ -16,6 +16,8 @@ private:
 public:
 	void Attack();
 	void Print();
+	bool pick(Unit*& take, string x);
 	bool addUnit(Unit* armyunit);
+	bool KillUnit(Unit* Killedunit);
 };
 
