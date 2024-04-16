@@ -1,7 +1,26 @@
-﻿  Game.cpp
+﻿  alienArmy.cpp
+  Alien_Monster.cpp
+  AS.cpp
+  Drones.cpp
+  earthArmy.cpp
+  Earth_Gunnery.cpp
+  ES.cpp
+  ET.cpp
+  Game.cpp
   Source.cpp
+  Unit.cpp
+D:\Data_Project\Data_Phase1\Project1\Unit.cpp(17,8): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   randGen.cpp
-D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\randGen.cpp(8,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Data_Project\Data_Phase1\Project1\randGen.cpp(8,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Data_Project\Data_Phase1\Project1\randGen.cpp(36,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Data_Project\Data_Phase1\Project1\randGen.cpp(53,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Data_Project\Data_Phase1\Project1\randGen.cpp(95,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Data_Project\Data_Phase1\Project1\randGen.cpp(111,65): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Data_Project\Data_Phase1\Project1\randGen.cpp(127,57): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  UnitAOP.cpp
+  UnitDEQueue.cpp
+  UnitpriQueue.cpp
+  UnitQueue.cpp
+  UnitStack.cpp
   Generating Code...
-  LINK : D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\x64\Debug\Project1.exe not found or not built by the last incremental link; performing full link
-  Project1.vcxproj -> D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\x64\Debug\Project1.exe
+  Project1.vcxproj -> D:\Data_Project\Data_Phase1\Project1\x64\Debug\Project1.exe
