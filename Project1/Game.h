@@ -10,12 +10,12 @@ private:
 	alienArmy AlienArmy;
 	earthArmy EarthArmy;
 	UnitQueue KilledList;
-	double CurrentTime;
+	int CurrentTime;
 public:
 	Game();
 	~Game();
 	void ReadParameters();
-	double getCurrentTime();
+	int getCurrentTime();
 	alienArmy* GetAlienArmy();
 	earthArmy* GetEarthArmy();
 	void print();
