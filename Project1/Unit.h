@@ -17,7 +17,7 @@ private:
 public:
 	Unit();
 
-	Unit(int id, double tj, int h, int p, int ac);
+	Unit(int id, int tj, int h, int p, int ac);
 	
 	void SetID(int id);
 	

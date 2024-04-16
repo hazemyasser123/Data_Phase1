@@ -230,7 +230,7 @@ void Game::Test()
 		}
 }
 
-double Game::getCurrentTime()
+int Game::getCurrentTime()
 {
 	return CurrentTime;
 }
