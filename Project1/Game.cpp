@@ -25,6 +25,27 @@ void Game::ReadParameters()
 	ifstream infile;
 	string line;
 	infile.open("Input.txt");
+	int N;
+	int ESper;
+	int ETper;
+	int EGper;
+	int ASper;
+	int AMper;
+	int ADper;
+	int Prob;
+	int PowerMinE;
+	int PowerMaxE;
+	int HealthMinE;
+	int HealthMaxE;
+	int AttackCapMinE;
+	int AttackCapMaxE;
+	int PowerMinA;
+	int PowerMaxA;
+	int HealthMinA;
+	int HealthMaxA;
+	int AttackCapMinA;
+	int AttackCapMaxA;
+
 	if (infile.is_open() == true)
 	{
 		infile >> N;
@@ -41,12 +62,35 @@ void Game::ReadParameters()
 		infile >> PowerMinA >> PowerMaxA >> HealthMinA >> HealthMaxA >> AttackCapMinA >> AttackCapMaxA;
 	}
 	infile.close();
+
+
 	PowerMaxE = -PowerMaxE;
 	HealthMaxE = -HealthMaxE;
 	AttackCapMaxE = -AttackCapMaxE;
 	PowerMaxA = -PowerMaxA;
 	HealthMaxA = -HealthMaxA;
 	AttackCapMaxA = -AttackCapMaxA;
+
+	g2->setN(N);
+	g2->setESper(ESper);
+	g2->setETper(ETper);
+	g2->setEGper(EGper);
+	g2-> setASper(ASper);
+	g2-> setAMper(AMper);
+	g2-> setADper(ADper);
+	g2-> setProb(Prob);
+	g2-> setPowerMinE(PowerMinE);
+	g2-> setPowerMaxE(PowerMaxE);
+	g2-> SetHealthMinE(HealthMinE);
+	g2-> SetHealthMaxE(HealthMaxE);
+	g2-> SetAttackCapMinE(AttackCapMinE);
+	g2-> SetAttackCapMaxE(AttackCapMaxE);
+	g2-> SetPowerMinA(PowerMinA);
+	g2-> SetPowerMaxA(PowerMaxA);
+	g2-> SetHealthMinA(HealthMinA);
+	g2-> SetHealthMaxA(HealthMaxA);
+	g2-> SetAttackCapMinA(AttackCapMinA);
+	g2-> SetAttackCapMaxA(AttackCapMaxA);
 }
 
 void Game::print()
@@ -186,105 +230,6 @@ void Game::Test()
 		}
 }
 
-int Game::getN()
-{
-	return N;
-}
-
-int Game::getESper()
-{
-	return ESper;
-}
-
-int Game::getETper()
-{
-	return ETper;
-}
-
-int Game::getEGper()
-{
-	return EGper;
-}
-
-int Game::getASper()
-{
-	return ASper;
-}
-
-int Game::getAMper()
-{
-	return AMper;
-}
-
-int Game::getADper()
-{
-	return ADper;
-}
-
-int Game::getProb()
-{
-	return Prob;
-}
-
-int Game::getPowerMinE()
-{
-	return PowerMinE;
-}
-
-int Game::getPowerMaxE()
-{
-	return PowerMaxE;
-}
-
-int Game::getHealthMinE()
-{
-	return HealthMinE;
-}
-
-int Game::getHealthMaxE()
-{
-	return HealthMaxE;
-}
-
-int Game::getAttackCapMinE()
-{
-	return AttackCapMinE;
-}
-
-int Game::getAttackCapMaxE()
-{
-	return AttackCapMaxE;
-}
-
-int Game::getPowerMinA()
-{
-	return PowerMinA;
-}
-
-int Game::getPowerMaxA()
-{
-	return PowerMaxA;
-}
-
-int Game::getHealthMinA()
-{
-	return HealthMinA;
-}
-
-int Game::getHealthMaxA()
-{
-	return HealthMaxA;
-}
-
-int Game::getAttackCapMinA()
-{
-	return AttackCapMinA;
-}
-
-int Game::getAttackCapMaxA()
-{
-	return AttackCapMaxA;
-}
 double Game::getCurrentTime()
 {
 	return CurrentTime;
