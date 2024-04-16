@@ -9,7 +9,7 @@ class AS : public Unit
 public:
 	AS();
 
-	AS(int id, double tj, int h, int p, int ac);
+	AS(int id, int tj, int h, int p, int ac);
 	
 	void Attack();
 

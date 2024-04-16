@@ -5,7 +5,7 @@ Alien_Monster::Alien_Monster() :Unit(0,0,0,0,0)
 	SetType("Alien_Monster");
 }
 
-Alien_Monster::Alien_Monster(int id, double tj, int h, int p, int ac):Unit(id,tj,h,p,ac)
+Alien_Monster::Alien_Monster(int id, int tj, int h, int p, int ac):Unit(id,tj,h,p,ac)
 {
 	SetType("Alien_Monster");
 }

@@ -5,9 +5,9 @@ AS::AS() : Unit()
 
 }
 
-AS::AS(int id, double tj, int h, int p, int ac) : Unit(id, tj, h, p, ac)
+AS::AS(int id, int tj, int h, int p, int ac) : Unit(id, tj, h, p, ac)
 {
-	Type = "AS";
+	SetType("AS");
 }
 
 void AS::Attack()

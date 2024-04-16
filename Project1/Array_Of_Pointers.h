@@ -31,6 +31,7 @@ public:
 	virtual bool Delete(T* data);
 	void clear();
 	int GetCount();
+	bool IsEmpty();
 };
 
 template<class T, int size>
@@ -111,4 +112,10 @@ template<class T, int size>
 inline int Array_Of_Pointers<T, size>::GetCount()
 {
 	return count;
+}
+
+template<class T, int size>
+inline bool Array_Of_Pointers<T, size>::IsEmpty()
+{
+	return (count == 0);
 }

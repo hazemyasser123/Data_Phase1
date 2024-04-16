@@ -13,6 +13,7 @@ private:
 	double CurrentTime;
 public:
 	Game();
+	~Game();
 	void ReadParameters();
 	double getCurrentTime();
 	alienArmy* GetAlienArmy();
