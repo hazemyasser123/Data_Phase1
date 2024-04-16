@@ -9,7 +9,7 @@ class ES : public Unit
 public:
 	ES();
 
-	ES(int id, double tj, int h, int p, int ac);
+	ES(int id, int tj, int h, int p, int ac);
 
 	void Attack();
 };

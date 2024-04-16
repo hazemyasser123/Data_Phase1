@@ -31,7 +31,7 @@ void Unit::SetType(string t)
 	Type = t;
 }
 
-void Unit::SetTj(double tj)
+void Unit::SetTj(int tj)
 {
 	Tj = tj;
 }
@@ -71,7 +71,7 @@ int Unit::GetAttackCap() const
 	return Attack_Capacity;
 }
 
-double Unit::GetTj() const
+int Unit::GetTj() const
 {
 	return Tj;
 }

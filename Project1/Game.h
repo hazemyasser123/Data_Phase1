@@ -33,6 +33,7 @@ private:
 	int AttackCapMaxA;
 public:
 	Game();
+	~Game();
 	void ReadParameters();
 	int getN();
 	int getESper();
