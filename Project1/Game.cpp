@@ -15,6 +15,11 @@ Game::Game()
 
 }
 
+Game::~Game()
+{
+	delete g2;
+}
+
 void Game::ReadParameters()
 {
 	ifstream infile;
@@ -110,7 +115,7 @@ void Game::Test()
 	int A = rand() % 100 + 1;
 	if (A <= 10)
 	{
-		Unit* EARTHSOILDER =nullptr;
+		Unit* EARTHSOILDER = nullptr;
 		EarthArmy.pick(EARTHSOILDER,"ES");
 		EarthArmy.addUnit(EARTHSOILDER);
 	}
@@ -159,7 +164,7 @@ void Game::Test()
 			Unit* Monster2;
 			Unit* Monster3;
 			Unit* Monster4;
-			Unit* Monster5;
+			Unit* Monster5; 
 			Monster1 = AlienArmy.PickAM();
 			Monster2 = AlienArmy.PickAM();
 			Monster3 = AlienArmy.PickAM();
@@ -225,7 +230,7 @@ void Game::Test()
 		}
 }
 
-double Game::getCurrentTime()
+int Game::getCurrentTime()
 {
 	return CurrentTime;
 }

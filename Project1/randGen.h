@@ -14,7 +14,7 @@ protected:
 	Game* GamePtr;
 	int Earth;
 	int Aliens;
-	double CurrentTime;
+	int CurrentTime;
 	int N;
 	int ESper;
 	int ETper;

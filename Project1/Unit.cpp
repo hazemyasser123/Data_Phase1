@@ -11,7 +11,7 @@ Unit::Unit()
 	SetAttackCap(0);
 }
 
-Unit::Unit(int id, double tj, int h, int p, int ac)
+Unit::Unit(int id, int tj, int h, int p, int ac)
 {
 	SetID(id);
 	SetTj(tj);
@@ -31,7 +31,7 @@ void Unit::SetType(string t)
 	Type = t;
 }
 
-void Unit::SetTj(double tj)
+void Unit::SetTj(int tj)
 {
 	Tj = tj;
 }
@@ -71,7 +71,7 @@ int Unit::GetAttackCap() const
 	return Attack_Capacity;
 }
 
-double Unit::GetTj() const
+int Unit::GetTj() const
 {
 	return Tj;
 }

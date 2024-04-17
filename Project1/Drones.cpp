@@ -5,9 +5,9 @@ Drone::Drone():Unit()
 
 }
 
-Drone::Drone(int id, double tj, int h, int p, int ac) : Unit(id, tj, h, p, ac)
+Drone::Drone(int id, int tj, int h, int p, int ac) : Unit(id, tj, h, p, ac)
 {
-	Type = "Drone";
+	SetType("Drone");
 }
 
 void Drone::Attack()
