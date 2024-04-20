@@ -11,13 +11,14 @@ Unit::Unit()
 	SetAttackCap(0);
 }
 
-Unit::Unit(int id, int tj, int h, int p, int ac)
+Unit::Unit(int id, int tj, int h, int p, int ac,Game* Gp)
 {
 	SetID(id);
 	SetTj(tj);
 	SetHealth(h);
 	SetPower(p);
 	SetAttackCap(ac);
+	PtrGame = Gp;
 }
 
 
