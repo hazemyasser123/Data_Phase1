@@ -7,7 +7,7 @@ class Drone : public Unit
 public:
 	Drone();
 
-	Drone(int id, int tj, int h, int p, int ac);
+	Drone(int id, int tj, int h, int p, int ac, Game* Gp);
 
 	void Attack();
 };

@@ -1,11 +1,11 @@
 #include "Alien_Monster.h"
 
-Alien_Monster::Alien_Monster() :Unit(0,0,0,0,0)
+Alien_Monster::Alien_Monster() :Unit()
 {
 	SetType("Alien_Monster");
 }
 
-Alien_Monster::Alien_Monster(int id, int tj, int h, int p, int ac):Unit(id,tj,h,p,ac)
+Alien_Monster::Alien_Monster(int id, int tj, int h, int p, int ac, Game* Gp):Unit(id,tj,h,p,ac, Gp)
 {
 	SetType("Alien_Monster");
 }

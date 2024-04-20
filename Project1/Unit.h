@@ -6,10 +6,9 @@ class Game;
 class Unit
 {
 private:
-	// TO DO : there will be a pointer to class game here (IN PHASE 2)
 	int ID;
 	string Type; // IMPORTANT : this should have a default value in each of the derived classes
-	int Tj; // Shows the timeskip when this unit joined the battle (Join Time)
+	int Tj;     // Shows the timeskip when this unit joined the battle (Join Time)
 	int Health;
 	int Power;
 	int Attack_Capacity;
@@ -17,7 +16,7 @@ private:
 public:
 	Unit();
 
-	Unit(int id, int tj, int h, int p, int ac);
+	Unit(int id, int tj, int h, int p, int ac, Game* Gp);
 	
 	void SetID(int id);
 	
@@ -54,6 +53,9 @@ public:
 	/****************************************************************/
 	virtual void Attack() = 0; // MUST BE PURE VIRTUAL LATER
 	/***************************************************************/
+
+	virtual void BeAttacked(); // I ADDED THIS FUNCTIONS BECAUSE DR.5AWAL (AKA. OMAR GAMAL) WANTS IT AND I DON'T KNOW IT'S OBJECTIVE AND HE WANTS IT TO BE 
+							  //  PURE VIRTUAL LATER
 };
 
 
