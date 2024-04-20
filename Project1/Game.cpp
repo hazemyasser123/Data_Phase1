@@ -135,7 +135,7 @@ void Game::Test()
 			EarthArmy.pick(EG, "Earth_Gunnery");
 			if (EG)
 			{
-				EG->SetHealth(EG->GetHealth() / 2);
+				/*EG->SetHealth(EG->GetHealth() / 2);*/
 				EarthArmy.addUnit(EG);
 			}
 		}
@@ -149,7 +149,7 @@ void Game::Test()
 				if (AlienSolider)
 				{
 					AlienSoliderlist.enqueue(AlienSolider);
-					AlienSolider->SetHealth(AlienSolider->GetHealth() / 2);
+					/*AlienSolider->SetHealth(AlienSolider->GetHealth() / 2);*/
 				}
 			}
 			for (int i = 0; i < 5; i++)

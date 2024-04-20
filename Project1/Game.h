@@ -1,8 +1,9 @@
 #pragma once
+#ifndef GAME
+#define GAME
 #include "alienArmy.h"
 #include "earthArmy.h"
 #include "randGen.h"
-
 class Game
 {
 private:
@@ -22,3 +23,4 @@ public:
 	void Test();
 };
 
+#endif

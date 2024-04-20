@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 using namespace std;
+#ifndef UNIT
+#define UNIT
 class Game;
 class Unit
 {
@@ -40,14 +42,14 @@ private:
 
 	void SetID(int id);
 
-	void SetType(string t);
-
 	void SetGamePtr(Game* pg);
 
 	void DEATH(int deathtime);
 
 public:
 	Unit();
+
+	void SetType(string t);
 
 	Unit(int id, int tj, int h, int p, int ac, Game* Gp);
 
@@ -86,7 +88,9 @@ public:
 	/***************************************************************/
 
 	virtual void BeAttacked(int DAMGE, int currenttime); // I ADDED THIS FUNCTIONS BECAUSE DR.5AWAL (AKA. OMAR GAMAL) WANTS IT AND I DON'T KNOW IT'S OBJECTIVE AND HE WANTS IT TO BE 
-										//  PURE VIRTUAL LATER
+														//  PURE VIRTUAL LATER
 };
 
+
+#endif
 
