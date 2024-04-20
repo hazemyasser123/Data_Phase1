@@ -183,6 +183,10 @@ void Unit::Print() const
 
 void Unit::BeAttacked(int DAMGE, int currenttime)
 {
+	if (!wasShot)
+	{
+		SetTa(currenttime);
+	}
 	SetHealth(Health - DAMGE);
 	if (!IsAlive())
 	{

@@ -44,12 +44,12 @@ private:
 
 	void SetGamePtr(Game* pg);
 
+	void DEATH(int deathtime);
+
 public:
 	Unit();
 
 	Unit(int id, int tj, int h, int p, int ac, Game* Gp);
-	
-	void DEATH(int deathtime);
 
 	int GetID() const;
 
