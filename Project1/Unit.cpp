@@ -9,6 +9,7 @@ Unit::Unit()
 	SetHealth(0);
 	SetPower(0);
 	SetAttackCap(0);
+	wasShot = false;
 }
 
 Unit::Unit(int id, int tj, int h, int p, int ac,Game* Gp)
@@ -19,8 +20,8 @@ Unit::Unit(int id, int tj, int h, int p, int ac,Game* Gp)
 	SetPower(p);
 	SetAttackCap(ac);
 	PtrGame = Gp;
+	wasShot = false;
 }
-
 
 void Unit::SetID(int id)
 {
@@ -32,14 +33,62 @@ void Unit::SetType(string t)
 	Type = t;
 }
 
-void Unit::SetTj(int tj)
+void Unit::SetTj(int time)
 {
-	Tj = tj;
+	Tj = time;
+}
+
+void Unit::SetTd(int time)
+{
+	if (IsAlive() == false)
+	{
+		Td = time;
+	}
+}
+
+void Unit::SetTa(int time)
+{
+	if (!wasShot)
+	{
+		Ta = time;
+		wasShot = true;
+	}
+}
+
+void Unit::SetDf(int time)
+{
+	Df = time;
+}
+
+void Unit::SetDd(int time)
+{
+	Dd = time;
+}
+
+void Unit::SetDb(int time)
+{
+	Db = time;
+}
+
+void Unit::DEATH(int deathtime)
+{
+	if (IsAlive() == false)
+	{
+		SetTd(deathtime);
+		SetDf(Ta - Tj);
+		SetDd(Td - Ta);
+		SetDb(Td - Tj);
+	}
 }
 
 void Unit::SetHealth(int h)
 {
-	Health = h;
+	if (h<0)
+	{
+		Health = 0;
+	}
+	else
+		Health = h;
 }
 
 void Unit::SetPower(int p)
@@ -55,6 +104,36 @@ void Unit::SetAttackCap(int ac)
 int Unit::GetID() const
 {
 	return ID;
+}
+
+int Unit::GetTd() const
+{
+	return Td;
+}
+
+int Unit::GetTa() const
+{
+	return Ta;
+}
+
+int Unit::GetDf() const
+{
+	return Df;
+}
+
+int Unit::GetDd() const
+{
+	return Dd;
+}
+
+int Unit::GetDb() const
+{
+	return Db;
+}
+
+bool Unit::GetwasShot() const
+{
+	return wasShot;
 }
 
 int Unit::GetHealth() const
@@ -102,8 +181,16 @@ void Unit::Print() const
 	cout << ID;
 }
 
-void Unit::Attack()
+void Unit::BeAttacked(int DAMGE, int currenttime)
 {
-	//MUST BE PURE VIRTUAL LATER 
+	if (!wasShot)
+	{
+		SetTa(currenttime);
+	}
+	SetHealth(Health - DAMGE);
+	if (!IsAlive())
+	{
+		DEATH(currenttime);
+	}
 }
-//nothing
+

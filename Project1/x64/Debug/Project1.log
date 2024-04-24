@@ -1,26 +1,1686 @@
-﻿  alienArmy.cpp
+﻿  AS.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'AS.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'AS.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'AS.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'AS.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'AS.cpp')
+  
   Alien_Monster.cpp
-  AS.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'Alien_Monster.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'Alien_Monster.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'Alien_Monster.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Alien_Monster.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Alien_Monster.cpp')
+  
   Drones.cpp
-  earthArmy.cpp
-  Earth_Gunnery.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'Drones.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'Drones.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'Drones.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Drones.cpp')
+  
   ES.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Drones.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'ES.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'ES.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'ES.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'ES.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'ES.cpp')
+  
   ET.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'ET.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'ET.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'ET.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'ET.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'ET.cpp')
+  
+  Earth_Gunnery.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'Earth_Gunnery.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'Earth_Gunnery.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'Earth_Gunnery.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Earth_Gunnery.cpp')
+  
   Game.cpp
-  Source.cpp
+  Main.cpp
   Unit.cpp
-D:\Data_Project\Data_Phase1\Project1\Unit.cpp(17,8): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  randGen.cpp
-D:\Data_Project\Data_Phase1\Project1\randGen.cpp(8,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\Data_Project\Data_Phase1\Project1\randGen.cpp(36,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-D:\Data_Project\Data_Phase1\Project1\randGen.cpp(53,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-D:\Data_Project\Data_Phase1\Project1\randGen.cpp(95,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-D:\Data_Project\Data_Phase1\Project1\randGen.cpp(111,65): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-D:\Data_Project\Data_Phase1\Project1\randGen.cpp(127,57): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'Unit.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'Unit.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'Unit.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Unit.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'Unit.cpp')
+  
   UnitAOP.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(19,10): error C3646: 'AM_List': unknown override specifier
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(19,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitAOP.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitAOP.cpp')
+  
   UnitDEQueue.cpp
-  UnitpriQueue.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'UnitDEQueue.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'UnitDEQueue.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'UnitDEQueue.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(20,14): error C3646: 'AD_List': unknown override specifier
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(20,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitDEQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitDEQueue.cpp')
+  
   UnitQueue.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'UnitQueue.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'UnitQueue.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'UnitQueue.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(18,12): error C3646: 'AS_List': unknown override specifier
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(18,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(12,12): error C3646: 'ES_List': unknown override specifier
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(12,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(13,12): error C3646: 'KilledList': unknown override specifier
+  (compiling source file 'UnitQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(13,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitQueue.cpp')
+  
   UnitStack.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'UnitStack.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'UnitStack.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'UnitStack.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(13,12): error C3646: 'ET_List': unknown override specifier
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(13,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitStack.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitStack.cpp')
+  
+  UnitpriQueue.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'UnitpriQueue.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'UnitpriQueue.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'UnitpriQueue.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(14,15): error C3646: 'EG_List': unknown override specifier
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(14,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'UnitpriQueue.cpp')
+  
+  alienArmy.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ES.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\ET.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(4,30): error C2504: 'Unit': base class undefined
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'alienArmy.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'alienArmy.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'alienArmy.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,39): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(4,44): error C2059: syntax error: '>'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitpriQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(19,12): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.h(20,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(11,12): error C3646: 'AlienArmy': unknown override specifier
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(11,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(20,11): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(20,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(20,27): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'alienArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.cpp(15,18): error C2039: 'getcount': is not a member of 'UnitQueue'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,7):
+  see declaration of 'UnitQueue'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.cpp(16,18): error C2039: 'GetCount': is not a member of 'UnitAOP'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,7):
+  see declaration of 'UnitAOP'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.cpp(23,9): error C2660: 'UnitAOP::Delete': function does not take 1 arguments
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,7):
+  see declaration of 'UnitAOP::Delete'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.cpp(23,9):
+  while trying to match the argument list '(Unit *)'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.cpp(30,10): error C2039: 'dequeue': is not a member of 'UnitQueue'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,7):
+  see declaration of 'UnitQueue'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.cpp(47,11): error C2039: 'enqueue': is not a member of 'UnitQueue'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,7):
+  see declaration of 'UnitQueue'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.cpp(52,11): error C2039: 'insert': is not a member of 'UnitAOP'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,7):
+  see declaration of 'UnitAOP'
+  
+  earthArmy.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(7,19): error C2504: 'Unit': base class undefined
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\AS.h(12,43): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(3,31): error C2504: 'Unit': base class undefined
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Alien_Monster.h(8,54): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(5,22): error C2504: 'Unit': base class undefined
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Drone.h(10,46): error C2061: syntax error: identifier 'Game'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2923: 'Array_Of_Pointers': 'Unit' is not a valid template type argument for parameter 'T'
+  (compiling source file 'earthArmy.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,42):
+  see declaration of 'Unit'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2976: 'Array_Of_Pointers': too few template arguments
+  (compiling source file 'earthArmy.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(4,24): error C2955: 'Array_Of_Pointers': use of class template requires template argument list
+  (compiling source file 'earthArmy.cpp')
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Array_Of_Pointers.h(13,1):
+  see declaration of 'Array_Of_Pointers'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitAOP.h(8,14): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,40): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,45): error C2059: syntax error: '>'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,38): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,43): error C2059: syntax error: '>'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(5,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,36): error C2065: 'Unit': undeclared identifier
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(5,41): error C2059: syntax error: '>'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitDEQueue.h(6,1): error C3770: 'unknown-type': is not a valid base class
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(25,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(26,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(27,18): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\alienArmy.h(28,15): error C2061: syntax error: identifier 'Unit'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(12,12): error C3646: 'EarthArmy': unknown override specifier
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(12,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(21,11): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(21,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Game.h(21,27): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'earthArmy.cpp')
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.cpp(11,18): error C2039: 'getcount': is not a member of 'UnitQueue'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,7):
+  see declaration of 'UnitQueue'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.cpp(12,18): error C2039: 'gettop': is not a member of 'UnitStack'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,7):
+  see declaration of 'UnitStack'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.cpp(20,24): error C2039: 'pop': is not a member of 'UnitStack'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,7):
+  see declaration of 'UnitStack'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.cpp(28,16): error C2039: 'dequeue': is not a member of 'UnitQueue'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,7):
+  see declaration of 'UnitQueue'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.cpp(47,11): error C2039: 'enqueue': is not a member of 'UnitQueue'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitQueue.h(4,7):
+  see declaration of 'UnitQueue'
+  
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\earthArmy.cpp(52,11): error C2039: 'push': is not a member of 'UnitStack'
+  D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\UnitStack.h(4,7):
+  see declaration of 'UnitStack'
+  
+  randGen.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\randGen.cpp(8,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
-  Project1.vcxproj -> D:\Data_Project\Data_Phase1\Project1\x64\Debug\Project1.exe
