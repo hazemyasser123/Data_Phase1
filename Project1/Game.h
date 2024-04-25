@@ -1,9 +1,10 @@
 #pragma once
-#ifndef GAME
-#define GAME
 #include "alienArmy.h"
 #include "earthArmy.h"
 #include "randGen.h"
+#ifndef GAME
+#define GAME
+class alienArmy;
 class Game
 {
 private:
@@ -15,12 +16,14 @@ private:
 public:
 	Game();
 	~Game();
+	void InsertInKilled_List(Unit* ToBeInserted);
 	void ReadParameters();
 	int getCurrentTime();
 	alienArmy* GetAlienArmy();
 	earthArmy* GetEarthArmy();
 	void print();
 	void Test();
+	void Attack();
 };
 
 #endif

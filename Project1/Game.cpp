@@ -20,6 +20,11 @@ Game::~Game()
 	delete g2;
 }
 
+void Game::InsertInKilled_List(Unit* ToBeInserted)
+{
+	KilledList.enqueue(ToBeInserted);
+}
+
 void Game::ReadParameters()
 {
 	ifstream infile;
