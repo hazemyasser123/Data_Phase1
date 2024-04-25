@@ -91,13 +91,20 @@ bool DEQueue<T>::dequeueback(T& backEntry)
 template <typename T>
 bool DEQueue<T>::dequeueboth(T& backEntry, T& frntEntry)
 {
-	if (this->count < 2)
-	{
-		return false;
-	}
 	bool x = dequeueback(backEntry);
 	bool y = this->dequeue(frntEntry);
-
+	if (x == false)
+	{
+		backEntry = nullptr;
+	}
+	if (y == false)
+	{
+		frntEntry = nullptr;
+	}
+	if (backEntry == frntEntry)
+	{
+		backEntry = nullptr;
+	}
 	return (x && y);
 }
 
