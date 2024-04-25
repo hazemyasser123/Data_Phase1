@@ -12,7 +12,7 @@ Unit::Unit()
 	wasShot = false;
 }
 
-Unit::Unit(int id, int tj, int h, int p, int ac,Game* Gp)
+Unit::Unit(int id, int tj, int h, int p, int ac, Game* Gp)
 {
 	SetID(id);
 	SetTj(tj);
@@ -83,13 +83,13 @@ void Unit::DEATH(int deathtime)
 
 void Unit::SetHealth(int h)
 {
-	if (h<0)
-	{
-		Health = 0;
-	}
-	else
-		Health = h;
+	Health = h;
 }
+//************************************Must Be deleted later************************************//
+void Unit::Attack(UnitQueue& Temp_List)
+{
+}
+//************************************Must Be deleted later************************************//
 
 void Unit::SetPower(int p)
 {
@@ -173,9 +173,9 @@ Game* Unit::GetGamePtr() const
 
 bool Unit::IsAlive()
 {
-	return (Health <= 0);
+	return (Health > 0);
 }
-	
+
 void Unit::Print() const
 {
 	cout << ID;
@@ -187,7 +187,7 @@ void Unit::BeAttacked(int DAMGE, int currenttime)
 	{
 		SetTa(currenttime);
 	}
-	SetHealth(Health - DAMGE);
+	//SetHealth(Health - DAMGE);
 	if (!IsAlive())
 	{
 		DEATH(currenttime);
