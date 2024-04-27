@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-Unit::Unit()
+Unit::Unit() :OrignalHealth(0)
 {
 	SetID(0);
 	SetTj(0);
@@ -12,7 +12,7 @@ Unit::Unit()
 	wasShot = false;
 }
 
-Unit::Unit(int id, int tj, int h, int p, int ac, Game* Gp)
+Unit::Unit(int id, int tj, int h, int p, int ac, Game* Gp):OrignalHealth(h)
 {
 	SetID(id);
 	SetTj(tj);
@@ -139,6 +139,11 @@ bool Unit::GetwasShot() const
 int Unit::GetHealth() const
 {
 	return Health;
+}
+
+int Unit::GetOrignalHealth() const
+{
+	return OrignalHealth;
 }
 
 int Unit::GetPower() const

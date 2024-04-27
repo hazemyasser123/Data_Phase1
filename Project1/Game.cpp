@@ -235,6 +235,13 @@ void Game::Test()
 		}
 }
 
+void Game::Attack()
+{
+	UnitQueue TempList;
+	
+	// This TempList will be passed to the alienarmy and eartharmy attack functions  
+}
+
 int Game::getCurrentTime()
 {
 	return CurrentTime;

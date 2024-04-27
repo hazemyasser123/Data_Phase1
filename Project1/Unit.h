@@ -16,12 +16,13 @@ private:
 	bool wasShot;	// if this is true the Ta won't be changed so don't screw up the inputing the first Ta & Df
 	//and this won't be changed to flase again besides I made Death so that no values of D won't change only T
 	int Dd;		// (Time of the unit killed compared to Ta)
-	int Df;		// Ta -Tj Time taken to be spotted
-	int Db;		// (Time the unit spent in battle)
+	int Df;		// Ta -Tj Time taken to be spotted     
+	int Db;		// (Time the unit spent in battle)                                                                
 	int Health;
 	int Power;
 	int Attack_Capacity;
 	Game* PtrGame;
+	const int OrignalHealth;
 
 	void SetDf(int time);
 
@@ -69,6 +70,8 @@ public:
 	bool GetwasShot() const;
 
 	int GetHealth() const;
+
+	int GetOrignalHealth() const;
 
 	int GetPower() const;
 
