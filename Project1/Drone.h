@@ -9,6 +9,6 @@ public:
 
 	Drone(int id, int tj, int h, int p, int ac, Game* Gp);
 
-	void Attack();
+	void Attack(UnitQueue& Temp_List);
 };
 

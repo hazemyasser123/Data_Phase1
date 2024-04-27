@@ -91,6 +91,12 @@ bool DEQueue<T>::dequeueback(T& backEntry)
 template <typename T>
 bool DEQueue<T>::dequeueboth(T& backEntry, T& frntEntry)
 {
+	// when i removed this and tried the test code it gave me a runtime error that i acutually didn't have time to understand
+	// but since i still had to remove it for EG to work so i removed it  
+	/*if (this->count < 2)
+	{
+		return false;
+	}*/
 	bool x = dequeueback(backEntry);
 	bool y = this->dequeue(frntEntry);
 	if (x == false)

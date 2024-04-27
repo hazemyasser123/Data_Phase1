@@ -39,3 +39,20 @@ bool UnitAOP::Delete(Unit*& data)
 	count--;
 	return false;
 }
+
+bool UnitAOP::AcceesRandomMonster(Unit*& data)
+{
+	if (count == 0)
+	{
+		data = nullptr;
+		return false;
+	}
+	if (count == 1)
+	{
+		data = items[0];
+		return true;
+	}
+	int c = rand() % (count - 1);
+	data = items[c];
+	return true;
+}

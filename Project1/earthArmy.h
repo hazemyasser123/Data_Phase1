@@ -14,7 +14,7 @@ private:
 	UnitpriQueue EG_List;
 
 public:
-	void Attack();
+	void Attack(UnitQueue& Temp_List);
 	void Print();
 	bool pick(Unit*& take, string x);
 	bool addUnit(Unit* armyunit);

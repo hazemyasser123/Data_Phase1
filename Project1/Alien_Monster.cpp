@@ -12,8 +12,6 @@ Alien_Monster::Alien_Monster(int id, int tj, int h, int p, int ac, Game* Gp) :Un
 }
 
 
-
-
 void Alien_Monster::Attack(UnitQueue& Temp_List)
 {
 	int NumberUnitsToBeAttacked;
