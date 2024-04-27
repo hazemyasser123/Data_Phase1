@@ -239,7 +239,7 @@ void Game::Attack()
 {
 	UnitQueue TempList;
 	
-	// This TempList will be passed to the alienarmy and eartharmy attack functions  
+	// This TempList should be passed to the alienarmy and eartharmy attack functions  
 }
 
 int Game::getCurrentTime()
