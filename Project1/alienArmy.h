@@ -20,7 +20,7 @@ private:
 	UnitDEQueue AD_List;
 
 public:
-	void Attack();
+	void Attack(UnitQueue& Temp_List);
 	void Print();
 	Unit* PickAM();
 	Unit* PickAS();

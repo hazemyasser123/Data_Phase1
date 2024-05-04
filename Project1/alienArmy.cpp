@@ -3,10 +3,16 @@
 #include "Array_Of_Pointers.h"
 using namespace std;
 
-
-void alienArmy::Attack()
+void alienArmy::Attack(UnitQueue& Temp_List)
 {
-	// TODO in phase 2
+	// This Temp_List should be sent as a parameter to the attack functions of each unit to be able to insert in it (See Line 14)
+	// I made the random access function in the UnitAOP class to pick a random AM without deleting it 
+	Unit* MonsterThatWillAttack;
+	AM_List.AcceesRandomMonster(MonsterThatWillAttack); // picking a random monster
+	if (MonsterThatWillAttack != nullptr)
+	{
+		MonsterThatWillAttack->Attack(Temp_List); // making that random monster attack
+	}
 }
 
 void alienArmy::Print()

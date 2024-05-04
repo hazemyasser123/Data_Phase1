@@ -9,8 +9,8 @@ class AS : public Unit
 public:
 	AS();
 
-	AS(int id, int tj, int h, int p, int ac);
+	AS(int id, int tj, int h, int p, int ac, Game* Gp);
 	
-	void Attack();
+	void Attack(UnitQueue& Temp_List);
 
 };

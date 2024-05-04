@@ -33,7 +33,7 @@ void randGen::CreateUnits()
 				//Generate its ID
 				int ID = Earth;
 				Earth++;
-				UnitToinsert = new ES(ID, GamePtr->getCurrentTime(), SoldierHP, SoldierPower, SoldierCapacity);
+				UnitToinsert = new ES(ID, GamePtr->getCurrentTime(), SoldierHP, SoldierPower, SoldierCapacity,GamePtr);
 				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 
 			}
@@ -50,7 +50,7 @@ void randGen::CreateUnits()
 				//Generate its ID
 				int ID = Earth;
 				Earth++;
-				UnitToinsert = new ET(ID, GamePtr->getCurrentTime(), TankHP, TankPower, TankCapacity);
+				UnitToinsert = new ET(ID, GamePtr->getCurrentTime(), TankHP, TankPower, TankCapacity, GamePtr);
 				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 			}
 			else
@@ -66,7 +66,7 @@ void randGen::CreateUnits()
 				//Generate its ID
 				int ID = Earth;
 				Earth++;
-				UnitToinsert = new Earth_Gunnery(ID, GamePtr->getCurrentTime(), GunneryHP, GunneryPower, GunneryCapacity);
+				UnitToinsert = new Earth_Gunnery(ID, GamePtr->getCurrentTime(), GunneryHP, GunneryPower, GunneryCapacity, GamePtr);
 				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 			}
 		}
@@ -92,7 +92,7 @@ void randGen::CreateUnits()
 				//Generate its ID
 				int ID = Aliens;
 				Aliens++;
-				UnitToinsert = new AS(ID, GamePtr->getCurrentTime(), SoldierHP, SoldierPower, SoldierCapacity);
+				UnitToinsert = new AS(ID, GamePtr->getCurrentTime(), SoldierHP, SoldierPower, SoldierCapacity, GamePtr);
 				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
 			else  if (B <= (AMper + ASper))
@@ -108,7 +108,7 @@ void randGen::CreateUnits()
 				//Generate its ID
 				int ID = Aliens;
 				Aliens++;
-				UnitToinsert = new Alien_Monster(ID, GamePtr->getCurrentTime(), MonsterHP, MonsterPower, MonsterCapacity);
+				UnitToinsert = new Alien_Monster(ID, GamePtr->getCurrentTime(), MonsterHP, MonsterPower, MonsterCapacity, GamePtr);
 				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
 			else
@@ -124,7 +124,7 @@ void randGen::CreateUnits()
 				//Generate its ID
 				int ID = Aliens;
 				Aliens++;
-				UnitToinsert = new Drone(ID, GamePtr->getCurrentTime(), DroneHP, DronePower, DroneCapacity);
+				UnitToinsert = new Drone(ID, GamePtr->getCurrentTime(), DroneHP, DronePower, DroneCapacity, GamePtr);
 				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
 		}

@@ -5,10 +5,11 @@ AS::AS() : Unit()
 
 }
 
-AS::AS(int id, int tj, int h, int p, int ac) : Unit(id, tj, h, p, ac)
+AS::AS(int id, int tj, int h, int p, int ac, Game* Gp) : Unit(id, tj, h, p, ac, Gp)
 {
 	SetType("AS");
 }
 
-void AS::Attack()
-{}
+void AS::Attack(UnitQueue& Temp_List)
+{
+}

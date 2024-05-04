@@ -1,8 +1,9 @@
 #include "earthArmy.h"
 
-void earthArmy::Attack()
+
+void earthArmy::Attack(UnitQueue& Temp_List)
 {
-	// TODO in phase 2
+	// READ THE COMMENT IN ** ALIENARMY.CPP ** LINE 8
 }
 
 void earthArmy::Print()

@@ -2,24 +2,26 @@
 #include <iostream>
 using namespace std;
 
-Unit::Unit()
+Unit::Unit() :OrignalHealth(0)
 {
 	SetID(0);
 	SetTj(0);
 	SetHealth(0);
 	SetPower(0);
 	SetAttackCap(0);
+	wasShot = false;
 }
 
-Unit::Unit(int id, int tj, int h, int p, int ac)
+Unit::Unit(int id, int tj, int h, int p, int ac, Game* Gp):OrignalHealth(h)
 {
 	SetID(id);
 	SetTj(tj);
 	SetHealth(h);
 	SetPower(p);
 	SetAttackCap(ac);
+	PtrGame = Gp;
+	wasShot = false;
 }
-
 
 void Unit::SetID(int id)
 {
@@ -31,15 +33,63 @@ void Unit::SetType(string t)
 	Type = t;
 }
 
-void Unit::SetTj(int tj)
+void Unit::SetTj(int time)
 {
-	Tj = tj;
+	Tj = time;
+}
+
+void Unit::SetTd(int time)
+{
+	if (IsAlive() == false)
+	{
+		Td = time;
+	}
+}
+
+void Unit::SetTa(int time)
+{
+	if (!wasShot)
+	{
+		Ta = time;
+		wasShot = true;
+	}
+}
+
+void Unit::SetDf(int time)
+{
+	Df = time;
+}
+
+void Unit::SetDd(int time)
+{
+	Dd = time;
+}
+
+void Unit::SetDb(int time)
+{
+	Db = time;
+}
+
+void Unit::DEATH(int deathtime)
+{
+	if (IsAlive() == false)
+	{
+		SetTd(deathtime);
+		SetDf(Ta - Tj);
+		SetDd(Td - Ta);
+		SetDb(Td - Tj);
+	}
 }
 
 void Unit::SetHealth(int h)
 {
 	Health = h;
 }
+//************************************Must Be deleted later************************************//
+void Unit::Attack(UnitQueue& Temp_List)
+{
+}
+//************************************Must Be deleted later************************************//
 
 void Unit::SetPower(int p)
 {
@@ -56,9 +106,44 @@ int Unit::GetID() const
 	return ID;
 }
 
+int Unit::GetTd() const
+{
+	return Td;
+}
+
+int Unit::GetTa() const
+{
+	return Ta;
+}
+
+int Unit::GetDf() const
+{
+	return Df;
+}
+
+int Unit::GetDd() const
+{
+	return Dd;
+}
+
+int Unit::GetDb() const
+{
+	return Db;
+}
+
+bool Unit::GetwasShot() const
+{
+	return wasShot;
+}
+
 int Unit::GetHealth() const
 {
 	return Health;
+}
+
+int Unit::GetOrignalHealth() const
+{
+	return OrignalHealth;
 }
 
 int Unit::GetPower() const
@@ -93,16 +178,24 @@ Game* Unit::GetGamePtr() const
 
 bool Unit::IsAlive()
 {
-	return (Health <= 0);
+	return (Health > 0);
 }
-	
+
 void Unit::Print() const
 {
 	cout << ID;
 }
 
-void Unit::Attack()
+void Unit::BeAttacked(int DAMGE, int currenttime)
 {
-	//MUST BE PURE VIRTUAL LATER 
+	if (!wasShot)
+	{
+		SetTa(currenttime);
+	}
+	//SetHealth(Health - DAMGE);
+	if (!IsAlive())
+	{
+		DEATH(currenttime);
+	}
 }
 
