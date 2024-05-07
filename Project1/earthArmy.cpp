@@ -1,9 +1,30 @@
 #include "earthArmy.h"
-
+#include "LinkedQueue.h"
 
 void earthArmy::Attack(UnitQueue& Temp_List)
 {
 	// READ THE COMMENT IN ** ALIENARMY.CPP ** LINE 8
+
+	Unit* ESthatWillAttack;
+	if (ES_List.peek(ESthatWillAttack))
+	{
+		ESthatWillAttack->Attack(Temp_List);
+	}
+
+	/*Unit* ETthatWillAttack;
+	if (ET_List.peek(ETthatWillAttack))
+	{
+		ETthatWillAttack->Attack(Temp_List);
+	}*/
+	
+	Unit* EGthatWillAttack;
+	int priEG; // dummy int
+	if (EG_List.peek(EGthatWillAttack, priEG))
+	{
+		EGthatWillAttack->Attack(Temp_List);
+	}
+
+	armyCount = ES_List.getcount() + (ET_List.gettop() + 1) + EG_List.getcount();
 }
 
 void earthArmy::Print()
@@ -59,4 +80,9 @@ bool earthArmy::addUnit(Unit* armyunit)  // add unit to appropiate list
 		return true;
 	}
 	else return false;
+}
+
+int earthArmy::getarmyCount()
+{
+	return armyCount;
 }

@@ -13,6 +13,22 @@ void alienArmy::Attack(UnitQueue& Temp_List)
 	{
 		MonsterThatWillAttack->Attack(Temp_List); // making that random monster attack
 	}
+
+	Unit* ASthatWillAttack;
+	if (AS_List.peek(ASthatWillAttack))
+	{
+		ASthatWillAttack->Attack(Temp_List);
+	}
+
+	/*Unit* drone1;
+	Unit* drone2;
+	if(AD_List.peekboth(drone1, drone2))
+	{
+		drone1->Attack(Temp_List);
+		drone2->Attack(Temp_List);
+	}*/
+
+	armyCount = AS_List.getcount() + AM_List.GetCount() + AD_List.getcount();
 }
 
 void alienArmy::Print()
@@ -64,6 +80,22 @@ bool alienArmy::addUnit(Unit* armyunit)  // add unit to appropiate list
 		return true;
 	}
 	else return false;
+}
+
+int alienArmy::getarmyCount()
+{
+	return armyCount;
+}
+
+double alienArmy::getAvgTj()
+{
+	/*int total_Tj;
+	Node<Unit*>* x = new Node<Unit*>();
+	Unit* y;
+	AS_List.peek(y);
+	AS_List.frontptr
+	
+	return 0.0;*/
 }
 
 

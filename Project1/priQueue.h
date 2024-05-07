@@ -84,7 +84,7 @@ public:
         if (isEmpty())
             return false;
 
-        topEntry = head->getItem();
+        topEntry = head->getItem(); // i think this should be getItem(pri) OR remove the argument list in priNode.h -- mtamer
         pri = head->getPri();
         return true;
     }
