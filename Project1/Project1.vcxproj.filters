@@ -77,9 +77,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Node.h">
-      <Filter>EarthArmyHeaders</Filter>
-    </ClInclude>
     <ClInclude Include="Earth_Gunnery.h">
       <Filter>EarthArmyHeaders</Filter>
     </ClInclude>
@@ -153,6 +150,9 @@
       <Filter>Game+randGen + Unit</Filter>
     </ClInclude>
     <ClInclude Include="UnitDEQueue.h">
+      <Filter>DS Headers + CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
       <Filter>DS Headers + CPP</Filter>
     </ClInclude>
   </ItemGroup>

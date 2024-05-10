@@ -15,7 +15,9 @@ Alien_Monster::Alien_Monster(int id, int tj, int h, int p, int ac, Game* Gp) :Un
 void Alien_Monster::Attack(UnitQueue& Temp_List)
 {
 	int NumberUnitsToBeAttacked;
-	Unit* UnitToBeAttacked;
+	bool dont_Comma = true;
+	Unit* UnitToBeAttacked = nullptr;
+	cout << "AM " << GetID() << " shot [";
 	if (GetAttackCap() % 2 == 0)
 	{
 		NumberUnitsToBeAttacked = GetAttackCap() / 2;
@@ -24,6 +26,12 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 			//GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ES");
 			if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ES") == true)
 			{
+				if (!dont_Comma)
+				{
+					cout << ", ";
+				}
+				dont_Comma = false;
+				cout << UnitToBeAttacked->GetID();
 				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
@@ -38,9 +46,14 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 		}
 		for (int i = 0; i < NumberUnitsToBeAttacked; i++)
 		{
-
 			if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ET") == true)
 			{
+				if (!dont_Comma)
+				{
+					cout << ", ";
+				}
+				dont_Comma = false;
+				cout << UnitToBeAttacked->GetID();
 				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
@@ -60,9 +73,14 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 		NumberUnitsToBeAttacked = GetAttackCap() / 2;
 		for (int i = 0; i < NumberUnitsToBeAttacked + 1; i++)
 		{
-
 			if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ES") == true)
 			{
+				if (!dont_Comma)
+				{
+					cout << ", ";
+				}
+				dont_Comma = false;
+				cout << UnitToBeAttacked->GetID();
 				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
@@ -80,6 +98,12 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 		{
 			if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ET") == true)
 			{
+				if (!dont_Comma)
+				{
+					cout << ", ";
+				}
+				dont_Comma = false;
+				cout << UnitToBeAttacked->GetID();
 				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
@@ -93,6 +117,7 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 			}
 		}
 	}
+	cout << "]" << endl;
 }
 
 

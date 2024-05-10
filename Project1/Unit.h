@@ -87,12 +87,9 @@ public:
 
 	void SetHealth(int h);
 
-	/****************************************************************/
-	virtual void Attack(UnitQueue& Temp_List); // MUST BE PURE VIRTUAL LATER
-	/***************************************************************/
+	virtual void Attack(UnitQueue& Temp_List) = 0;
 
-	virtual void BeAttacked(int DAMGE, int currenttime); // I ADDED THIS FUNCTIONS BECAUSE DR.5AWAL (AKA. OMAR GAMAL) WANTS IT AND I DON'T KNOW IT'S OBJECTIVE AND HE WANTS IT TO BE 
-	//  PURE VIRTUAL LATER
+	virtual void BeAttacked(int DAMGE, int currenttime);
 };
 
 
