@@ -3,19 +3,17 @@
 
 void earthArmy::Attack(UnitQueue& Temp_List)
 {
-	// READ THE COMMENT IN ** ALIENARMY.CPP ** LINE 8
-
 	Unit* ESthatWillAttack;
 	if (ES_List.peek(ESthatWillAttack))
 	{
 		ESthatWillAttack->Attack(Temp_List);
 	}
 
-	/*Unit* ETthatWillAttack;
+	Unit* ETthatWillAttack;
 	if (ET_List.peek(ETthatWillAttack))
 	{
 		ETthatWillAttack->Attack(Temp_List);
-	}*/
+	}
 	
 	Unit* EGthatWillAttack;
 	int priEG; // dummy int
@@ -23,13 +21,12 @@ void earthArmy::Attack(UnitQueue& Temp_List)
 	{
 		EGthatWillAttack->Attack(Temp_List);
 	}
-
 	armyCount = ES_List.getcount() + (ET_List.gettop() + 1) + EG_List.getcount();
 }
 
 void earthArmy::Print()
 {
-	cout << "============== Earth Army Alive Units ==============" << endl;
+	cout << "==============  Earth Army Alive Units ==============" << endl;
 	cout << ES_List.getcount() << " ES "; ES_List.PrintQueue();            // eg: 55 ES [1, 2, 3, 4, ...]
 	cout << ET_List.gettop() + 1 << " ET "; ET_List.PrintStack();
 	cout << EG_List.getcount() << " EG "; EG_List.PrintPriQueue();
@@ -63,7 +60,9 @@ bool earthArmy::pick(Unit*& take, string x)
 bool earthArmy::addUnit(Unit* armyunit)  // add unit to appropiate list 
 {
 	if (armyunit == nullptr)
+	{
 		return false;
+	}	
 	if (armyunit->GetType() == "ES")
 	{
 		ES_List.enqueue((ES*)armyunit);

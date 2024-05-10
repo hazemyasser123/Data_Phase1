@@ -4,7 +4,12 @@
 #include "randGen.h"
 #ifndef GAME
 #define GAME
-class alienArmy;
+enum Result
+{
+	EARTHWON,
+	ALIENWON,
+	DRAW
+};
 class Game
 {
 private:
@@ -13,6 +18,8 @@ private:
 	earthArmy EarthArmy;
 	UnitQueue KilledList;
 	int CurrentTime;
+	bool We_Are_Not_Done_Yet;
+	Result Whos_the_Winner;	//Will take earth army as the refernce of being won or lost in the outfile //From Omar
 public:
 	Game();
 	~Game();
@@ -24,6 +31,10 @@ public:
 	void print();
 	void Test();
 	void Attack();
+	bool AreWeNotDoneYet();
+	void WhoWon();
+	void generateOutputFile();
+	void DisplayResult();
 };
 
 #endif

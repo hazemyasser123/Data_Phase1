@@ -83,9 +83,8 @@ public:
     bool peek(T& topEntry, int& pri) {
         if (isEmpty())
             return false;
-
-        topEntry = head->getItem(); // i think this should be getItem(pri) OR remove the argument list in priNode.h -- mtamer
         pri = head->getPri();
+        topEntry = head->getItem(pri); // i think this should be getItem(pri) OR remove the argument list in priNode.h -- mtamer
         return true;
     }
 

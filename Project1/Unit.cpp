@@ -85,11 +85,6 @@ void Unit::SetHealth(int h)
 {
 	Health = h;
 }
-//************************************Must Be deleted later************************************//
-void Unit::Attack(UnitQueue& Temp_List)
-{
-}
-//************************************Must Be deleted later************************************//
 
 void Unit::SetPower(int p)
 {
@@ -178,7 +173,14 @@ Game* Unit::GetGamePtr() const
 
 bool Unit::IsAlive()
 {
-	return (Health > 0);
+	if (Health > 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 void Unit::Print() const

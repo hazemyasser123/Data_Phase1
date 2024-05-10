@@ -12,7 +12,7 @@ Game::Game()
 	g2 = new randGen(this);
 	ReadParameters();
 	CurrentTime = 1;
-
+	We_Are_Not_Done_Yet = true;
 }
 
 Game::~Game()
@@ -31,25 +31,25 @@ void Game::ReadParameters()
 	string line;
 	infile.open("Input.txt");
 	int N;
-	int ESper;
-	int ETper;
-	int EGper;
-	int ASper;
-	int AMper;
-	int ADper;
-	int Prob;
-	int PowerMinE;
-	int PowerMaxE;
-	int HealthMinE;
-	int HealthMaxE;
-	int AttackCapMinE;
-	int AttackCapMaxE;
-	int PowerMinA;
-	int PowerMaxA;
-	int HealthMinA;
-	int HealthMaxA;
-	int AttackCapMinA;
-	int AttackCapMaxA;
+	int ESper = 0;
+	int ETper = 0;
+	int EGper = 0;
+	int ASper = 0;
+	int AMper = 0;
+	int ADper = 0;
+	int Prob = 0;
+	int PowerMinE = 0;
+	int PowerMaxE = 0;
+	int HealthMinE = 0;
+	int HealthMaxE = 0;
+	int AttackCapMinE = 0;
+	int AttackCapMaxE = 0;
+	int PowerMinA = 0;
+	int PowerMaxA = 0;
+	int HealthMinA = 0;
+	int HealthMaxA = 0;
+	int AttackCapMinA = 0;
+	int AttackCapMaxA = 0;
 
 	if (infile.is_open() == true)
 	{
@@ -106,13 +106,7 @@ void Game::print()
 	EarthArmy.Print();
 	cout << endl;
 	AlienArmy.Print();
-	cout << endl;
-
-	cout << "============== Killed/Destructed Units ==============" << endl;
-	cout<< KilledList.getcount() << " units ";
-	KilledList.PrintQueue();
 	cout << endl << endl;
-	CurrentTime++;
 }
 
 void Game::Test()
@@ -237,9 +231,115 @@ void Game::Test()
 
 void Game::Attack()
 {
+	cout << "==============  Units fighting at current step =======" << endl;
 	UnitQueue TempList;
-	
-	// This TempList should be passed to the alienarmy and eartharmy attack functions  
+	EarthArmy.Attack(TempList);
+	Unit* x;
+	while (TempList.dequeue(x))
+	{
+		AlienArmy.addUnit(x);
+	}
+	AlienArmy.Attack(TempList);
+	while (TempList.dequeue(x))
+	{
+		EarthArmy.addUnit(x);
+	}
+	cout << "==============  Killed/Destructed Units ==============" << endl;
+	cout << KilledList.getcount() << " units ";
+	KilledList.PrintQueue();
+	cout << endl << endl;
+	CurrentTime++;
+}
+
+bool Game::AreWeNotDoneYet()
+{
+	return We_Are_Not_Done_Yet;
+}
+
+void Game::WhoWon()
+{
+	Unit* SOLIDER = nullptr;
+	Unit* TANK_MONSTER = nullptr;
+	Unit* Gunner_Drone1 = nullptr;
+	EarthArmy.pick(SOLIDER, "ES");
+	EarthArmy.pick(TANK_MONSTER, "ET");
+	EarthArmy.pick(Gunner_Drone1, "Earth_Gunnery");
+
+	if (SOLIDER == nullptr && TANK_MONSTER == nullptr && Gunner_Drone1 == nullptr)
+	{
+		We_Are_Not_Done_Yet = false;
+		Whos_the_Winner = ALIENWON;
+	}
+	else
+	{
+		if (SOLIDER != nullptr)
+		{
+			EarthArmy.addUnit(SOLIDER);
+		}
+		if (TANK_MONSTER != nullptr)
+		{
+			EarthArmy.addUnit(TANK_MONSTER);
+		}
+		if (Gunner_Drone1 != nullptr)
+		{
+			EarthArmy.addUnit(Gunner_Drone1);
+		}
+	}
+
+	SOLIDER = AlienArmy.PickAS();
+	TANK_MONSTER = AlienArmy.PickAM();
+	Unit* Drone2;
+	AlienArmy.pickDrones(Gunner_Drone1, Drone2);
+
+	if (SOLIDER == nullptr && TANK_MONSTER == nullptr && Gunner_Drone1 == nullptr)
+	{
+		We_Are_Not_Done_Yet = false;
+		Whos_the_Winner = EARTHWON;
+	}
+	else
+	{
+		if (SOLIDER != nullptr)
+		{
+			AlienArmy.addUnit(SOLIDER);
+		}
+		if (TANK_MONSTER != nullptr)
+		{
+			AlienArmy.addUnit(TANK_MONSTER);
+		}
+		if (Gunner_Drone1 != nullptr)
+		{
+			AlienArmy.addUnit(Gunner_Drone1);
+		}
+		if (Drone2 != nullptr)
+		{
+			AlienArmy.addUnit(Drone2);
+		}
+	}
+	if (CurrentTime == 301)
+	{
+		We_Are_Not_Done_Yet = false;
+		Whos_the_Winner = DRAW;
+	}
+}
+
+void Game::generateOutputFile()
+{
+
+}
+
+void Game::DisplayResult()
+{
+	switch (Whos_the_Winner)
+	{
+	case EARTHWON: cout << endl << "EARTH ARMY WON THE FIGHT" << endl;
+		break;
+	case ALIENWON: cout << endl << "ALIEN ARMY WON THE FIGHT" << endl;
+		break;
+	case DRAW: cout << endl << "NO ONE WON ... what a disappointment ..." << endl;
+		break;
+	default:
+		break;
+	}
 }
 
 int Game::getCurrentTime()
@@ -260,7 +360,3 @@ earthArmy* Game::GetEarthArmy()
 	Eptr = &EarthArmy;
 	return Eptr;
 }
-
-
-
-

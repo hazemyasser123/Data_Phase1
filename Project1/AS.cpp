@@ -13,11 +13,19 @@ AS::AS(int id, int tj, int h, int p, int ac, Game* Gp) : Unit(id, tj, h, p, ac, 
 
 void AS::Attack(UnitQueue& Temp_List)
 {
-	Unit* ToBeAttacked;
+	Unit* ToBeAttacked = nullptr;
+	bool dont_Comma = true;
+	cout << "AS " << GetID() << " shot [";
 	for (int NumberAttacked = 0; NumberAttacked < GetAttackCap(); NumberAttacked++)
 	{
 		if (GetGamePtr()->GetEarthArmy()->pick(ToBeAttacked, "ES"))
 		{
+			if (!dont_Comma)
+			{
+				cout << ", ";
+			}
+			dont_Comma = false;
+			cout << ToBeAttacked->GetID();
 			ToBeAttacked->SetHealth(ToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((ToBeAttacked->GetHealth()) ^ (1 / 2))));
 			ToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 
@@ -35,4 +43,5 @@ void AS::Attack(UnitQueue& Temp_List)
 			}
 		}
 	}
+	cout << "]" << endl;
 }

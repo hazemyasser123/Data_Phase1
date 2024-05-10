@@ -121,7 +121,7 @@ bool DEQueue<T>::peekback(T& backEntry)
 {
 	if (this->isEmpty())
 		return false;
-	backEntry = this->backPtr->getitem();
+	backEntry = this->backPtr->getItem();
 }
 
 template <typename T>
