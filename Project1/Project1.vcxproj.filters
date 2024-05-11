@@ -75,8 +75,14 @@
     <ClCompile Include="UnitStack.cpp">
       <Filter>DS Headers + CPP</Filter>
     </ClCompile>
+    <ClCompile Include="HU.cpp">
+      <Filter>Game+randGen + Unit</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Node.h">
+      <Filter>EarthArmyHeaders</Filter>
+    </ClInclude>
     <ClInclude Include="Earth_Gunnery.h">
       <Filter>EarthArmyHeaders</Filter>
     </ClInclude>
@@ -152,8 +158,8 @@
     <ClInclude Include="UnitDEQueue.h">
       <Filter>DS Headers + CPP</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
-      <Filter>DS Headers + CPP</Filter>
+    <ClInclude Include="HU.h">
+      <Filter>Game+randGen + Unit</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

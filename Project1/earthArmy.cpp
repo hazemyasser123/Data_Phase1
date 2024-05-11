@@ -40,6 +40,21 @@ bool earthArmy::pick(Unit*& take, string x)
 		if (truth)
 			return true;
 	}
+	else if (x == "UML_S")
+	{
+		int y;
+		if (UML_Soldiers.dequeue(take, y) == true)
+		{
+			return true;
+		}
+	}
+	else if (x == "UML_T")
+	{
+		if (UML_Tanks.dequeue(take) == true)
+		{
+			return true;
+		}
+	}
 	else
 	{
 		if (x == "ES")
@@ -78,12 +93,27 @@ bool earthArmy::addUnit(Unit* armyunit)  // add unit to appropiate list
 		EG_List.enqueue((Earth_Gunnery*)armyunit, armyunit->GetHealth()+armyunit->GetPower()); //priority formula can be changed if needed later
 		return true;
 	}
+	else if (armyunit->GetType() == "HU")
+	{
+		HU_List.push((HU*)armyunit);
+	}
 	else return false;
 }
 
 int earthArmy::GetESCount()
 {
 	return ES_List.getcount();
+}
+
+void earthArmy::AddToUML_Soldiers(Unit* ArmyUnit)
+{
+
+	UML_Soldiers.enqueue(ArmyUnit, 100 - (ArmyUnit->GetHealth())); //Priority is 100 - HP so lowest has highest priority.
+}
+
+void earthArmy::AddToUML_Tanks(Unit* ArmyUnit)
+{
+	UML_Tanks.enqueue(ArmyUnit);
 }
 
 int earthArmy::getarmyCount()

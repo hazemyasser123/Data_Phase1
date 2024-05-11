@@ -53,7 +53,7 @@ void randGen::CreateUnits()
 				UnitToinsert = new ET(ID, GamePtr->getCurrentTime(), TankHP, TankPower, TankCapacity, GamePtr);
 				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 			}
-			else
+			else if (B <= (ETper + ESper + EGper))
 			{
 				// Generate Earth Gunnery
 
@@ -67,6 +67,21 @@ void randGen::CreateUnits()
 				int ID = Earth;
 				Earth++;
 				UnitToinsert = new Earth_Gunnery(ID, GamePtr->getCurrentTime(), GunneryHP, GunneryPower, GunneryCapacity, GamePtr);
+				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
+			}
+			else
+			{
+				//Generate Health Unit
+				//Generate its hp
+				int HealthUnitHP = HealthMinE + rand() % (HealthMaxE - HealthMinE + 1);
+				//Generate its power
+				int HealthUnitPower = PowerMinE + rand() % (PowerMaxE - PowerMinE + 1);
+				//Generate its capcity
+				int HealthUnitCapacity = AttackCapMinE + rand() % (AttackCapMaxE - AttackCapMinE + 1);
+				//Generate its ID
+				int ID = Earth;
+				Earth++;
+				UnitToinsert = new HU(ID, GamePtr->getCurrentTime(), HealthUnitHP, HealthUnitPower, HealthUnitCapacity, GamePtr);
 				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 			}
 		}
@@ -174,6 +189,11 @@ void randGen::setProb(int input)
 void randGen::setPowerMinE(int input)
 {
 	PowerMinE = input;
+}
+
+void randGen::setHUper(int input)
+{
+	HUper = input;
 }
 
 void randGen::setPowerMaxE(int input)

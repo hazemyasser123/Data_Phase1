@@ -2,6 +2,7 @@
 #include "alienArmy.h"
 #include "earthArmy.h"
 #include "randGen.h"
+
 #ifndef GAME
 #define GAME
 enum Result
