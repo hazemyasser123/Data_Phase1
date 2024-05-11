@@ -83,6 +83,11 @@ int alienArmy::getarmyCount()
 	return armyCount;
 }
 
+int alienArmy::GetASCount()
+{
+	return AS_List.getcount();
+}
+
 double alienArmy::getAvgTj()
 {
 	/*int total_Tj;
