@@ -12,11 +12,14 @@ private:
 	UnitQueue ES_List;
 	UnitStack ET_List;
 	UnitpriQueue EG_List;
+	int armyCount;
 
 public:
 	void Attack(UnitQueue& Temp_List);
 	void Print();
 	bool pick(Unit*& take, string x);
 	bool addUnit(Unit* armyunit);
+	int getarmyCount();
+	int GetESCount();
 };
 
