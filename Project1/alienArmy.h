@@ -33,6 +33,7 @@ public:
 	void pickDrones(Unit*& frntDrone, Unit*& backDrone);
 	bool addUnit(Unit* armyunit);
 	int getarmyCount();
+	int GetASCount();
 	double getAvgTj();
 };
 

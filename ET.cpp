@@ -3,7 +3,7 @@
 
 ET::ET() : Unit()
 {
-	SetType("ET");
+
 }
 
 ET::ET(int id, int tj, int h, int p, int ac, Game* Gp) : Unit(id, tj, h, p, ac, Gp)
@@ -69,7 +69,7 @@ void ET::DetermineAttackMode()
 	}
 	else //if the tank was already attacking soliders
 	{
-		/*Switch Mode only if the ES count reaches 80% of AS count*/
+		//Switch Mode only if the ES count reaches 80% of AS count
 		if (ESCount >= (0.8 * ASCount)) //Check if ES count reached80% of AS count
 		{
 			AttackMode = false;
