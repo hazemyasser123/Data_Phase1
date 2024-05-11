@@ -137,6 +137,7 @@
     <ClCompile Include="ES.cpp" />
     <ClCompile Include="ET.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="HU.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Unit.cpp" />
     <ClCompile Include="randGen.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="ES.h" />
     <ClInclude Include="ET.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="HU.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="priNode.h" />

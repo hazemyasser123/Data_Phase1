@@ -5,8 +5,10 @@
 #include <cstdlib> // For rand() function
 #include <ctime>   // For time() function
 #include <random>
+#include <Windows.h> // for the sound effects
+#include "MMSystem.h" // for the sound effects
 using namespace std;
-
+#pragma comment(lib,"winmm.lib") // for the sound effects
 Game::Game()
 {
 	g2 = new randGen(this);
@@ -37,6 +39,7 @@ void Game::ReadParameters()
 	int ASper = 0;
 	int AMper = 0;
 	int ADper = 0;
+	int HUper = 0;
 	int Prob = 0;
 	int PowerMinE = 0;
 	int PowerMaxE = 0;
@@ -55,7 +58,7 @@ void Game::ReadParameters()
 	{
 		infile >> N;
 		getline(infile, line);
-		infile >> ESper >> ETper >> EGper;
+		infile >> ESper >> ETper >> EGper >> HUper;
 		getline(infile, line);
 		infile >> ASper >> AMper >> ADper;
 		getline(infile, line);
@@ -80,6 +83,7 @@ void Game::ReadParameters()
 	g2->setESper(ESper);
 	g2->setETper(ETper);
 	g2->setEGper(EGper);
+	g2->setHUper(HUper);
 	g2-> setASper(ASper);
 	g2-> setAMper(AMper);
 	g2-> setADper(ADper);
@@ -229,6 +233,7 @@ void Game::Test()
 		}
 }
 
+
 void Game::Attack()
 {
 	cout << "==============  Units fighting at current step =======" << endl;
@@ -331,11 +336,17 @@ void Game::DisplayResult()
 {
 	switch (Whos_the_Winner)
 	{
-	case EARTHWON: cout << endl << "EARTH ARMY WON THE FIGHT" << endl;
+	case EARTHWON: 
+		cout << endl << "EARTH ARMY WON THE FIGHT" << endl;
+		PlaySound(TEXT("Win.wav"), NULL, SND_SYNC);
 		break;
-	case ALIENWON: cout << endl << "ALIEN ARMY WON THE FIGHT" << endl;
+	case ALIENWON: 
+		cout << endl << "ALIEN ARMY WON THE FIGHT" << endl;
+		PlaySound(TEXT("Lose.wav"), NULL, SND_SYNC);
 		break;
-	case DRAW: cout << endl << "NO ONE WON ... what a disappointment ..." << endl;
+	case DRAW: 
+		cout << endl << "NO ONE WON ... what a disappointment ..." << endl;
+		PlaySound(TEXT("Draw.wav"), NULL, SND_SYNC);
 		break;
 	default:
 		break;
