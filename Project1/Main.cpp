@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+
 	Game g2;
 	/*for (int i = 0; i < 50; i++)
 	{

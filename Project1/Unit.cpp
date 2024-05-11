@@ -33,6 +33,11 @@ void Unit::SetType(string t)
 	Type = t;
 }
 
+void Unit::SetTm(int time)
+{
+	Tm = time;
+}
+
 void Unit::SetTj(int time)
 {
 	Tj = time;
@@ -114,6 +119,11 @@ int Unit::GetTa() const
 int Unit::GetDf() const
 {
 	return Df;
+}
+
+int Unit::GetTm() const
+{
+	return Tm;
 }
 
 int Unit::GetDd() const

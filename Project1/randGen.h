@@ -22,6 +22,7 @@ protected:
 	int ASper;
 	int AMper;
 	int ADper;
+	int HUper;
 	int Prob;
 	int PowerMinE;
 	int PowerMaxE;
@@ -45,6 +46,7 @@ public:
 	void setASper(int input);
 	void setAMper(int input);
 	void setADper(int input);
+	void setHUper(int input);
 	void setProb(int input);
 	void setPowerMinE(int input);
 	void setPowerMaxE(int input);
