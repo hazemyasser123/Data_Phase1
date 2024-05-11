@@ -81,6 +81,11 @@ bool earthArmy::addUnit(Unit* armyunit)  // add unit to appropiate list
 	else return false;
 }
 
+int earthArmy::GetESCount()
+{
+	return ES_List.getcount();
+}
+
 int earthArmy::getarmyCount()
 {
 	return armyCount;

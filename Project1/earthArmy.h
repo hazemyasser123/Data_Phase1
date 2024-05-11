@@ -20,5 +20,6 @@ public:
 	bool pick(Unit*& take, string x);
 	bool addUnit(Unit* armyunit);
 	int getarmyCount();
+	int GetESCount();
 };
 
