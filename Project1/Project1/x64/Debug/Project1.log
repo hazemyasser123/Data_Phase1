@@ -1,13 +1,22 @@
-﻿  Alien_Monster.cpp
-  AS.cpp
-  earthArmy.cpp
-  Earth_Gunnery.cpp
+﻿  AS.cpp
+  Alien_Monster.cpp
+  Drones.cpp
   ES.cpp
+  ET.cpp
+  Earth_Gunnery.cpp
   Game.cpp
   Main.cpp
+  Unit.cpp
+  UnitAOP.cpp
+  UnitDEQueue.cpp
+  UnitQueue.cpp
+  UnitStack.cpp
+  UnitpriQueue.cpp
+  alienArmy.cpp
+  earthArmy.cpp
   randGen.cpp
 D:\DS project\Data_Phase1\Project1\randGen.cpp(8,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  UnitpriQueue.cpp
-  UnitStack.cpp
   Generating Code...
+D:\DS project\Data_Phase1\Project1\DEQueue.h(125,1): warning C4715: 'DEQueue<Unit *>::peekback': not all control paths return a value
+  LINK : D:\DS project\Data_Phase1\Project1\x64\Debug\Project1.exe not found or not built by the last incremental link; performing full link
   Project1.vcxproj -> D:\DS project\Data_Phase1\Project1\x64\Debug\Project1.exe
