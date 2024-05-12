@@ -54,9 +54,6 @@
     <ClCompile Include="ET.cpp">
       <Filter>CPP of the armies</Filter>
     </ClCompile>
-    <ClCompile Include="randGen.cpp">
-      <Filter>Game+randGen + Unit</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Main + Input</Filter>
     </ClCompile>
@@ -75,8 +72,11 @@
     <ClCompile Include="UnitStack.cpp">
       <Filter>DS Headers + CPP</Filter>
     </ClCompile>
+    <ClCompile Include="randGen.cpp">
+      <Filter>EarthArmyHeaders</Filter>
+    </ClCompile>
     <ClCompile Include="HU.cpp">
-      <Filter>Game+randGen + Unit</Filter>
+      <Filter>CPP of the armies</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

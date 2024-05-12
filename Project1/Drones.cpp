@@ -57,6 +57,15 @@ void Drone::Attack(UnitQueue& Temp_List)
 				{
 
 					Temp_List.enqueue(UnitToBeAttacked);
+					if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth()) //If the unit needs healing
+					{
+						UnitToBeAttacked->SetTm(GetGamePtr()->getCurrentTime());
+						GetGamePtr()->GetEarthArmy()->AddToUML_Tanks(UnitToBeAttacked);
+					}
+					else
+					{
+						Temp_List.enqueue(UnitToBeAttacked);
+					}
 				}
 				else
 				{
@@ -106,6 +115,15 @@ void Drone::Attack(UnitQueue& Temp_List)
 				if (UnitToBeAttacked->IsAlive() == true)
 				{
 					Temp_List.enqueue(UnitToBeAttacked);
+					if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth()) //If the unit needs healing
+					{
+						UnitToBeAttacked->SetTm(GetGamePtr()->getCurrentTime());
+						GetGamePtr()->GetEarthArmy()->AddToUML_Tanks(UnitToBeAttacked);
+					}
+					else
+					{
+						Temp_List.enqueue(UnitToBeAttacked);
+					}
 				}
 				else
 				{
