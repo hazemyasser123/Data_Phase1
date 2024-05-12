@@ -175,6 +175,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 				cout << ", ";
 			}
 			dont_Comma = false;
+			cout << UnitToBeAttacked->GetID();
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -206,6 +207,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 				cout << ", ";
 			}
 			dont_Comma = false;
+			cout << UnitToBeAttacked->GetID();
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -225,6 +227,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 				cout << ", ";
 			}
 			dont_Comma = false;
+			cout << UnitToBeAttacked2->GetID();
 			UnitToBeAttacked2->SetHealth(UnitToBeAttacked2->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked2->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked2->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -248,6 +251,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 				cout << ", ";
 			}
 			dont_Comma = false;
+			cout << UnitToBeAttacked->GetID();
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;

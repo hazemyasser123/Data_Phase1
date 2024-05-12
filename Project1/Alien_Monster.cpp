@@ -160,6 +160,7 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 				cout << ", ";
 			}
 			dont_Comma = false;
+			cout << UnitToBeAttacked->GetID();
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -195,6 +196,7 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 				cout << ", ";
 			}
 			dont_Comma = false;
+			cout << UnitToBeAttacked->GetID();
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -227,6 +229,7 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 				cout << ", ";
 			}
 			dont_Comma = false;
+			cout << UnitToBeAttacked->GetID();
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
