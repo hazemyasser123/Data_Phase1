@@ -160,17 +160,22 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 	//cout << "]" << endl;
 
 	int NumberUnitsToBeAttacked;
+	bool dont_Comma = true;
 	Unit* UnitToBeAttacked;
 	Unit* UnitToBeAttacked2; // This is made for the case of attacking two drones 
 	NumberUnitsToBeAttacked = GetAttackCap();
-	UnitQueue IDSNeeded;
-	cout << "EG " << GetID() << " shot ";
+	cout << "EG " << GetID() << " shot [";
 	while (NumberUnitsToBeAttacked > GetAttackCap() / 2)
 	{
 		UnitToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAM();
 		if (UnitToBeAttacked != nullptr)
 		{
-			IDSNeeded.enqueue(UnitToBeAttacked);
+			if (!dont_Comma)
+			{
+				cout << ", ";
+			}
+			dont_Comma = false;
+			cout << UnitToBeAttacked->GetID();
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -197,7 +202,12 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 		}
 		if (UnitToBeAttacked != nullptr)
 		{
-			IDSNeeded.enqueue(UnitToBeAttacked);
+			if (!dont_Comma)
+			{
+				cout << ", ";
+			}
+			dont_Comma = false;
+			cout << UnitToBeAttacked->GetID();
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -212,7 +222,12 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 		}
 		if (UnitToBeAttacked2 != nullptr)
 		{
-			IDSNeeded.enqueue(UnitToBeAttacked);
+			if (!dont_Comma)
+			{
+				cout << ", ";
+			}
+			dont_Comma = false;
+			cout << UnitToBeAttacked2->GetID();
 			UnitToBeAttacked2->SetHealth(UnitToBeAttacked2->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked2->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked2->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -231,7 +246,12 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 		UnitToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAM();
 		if (UnitToBeAttacked != nullptr)
 		{
-			IDSNeeded.enqueue(UnitToBeAttacked);
+			if (!dont_Comma)
+			{
+				cout << ", ";
+			}
+			dont_Comma = false;
+			cout << UnitToBeAttacked->GetID();
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -249,5 +269,5 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 			break;
 		}
 	}
-	IDSNeeded.PrintQueue();
+	cout << "]" << endl;
 }

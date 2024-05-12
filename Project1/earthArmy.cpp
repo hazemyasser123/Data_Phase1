@@ -21,7 +21,15 @@ void earthArmy::Attack(UnitQueue& Temp_List)
 	{
 		EGthatWillAttack->Attack(Temp_List);
 	}
-	armyCount = ES_List.getcount() + (ET_List.gettop() + 1) + EG_List.getcount();
+	
+	Unit* HUthatWillHeal;
+	if (HU_List.pop(HUthatWillHeal))
+	{
+		HUthatWillHeal->Attack(Temp_List);
+	}
+	// pop 3ashan neshlo mel army howa byro7 el killed list fel attack bta3to
+
+	armyCount = ES_List.getcount() + (ET_List.gettop() + 1) + EG_List.getcount() + (HU_List.gettop() + 1);
 }
 
 void earthArmy::Print()
