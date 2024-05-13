@@ -170,16 +170,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 		UnitToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAM();
 		if (UnitToBeAttacked != nullptr)
 		{
-<<<<<<< HEAD
 			IDSNeeded.enqueue(UnitToBeAttacked);
-=======
-			if (!dont_Comma)
-			{
-				cout << ", ";
-			}
-			dont_Comma = false;
-			cout << UnitToBeAttacked->GetID();
->>>>>>> 03547b1e026548fa59506d148de9857b80581f14
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -206,16 +197,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 		}
 		if (UnitToBeAttacked != nullptr)
 		{
-<<<<<<< HEAD
 			IDSNeeded.enqueue(UnitToBeAttacked);
-=======
-			if (!dont_Comma)
-			{
-				cout << ", ";
-			}
-			dont_Comma = false;
-			cout << UnitToBeAttacked->GetID();
->>>>>>> 03547b1e026548fa59506d148de9857b80581f14
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -230,16 +212,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 		}
 		if (UnitToBeAttacked2 != nullptr)
 		{
-<<<<<<< HEAD
 			IDSNeeded.enqueue(UnitToBeAttacked);
-=======
-			if (!dont_Comma)
-			{
-				cout << ", ";
-			}
-			dont_Comma = false;
-			cout << UnitToBeAttacked2->GetID();
->>>>>>> 03547b1e026548fa59506d148de9857b80581f14
 			UnitToBeAttacked2->SetHealth(UnitToBeAttacked2->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked2->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked2->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
@@ -258,16 +231,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 		UnitToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAM();
 		if (UnitToBeAttacked != nullptr)
 		{
-<<<<<<< HEAD
 			IDSNeeded.enqueue(UnitToBeAttacked);
-=======
-			if (!dont_Comma)
-			{
-				cout << ", ";
-			}
-			dont_Comma = false;
-			cout << UnitToBeAttacked->GetID();
->>>>>>> 03547b1e026548fa59506d148de9857b80581f14
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;

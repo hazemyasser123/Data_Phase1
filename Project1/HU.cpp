@@ -82,13 +82,9 @@ void HU::Attack(UnitQueue& Temp_List)
 		}
 	}
 	GetGamePtr()->InsertInKilled_List(this);
-<<<<<<< HEAD
 	IDSNeeded.PrintQueue();
-=======
 	// 3amalt fel army attack pop 3ashan nb2a neshelo mel army keda enta bt7ot fel killed list sa7 bas mesh btshelo mel army
 	// sincerly omar to haitham
-
->>>>>>> 03547b1e026548fa59506d148de9857b80581f14
 }
 
 
