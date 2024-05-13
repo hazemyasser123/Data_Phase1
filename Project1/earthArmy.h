@@ -20,6 +20,7 @@ private:
 public:
 	void Attack(UnitQueue& Temp_List);
 	void Print();
+	void PrintHealinglist();
 	bool pick(Unit*& take, string x);
 	bool addUnit(Unit* armyunit);
 	int getarmyCount();

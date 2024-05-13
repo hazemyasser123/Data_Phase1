@@ -104,7 +104,6 @@ void Game::ReadParameters()
 
 void Game::print()
 {
-
 	g2->CreateUnits();
 	cout << "Current Timestep " << CurrentTime << endl;
 	EarthArmy.Print();

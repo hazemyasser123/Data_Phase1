@@ -14,11 +14,14 @@ ET::ET(int id, int tj, int h, int p, int ac, Game* Gp) : Unit(id, tj, h, p, ac, 
 void ET::Attack(UnitQueue& Temp_List)
 {
 	Unit* UnitToBeAttacked;
+	UnitQueue IDSNeeded;
+	cout << "ET " << GetID() << " shot ";
 	for (int i = 0; i < GetAttackCap(); i++) //This for loop attacks alien monsters
 	{
 		UnitToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAM();
 		if (UnitToBeAttacked != nullptr)
 		{
+			IDSNeeded.enqueue(UnitToBeAttacked);
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			if (UnitToBeAttacked->IsAlive() == true)
@@ -40,6 +43,7 @@ void ET::Attack(UnitQueue& Temp_List)
 			UnitToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAS();
 			if (UnitToBeAttacked != nullptr)
 			{
+				IDSNeeded.enqueue(UnitToBeAttacked);
 				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
@@ -53,6 +57,7 @@ void ET::Attack(UnitQueue& Temp_List)
 			}
 		}
 	}
+	IDSNeeded.PrintQueue();
 }
 
 void ET::DetermineAttackMode()

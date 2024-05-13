@@ -30,6 +30,14 @@ void earthArmy::Print()
 	cout << ES_List.getcount() << " ES "; ES_List.PrintQueue();            // eg: 55 ES [1, 2, 3, 4, ...]
 	cout << ET_List.gettop() + 1 << " ET "; ET_List.PrintStack();
 	cout << EG_List.getcount() << " EG "; EG_List.PrintPriQueue();
+	cout << HU_List.gettop() + 1 << " HU"; HU_List.PrintStack();
+}
+
+void earthArmy::PrintHealinglist()
+{
+	cout << "==============  Healing List Units ==================" << endl;
+	cout << UML_Soldiers.getcount() << " UML Soliders "; UML_Soldiers.PrintPriQueue();
+	cout << UML_Tanks.getcount() << " UML Tanks "; UML_Tanks.PrintQueue();
 }
 
 bool earthArmy::pick(Unit*& take, string x)
