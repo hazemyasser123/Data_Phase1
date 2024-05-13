@@ -14,6 +14,8 @@ HU::HU(int id, int tj, int h, int p, int ac, Game* Gp) : Unit(id, tj, h, p, ac, 
 void HU::Attack(UnitQueue& Temp_List)
 {
 	Unit* UnitToBeHealed;
+	UnitQueue IDSNeeded;
+	cout << "HU " << GetID() << " Healed ";
 	for (int i = 0; i < GetAttackCap(); i++) //This for loop heals earth soldiers
 	{
 		if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeHealed, "UML_S") == true)
@@ -30,6 +32,7 @@ void HU::Attack(UnitQueue& Temp_List)
 				UnitToBeHealed->SetHealth((UnitToBeHealed->GetHealth()) + (GetPower() * GetHealth() / 100) / ((UnitToBeHealed->GetHealth()) ^ (1 / 2)));
 				UnitToBeHealed->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				int OriginalHP = UnitToBeHealed->GetOrignalHealth();
+				IDSNeeded.enqueue(UnitToBeHealed);
 				if (UnitToBeHealed->GetHealth() >= 0.2 * OriginalHP) // if HP is now greater than 20% of its original
 				{
 					//make it join battle (not sure how that is done)
@@ -79,9 +82,9 @@ void HU::Attack(UnitQueue& Temp_List)
 		}
 	}
 	GetGamePtr()->InsertInKilled_List(this);
+	IDSNeeded.PrintQueue();
 	// 3amalt fel army attack pop 3ashan nb2a neshelo mel army keda enta bt7ot fel killed list sa7 bas mesh btshelo mel army
 	// sincerly omar to haitham
-
 }
 
 
