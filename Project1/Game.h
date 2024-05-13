@@ -20,6 +20,7 @@ private:
 	UnitQueue KilledList;
 	int CurrentTime;
 	bool We_Are_Not_Done_Yet;
+	bool Interactive_true_silent_false;
 	Result Whos_the_Winner;	//Will take earth army as the refernce of being won or lost in the outfile //From Omar
 public:
 	Game();
@@ -36,6 +37,10 @@ public:
 	void WhoWon();
 	void generateOutputFile();
 	void DisplayResult();
+	void SIMULAAAATIOOON();
+	void SILENCE();
+	void Run();
+	void ChooseMode();
 };
 
 #endif
