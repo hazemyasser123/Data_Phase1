@@ -158,7 +158,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 	//	}
 	//}
 	//cout << "]" << endl;
-
+	// if(getmode == true)
 	int NumberUnitsToBeAttacked;
 	bool dont_Comma = true;
 	Unit* UnitToBeAttacked;

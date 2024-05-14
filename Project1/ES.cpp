@@ -8,6 +8,8 @@ ES::ES() : Unit()
 
 ES::ES(int id, int tj, int h, int p, int ac, Game* Gp): Unit(id, tj, h, p, ac, Gp)
 {
+	IsImmune = false;
+	IsInfected = false;
 	SetType("ES");
 }
 
@@ -40,5 +42,25 @@ void ES::Attack(UnitQueue& Temp_List)
 		}
 	}
 	cout << "]" << endl;
+}
+
+void ES::SetIsInfected(bool isinf)
+{
+	IsInfected = isinf;
+}
+
+void ES::SetIsImmune(bool isimmune)
+{
+	IsImmune = isimmune;
+}
+
+bool ES::GetIsInfected()
+{
+	return IsInfected;
+}
+
+bool ES::GetImmunity()
+{
+	return IsImmune;
 }
 

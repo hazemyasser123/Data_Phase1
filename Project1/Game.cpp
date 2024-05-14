@@ -11,6 +11,8 @@ using namespace std;
 #pragma comment(lib,"winmm.lib") // for the sound effects
 Game::Game()
 {
+	Interactive_true_silent_false = true; // interactive by default
+	InfectionPer = 0;
 	g2 = new randGen(this);
 	ReadParameters();
 	CurrentTime = 1;
@@ -32,7 +34,7 @@ void Game::ReadParameters()
 	ifstream infile;
 	string line;
 	infile.open("Input.txt");
-	int N;
+	int N = 0;
 	int ESper = 0;
 	int ETper = 0;
 	int EGper = 0;
@@ -53,14 +55,13 @@ void Game::ReadParameters()
 	int HealthMaxA = 0;
 	int AttackCapMinA = 0;
 	int AttackCapMaxA = 0;
-
 	if (infile.is_open() == true)
 	{
 		infile >> N;
 		getline(infile, line);
 		infile >> ESper >> ETper >> EGper >> HUper;
 		getline(infile, line);
-		infile >> ASper >> AMper >> ADper;
+		infile >> ASper >> AMper >> ADper >> InfectionPer;
 		getline(infile, line);
 		infile >> Prob;
 		getline(infile, line);
@@ -104,8 +105,6 @@ void Game::ReadParameters()
 
 void Game::print()
 {
-
-	g2->CreateUnits();
 	cout << "Current Timestep " << CurrentTime << endl;
 	EarthArmy.Print();
 	cout << endl;
@@ -236,24 +235,46 @@ void Game::Test()
 
 void Game::Attack()
 {
-	cout << "==============  Units fighting at current step =======" << endl;
-	UnitQueue TempList;
-	EarthArmy.Attack(TempList);
-	Unit* x;
-	while (TempList.dequeue(x))
+	if (Interactive_true_silent_false == true)
 	{
-		AlienArmy.addUnit(x);
+		cout << "==============  Units fighting at current step =======" << endl;
+		UnitQueue TempList;
+		EarthArmy.Attack(TempList);
+		Unit* x;
+		while (TempList.dequeue(x))
+		{
+			AlienArmy.addUnit(x);
+		}
+		AlienArmy.Attack(TempList);
+		while (TempList.dequeue(x))
+		{
+			EarthArmy.addUnit(x);
+		}
+		cout << "==============  Killed/Destructed Units ==============" << endl;
+		cout << KilledList.getcount() << " units ";
+		KilledList.PrintQueue();
+		cout << endl << endl;
 	}
-	AlienArmy.Attack(TempList);
-	while (TempList.dequeue(x))
+	else
 	{
-		EarthArmy.addUnit(x);
+
+		UnitQueue TempList;
+		EarthArmy.Attack(TempList);
+		Unit* x;
+		while (TempList.dequeue(x))
+		{
+			AlienArmy.addUnit(x);
+		}
+		AlienArmy.Attack(TempList);
+		while (TempList.dequeue(x))
+		{
+			EarthArmy.addUnit(x);
+		}
 	}
-	cout << "==============  Killed/Destructed Units ==============" << endl;
-	cout << KilledList.getcount() << " units ";
-	KilledList.PrintQueue();
-	cout << endl << endl;
+
+
 	CurrentTime++;
+
 }
 
 bool Game::AreWeNotDoneYet()
@@ -320,7 +341,7 @@ void Game::WhoWon()
 			AlienArmy.addUnit(Drone2);
 		}
 	}
-	if (CurrentTime == 301)
+	if (CurrentTime == 500)
 	{
 		We_Are_Not_Done_Yet = false;
 		Whos_the_Winner = DRAW;
@@ -329,7 +350,29 @@ void Game::WhoWon()
 
 void Game::generateOutputFile()
 {
-
+	ofstream outputFile;
+	outputFile.open("output.txt");
+	if (!outputFile.is_open())
+	{
+		cerr << "Error opening file." << endl;
+	}
+	Unit* unitptr;
+	while (KilledList.dequeue(unitptr))
+	{
+		outputFile << "Td = " << unitptr->GetTd() << "\t\t";
+		if (unitptr->GetID() >= 2000)
+		{
+			outputFile << "ID = " << unitptr->GetID() << "\t";
+		}
+		else
+		{
+			outputFile << "ID = " << unitptr->GetID() << "\t\t";
+		}
+		outputFile << "Tj = " << unitptr->GetTj() << "\t\t";
+		outputFile << "Df = " << unitptr->GetDf() << "\t\t";
+		outputFile << "Dd = " << unitptr->GetDd() << "\t\t";
+		outputFile << "Db = " << unitptr->GetDb() << "\n";
+	}
 }
 
 void Game::DisplayResult()
@@ -351,6 +394,82 @@ void Game::DisplayResult()
 	default:
 		break;
 	}
+}
+
+int Game::GetInfectionPer()
+{
+	return InfectionPer;
+}
+
+void Game::ChooseMode()
+{
+	cout << "Choose I or i for Interaactive mode and S or s for Silent mode" << endl;
+	char x;
+	cin >> x;
+	int z = 0;
+	while ((x != 'I') && (x != 'i') && (x != 'S') && (x != 's'))
+	{
+		cout << "Pleasem, choose I or i for Interaactive mode and S or s for Silent mode" << endl;
+	}
+	if (x == 'I' || x == 'i')
+	{
+		Interactive_true_silent_false = true;
+	}
+	else
+	{
+		Interactive_true_silent_false = false;
+	}
+}
+
+void Game::Simulation()
+{
+	ChooseMode();
+
+	if (Interactive_true_silent_false == true)
+	{
+		for (int i = 0; i < 39; i++)
+		{
+			g2->CreateUnits();
+			print();
+			Attack();
+			system("pause");
+			cout << endl;
+		}
+
+		while (AreWeNotDoneYet())
+		{
+			g2->CreateUnits();
+			print();
+			Attack();
+			WhoWon();
+			system("pause");
+			cout << endl;
+		}
+		DisplayResult();
+	}
+	else
+	{
+		cout << "simulation starts" << endl;
+		for (int i = 0; i < 39; i++)
+		{
+			g2->CreateUnits();
+			Attack();
+		}
+
+		while (AreWeNotDoneYet())
+		{
+			g2->CreateUnits();
+			Attack();
+			WhoWon();
+		}
+	}
+	cout << "simulation end" << endl;
+	generateOutputFile();
+}
+
+bool Game::Get_Interactive_true_silent_false()
+{
+	return Interactive_true_silent_false;
 }
 
 int Game::getCurrentTime()
