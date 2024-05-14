@@ -18,7 +18,6 @@ void ES::Attack(UnitQueue& Temp_List)
 	Unit* ToBeAttacked = nullptr;
 	bool dont_Comma = true;
 	UnitQueue IDSNeeded;
-	cout << "ES " << GetID() << " shot ";
 	for (int NumberAttacked = 0; NumberAttacked < GetAttackCap(); NumberAttacked++)
 	{
 		ToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAS();
@@ -38,7 +37,11 @@ void ES::Attack(UnitQueue& Temp_List)
 			}
 		}
 	}
-	IDSNeeded.PrintQueue();
+	if (GetGamePtr()->Get_Interactive_true_silent_false())
+	{
+		cout << "ES " << GetID() << " shot ";
+		IDSNeeded.PrintQueue();
+	}
 }
 
 void ES::SetIsInfected(bool isinf)

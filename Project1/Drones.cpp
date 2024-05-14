@@ -15,7 +15,6 @@ void Drone::Attack(UnitQueue& Temp_List)
 	int NumberUnitsToBeAttacked;
 	Unit* UnitToBeAttacked = nullptr;
 	UnitQueue IDSNeeded;
-	cout << "AD " << GetID() << " shot ";
 	if (GetAttackCap() % 2 == 0)
 	{
 		NumberUnitsToBeAttacked = GetAttackCap() / 2;
@@ -112,5 +111,10 @@ void Drone::Attack(UnitQueue& Temp_List)
 			}
 		}
 	}
-	IDSNeeded.PrintQueue();
+	if (GetGamePtr()->Get_Interactive_true_silent_false())
+	{
+		cout << "AD " << GetID() << " shot ";
+		IDSNeeded.PrintQueue();
+	}
+	
 }
