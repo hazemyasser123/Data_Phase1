@@ -15,7 +15,6 @@ void HU::Attack(UnitQueue& Temp_List)
 {
 	Unit* UnitToBeHealed;
 	UnitQueue IDSNeeded;
-	cout << "HU " << GetID() << " Healed ";
 	for (int i = 0; i < GetAttackCap(); i++) //This for loop heals earth soldiers
 	{
 		if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeHealed, "UML_S") == true)
@@ -82,9 +81,11 @@ void HU::Attack(UnitQueue& Temp_List)
 		}
 	}
 	GetGamePtr()->InsertInKilled_List(this);
-	IDSNeeded.PrintQueue();
-	// 3amalt fel army attack pop 3ashan nb2a neshelo mel army keda enta bt7ot fel killed list sa7 bas mesh btshelo mel army
-	// sincerly omar to haitham
+	if (GetGamePtr()->Get_Interactive_true_silent_false())
+	{
+		cout << "HU " << GetID() << " Healed ";
+		IDSNeeded.PrintQueue();
+	}
 }
 
 
