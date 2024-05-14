@@ -63,3 +63,15 @@ bool ES::GetImmunity()
 	return IsImmune;
 }
 
+void ES::Print() const
+{
+	if (IsInfected == true)
+	{
+		cout << "*" << GetID() << "*";
+	}
+	else
+	{
+		cout << GetID();
+	}
+}
+
