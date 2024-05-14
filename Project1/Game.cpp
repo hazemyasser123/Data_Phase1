@@ -104,7 +104,6 @@ void Game::ReadParameters()
 
 void Game::print()
 {
-
 	g2->CreateUnits();
 	cout << "Current Timestep " << CurrentTime << endl;
 	EarthArmy.Print();
@@ -350,6 +349,80 @@ void Game::DisplayResult()
 		break;
 	default:
 		break;
+	}
+}
+
+void Game::SIMULAAAATIOOON()
+{
+	for (int i = 0; i < 39; i++)
+	{
+		print();
+		Attack();
+		/*system("pause");*/
+		cout << endl;
+	}
+
+	while (AreWeNotDoneYet())
+	{
+		print();
+		Attack();
+		WhoWon();
+		/*system("pause");*/
+		cout << endl;
+	}
+	DisplayResult();
+	generateOutputFile();
+}
+
+void Game::SILENCE()
+{
+	cout << "Silent Mode" << endl << "Simulation Starts...";
+	for (int i = 0; i < 39; i++)
+	{
+		g2->CreateUnits();
+		Attack();
+	}
+
+	while (AreWeNotDoneYet())
+	{
+		g2->CreateUnits();
+		Attack();
+		WhoWon();
+	}
+	generateOutputFile();
+	cout << "Simulation ends, Output file is created";
+}
+
+void Game::Run()
+{
+	ChooseMode();
+	if (Interactive_true_silent_false)
+	{
+		SIMULAAAATIOOON();
+	}
+	else
+	{
+		SILENCE();
+	}
+}
+
+void Game::ChooseMode()
+{
+	cout << "Choose I or i for Interaactive mode and S or s for Silent mode" << endl;
+	char x;
+	cin >> x;
+	int z = 0;
+	while ((x != 'I') && (x != 'i') && (x != 'S') && (x != 's'))
+	{
+		cout << "Pleasem, choose I or i for Interaactive mode and S or s for Silent mode" << endl;
+	}
+	if (x == 'I' || x == 'i')
+	{
+		Interactive_true_silent_false = true;
+	}
+	else
+	{
+		Interactive_true_silent_false = false;
 	}
 }
 
