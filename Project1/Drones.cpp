@@ -44,8 +44,6 @@ void Drone::Attack(UnitQueue& Temp_List)
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
 				{
-
-					Temp_List.enqueue(UnitToBeAttacked);
 					if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth()) //If the unit needs healing
 					{
 						UnitToBeAttacked->SetTm(GetGamePtr()->getCurrentTime());
@@ -93,7 +91,6 @@ void Drone::Attack(UnitQueue& Temp_List)
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
 				{
-					Temp_List.enqueue(UnitToBeAttacked);
 					if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth()) //If the unit needs healing
 					{
 						UnitToBeAttacked->SetTm(GetGamePtr()->getCurrentTime());
