@@ -127,7 +127,6 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 	int NumberUnitsToBeAttacked;
 	Unit* UnitToBeAttacked;
 	UnitQueue IDSNeeded;
-	
 	NumberUnitsToBeAttacked = GetAttackCap();
 	while (NumberUnitsToBeAttacked > GetAttackCap() / 2)
 	{
@@ -137,6 +136,7 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
+
 			if (UnitToBeAttacked->IsAlive() == true)
 			{
 				if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth()) //If the unit needs healing
@@ -146,12 +146,38 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 				}
 				else
 				{
+					
 					Temp_List.enqueue(UnitToBeAttacked);
 				}
 			}
 			else
 			{
-				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				ES* UnitToBeAttackedES = (ES*)UnitToBeAttacked;
+				if (UnitToBeAttackedES->GetImmunity() == false)
+				{
+					if (UnitToBeAttackedES->GetIsInfected() == false)
+					{
+						if ((rand() % 100 + 1) <= GetGamePtr()->GetInfectionPer())
+						{
+							UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetOrignalHealth());
+							UnitToBeAttackedES->SetIsInfected(true);
+							Temp_List.enqueue(UnitToBeAttacked);
+						}
+						else
+						{
+							GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+						}
+					}
+					else
+					{
+						GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+					}
+				}
+				else
+				{
+					GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				}
+				
 			}
 		}
 		else
@@ -210,7 +236,31 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 			}
 			else
 			{
-				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				ES* UnitToBeAttackedES = (ES*)UnitToBeAttacked;
+				if (UnitToBeAttackedES->GetImmunity() == false)
+				{
+					if (UnitToBeAttackedES->GetIsInfected() == false)
+					{
+						if ((rand() % 100 + 1) <= GetGamePtr()->GetInfectionPer())
+						{
+							UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetOrignalHealth());
+							UnitToBeAttackedES->SetIsInfected(true);
+							Temp_List.enqueue(UnitToBeAttacked);
+						}
+						else
+						{
+							GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+						}
+					}
+					else
+					{
+						GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+					}
+				}
+				else
+				{
+					GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				}
 			}
 		}
 		else

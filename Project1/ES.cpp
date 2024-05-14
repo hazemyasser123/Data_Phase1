@@ -25,7 +25,6 @@ void ES::Attack(UnitQueue& Temp_List)
 		if (ToBeAttacked != nullptr)
 		{
 			IDSNeeded.enqueue(ToBeAttacked);
-			cout << ToBeAttacked->GetID();
 			ToBeAttacked->SetHealth(ToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((ToBeAttacked->GetHealth()) ^ (1 / 2))));
 			ToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			if (ToBeAttacked->IsAlive() == true)
@@ -59,5 +58,17 @@ bool ES::GetIsInfected()
 bool ES::GetImmunity()
 {
 	return IsImmune;
+}
+
+void ES::Print() const
+{
+	if (IsInfected == true)
+	{
+		cout << "*" << GetID() << "*";
+	}
+	else
+	{
+		cout << GetID();
+	}
 }
 

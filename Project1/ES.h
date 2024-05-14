@@ -23,4 +23,6 @@ public:
 	bool GetIsInfected();
 
 	bool GetImmunity();
+
+	void Print() const;
 };

@@ -88,7 +88,7 @@ public:
 
 	bool IsAlive();
 
-	void Print() const;
+	virtual void Print() const;
 
 	void SetHealth(int h);
 
