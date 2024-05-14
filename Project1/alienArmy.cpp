@@ -88,15 +88,40 @@ int alienArmy::GetASCount()
 	return AS_List.getcount();
 }
 
-double alienArmy::getAvgTj()
+void alienArmy::calc_created(Unit* armyunit)
 {
-	/*int total_Tj;
-	Node<Unit*>* x = new Node<Unit*>();
-	Unit* y;
-	AS_List.peek(y);
-	AS_List.frontptr
-	*/
-	return 0.0;
+	if (armyunit != nullptr)
+	{
+		if (armyunit->GetType() == "AS")
+		{
+			AS_created = AS_created + 1;
+		}
+		else if (armyunit->GetType() == "Alien_Monster")
+		{
+			AM_created = AM_created + 1;
+		}
+		else if (armyunit->GetType() == "Drone")
+		{
+			AD_created = AD_created + 1;
+		}
+	}
+	return;
 }
+
+float alienArmy::getAScreated()
+{
+	return AS_created;
+}
+
+float alienArmy::getAMcreated()
+{
+	return AM_created;
+}
+
+float alienArmy::getADcreated()
+{
+	return AD_created;
+}
+
 
 

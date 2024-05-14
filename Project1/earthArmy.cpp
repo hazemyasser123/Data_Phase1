@@ -121,6 +121,41 @@ int earthArmy::GetESCount()
 	return ES_List.getcount();
 }
 
+void earthArmy::calc_created(Unit* armyunit)
+{
+	//if (armyunit != nullptr)
+	{
+		if (armyunit->GetType() == "ES")
+		{
+			ES_created = ES_created + 1;
+		}
+		else if (armyunit->GetType() == "ET")
+		{
+			ET_created = ET_created + 1;
+		}
+		else if (armyunit->GetType() == "Earth_Gunnery")
+		{
+			EG_created = EG_created + 1;
+		}
+	}
+	return;
+}
+
+float earthArmy::getEScreated()
+{
+	return ES_created;
+}
+
+float earthArmy::getETcreated()
+{
+	return ET_created;
+}
+
+float earthArmy::getEGcreated()
+{
+	return EG_created;
+}
+
 void earthArmy::AddToUML_Soldiers(Unit* ArmyUnit)
 {
 
