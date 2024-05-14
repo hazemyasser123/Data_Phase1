@@ -223,9 +223,6 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 		cout << "AM " << GetID() << " shot ";
 		IDSNeeded.PrintQueue();
 	}
-
-	
-
 }
 
 

@@ -15,7 +15,6 @@ void AS::Attack(UnitQueue& Temp_List)
 {
 	Unit* ToBeAttacked = nullptr;
 	UnitQueue IDSNeeded;
-	cout << "AS " << GetID() << " shot ";
 	for (int NumberAttacked = 0; NumberAttacked < GetAttackCap(); NumberAttacked++)
 	{
 		if (GetGamePtr()->GetEarthArmy()->pick(ToBeAttacked, "ES"))
@@ -38,5 +37,9 @@ void AS::Attack(UnitQueue& Temp_List)
 			}
 		}
 	}
-	IDSNeeded.PrintQueue();
+	if (GetGamePtr()->Get_Interactive_true_silent_false())
+	{
+		cout << "AS " << GetID() << " shot ";
+		IDSNeeded.PrintQueue();
+	}
 }

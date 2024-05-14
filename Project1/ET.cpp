@@ -15,7 +15,6 @@ void ET::Attack(UnitQueue& Temp_List)
 {
 	Unit* UnitToBeAttacked;
 	UnitQueue IDSNeeded;
-	cout << "ET " << GetID() << " shot ";
 	for (int i = 0; i < GetAttackCap(); i++) //This for loop attacks alien monsters
 	{
 		UnitToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAM();
@@ -57,7 +56,11 @@ void ET::Attack(UnitQueue& Temp_List)
 			}
 		}
 	}
-	IDSNeeded.PrintQueue();
+	if (GetGamePtr()->Get_Interactive_true_silent_false())
+	{
+		cout << "ET " << GetID() << " shot ";
+		IDSNeeded.PrintQueue();
+	}
 }
 
 void ET::DetermineAttackMode()
