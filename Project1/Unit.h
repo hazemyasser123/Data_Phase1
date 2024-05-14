@@ -13,7 +13,7 @@ private:
 	int Tj;     // Shows the timeskip when this unit joined the battle (Join Time)
 	int Td;		// (Time dismissed or time of death)
 	int Ta;		// (Time of the unit got the first shot by enemy)
-	int Tm; // Time the unit joined the UML
+	int Tm;		// Time the unit joined the UML
 	bool wasShot;	// if this is true the Ta won't be changed so don't screw up the inputing the first Ta & Df
 	//and this won't be changed to flase again besides I made Death so that no values of D won't change only T
 	int Dd;		// (Time of the unit killed compared to Ta)
