@@ -21,7 +21,7 @@ void ET::Attack(UnitQueue& Temp_List)
 		if (UnitToBeAttacked != nullptr)
 		{
 			IDSNeeded.enqueue(UnitToBeAttacked);
-			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
+			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeAttacked->GetHealth()))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			if (UnitToBeAttacked->IsAlive() == true)
 			{
@@ -30,6 +30,7 @@ void ET::Attack(UnitQueue& Temp_List)
 			else
 			{
 				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			}
 		}
 	}
@@ -43,7 +44,7 @@ void ET::Attack(UnitQueue& Temp_List)
 			if (UnitToBeAttacked != nullptr)
 			{
 				IDSNeeded.enqueue(UnitToBeAttacked);
-				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
+				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeAttacked->GetHealth()))));
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
 				{
@@ -52,6 +53,7 @@ void ET::Attack(UnitQueue& Temp_List)
 				else
 				{
 					GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+					UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				}
 			}
 		}

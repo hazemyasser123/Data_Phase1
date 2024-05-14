@@ -20,7 +20,7 @@ void AS::Attack(UnitQueue& Temp_List)
 		if (GetGamePtr()->GetEarthArmy()->pick(ToBeAttacked, "ES"))
 		{
 			IDSNeeded.enqueue(ToBeAttacked);
-			ToBeAttacked->SetHealth(ToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((ToBeAttacked->GetHealth()) ^ (1 / 2))));
+			ToBeAttacked->SetHealth(ToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((ToBeAttacked->GetHealth()))));
 			ToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 
 			// should check if health is 1-20% of its initial heath to add it to UML1 otherwise to templist

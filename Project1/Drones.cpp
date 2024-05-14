@@ -23,7 +23,7 @@ void Drone::Attack(UnitQueue& Temp_List)
 			if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "Earth_Gunnery") == true)
 			{
 				IDSNeeded.enqueue(UnitToBeAttacked);
-				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
+				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeAttacked->GetHealth()))));
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
 				{
@@ -40,12 +40,10 @@ void Drone::Attack(UnitQueue& Temp_List)
 			if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ET") == true)
 			{
 				IDSNeeded.enqueue(UnitToBeAttacked);
-				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
+				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeAttacked->GetHealth()))));
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
 				{
-
-					Temp_List.enqueue(UnitToBeAttacked);
 					if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth()) //If the unit needs healing
 					{
 						UnitToBeAttacked->SetTm(GetGamePtr()->getCurrentTime());
@@ -71,7 +69,7 @@ void Drone::Attack(UnitQueue& Temp_List)
 			if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "Earth_Gunnery") == true)
 			{
 				IDSNeeded.enqueue(UnitToBeAttacked);
-				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
+				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeAttacked->GetHealth()))));
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
 				{
@@ -89,11 +87,10 @@ void Drone::Attack(UnitQueue& Temp_List)
 			if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ET") == true)
 			{
 				IDSNeeded.enqueue(UnitToBeAttacked);
-				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
+				UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeAttacked->GetHealth()))));
 				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				if (UnitToBeAttacked->IsAlive() == true)
 				{
-					Temp_List.enqueue(UnitToBeAttacked);
 					if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth()) //If the unit needs healing
 					{
 						UnitToBeAttacked->SetTm(GetGamePtr()->getCurrentTime());

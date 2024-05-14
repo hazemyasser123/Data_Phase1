@@ -14,120 +14,9 @@ Alien_Monster::Alien_Monster(int id, int tj, int h, int p, int ac, Game* Gp) :Un
 
 void Alien_Monster::Attack(UnitQueue& Temp_List)
 {
-
-	//int NumberUnitsToBeAttacked;
-	//bool dont_Comma = true;
-	//Unit* UnitToBeAttacked;
-	//
-	//cout << "AM " << GetID() << " shot [";
-	//NumberUnitsToBeAttacked = GetAttackCap();
-	//while (NumberUnitsToBeAttacked > GetAttackCap() / 2)
-	//{
-	//	if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ES") == true)
-	//	{
-	//		if (!dont_Comma)
-	//		{
-	//			cout << ", ";
-	//		}
-	//		dont_Comma = false;
-	//		UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
-	//		UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
-	//		NumberUnitsToBeAttacked--;
-	//		if (UnitToBeAttacked->IsAlive() == true)
-	//		{
-	//			if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth()) //If the unit needs healing
-	//			{
-	//				UnitToBeAttacked->SetTm(GetGamePtr()->getCurrentTime());
-	//				GetGamePtr()->GetEarthArmy()->AddToUML_Soldiers(UnitToBeAttacked);
-	//			}
-	//			else
-	//			{
-	//				Temp_List.enqueue(UnitToBeAttacked);
-	//			}
-	//		}
-	//		else
-	//		{
-	//		
-	//				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
-	//		}
-	//	}
-	//	else
-	//	{
-	//		break;
-	//	}
-	//}
-	//while (NumberUnitsToBeAttacked > 0)
-	//{
-
-	//	if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ET") == true)
-	//	{
-	//		if (!dont_Comma)
-	//		{
-	//			cout << ", ";
-	//		}
-	//		dont_Comma = false;
-	//		UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
-	//		UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
-	//		NumberUnitsToBeAttacked--;
-	//		if (UnitToBeAttacked->IsAlive() == true)
-	//		{
-	//			if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth())
-	//			{
-	//				GetGamePtr()->GetEarthArmy()->AddToUML_Tanks(UnitToBeAttacked);
-	//			}
-	//			else {
-	//				Temp_List.enqueue(UnitToBeAttacked);
-	//			}
-	//		}
-	//		else
-	//		{
-	//			GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
-	//		}
-	//	}
-	//	else
-	//	{
-	//		break;
-	//	}
-	//}
-	//while (NumberUnitsToBeAttacked > 0)
-	//{
-	//	if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ES") == true)
-	//	{
-	//		if (!dont_Comma)
-	//		{
-	//			cout << ", ";
-	//		}
-	//		dont_Comma = false;
-	//		UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
-	//		UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
-	//		NumberUnitsToBeAttacked--;
-	//		if (UnitToBeAttacked->IsAlive() == true)
-	//		{
-	//			if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth()) //If the unit needs healing
-	//			{
-	//				UnitToBeAttacked->SetTm(GetGamePtr()->getCurrentTime());
-	//				GetGamePtr()->GetEarthArmy()->AddToUML_Soldiers(UnitToBeAttacked);
-	//			}
-	//			else
-	//			{
-	//				Temp_List.enqueue(UnitToBeAttacked);
-	//			}
-	//		}
-	//		else
-	//		{
-	//			GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
-	//		}
-	//	}
-	//	else
-	//	{
-	//		break;
-	//	}
-	//}
-
 	int NumberUnitsToBeAttacked;
 	Unit* UnitToBeAttacked;
 	UnitQueue IDSNeeded;
-	
 	NumberUnitsToBeAttacked = GetAttackCap();
 	while (NumberUnitsToBeAttacked > GetAttackCap() / 2)
 	{
@@ -137,6 +26,7 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
+
 			if (UnitToBeAttacked->IsAlive() == true)
 			{
 				if (UnitToBeAttacked->GetHealth() < 0.2 * UnitToBeAttacked->GetOrignalHealth()) //If the unit needs healing
@@ -146,12 +36,38 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 				}
 				else
 				{
+					
 					Temp_List.enqueue(UnitToBeAttacked);
 				}
 			}
 			else
 			{
-				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				ES* UnitToBeAttackedES = (ES*)UnitToBeAttacked;
+				if (UnitToBeAttackedES->GetImmunity() == false)
+				{
+					if (UnitToBeAttackedES->GetIsInfected() == false)
+					{
+						if ((rand() % 100 + 1) <= GetGamePtr()->GetInfectionPer())
+						{
+							UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetOrignalHealth());
+							UnitToBeAttackedES->SetIsInfected(true);
+							Temp_List.enqueue(UnitToBeAttacked);
+						}
+						else
+						{
+							GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+						}
+					}
+					else
+					{
+						GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+					}
+				}
+				else
+				{
+					GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				}
+				
 			}
 		}
 		else
@@ -165,7 +81,7 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 		if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ET") == true)
 		{
 			IDSNeeded.enqueue(UnitToBeAttacked);
-			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
+			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeAttacked->GetHealth()))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
 			if (UnitToBeAttacked->IsAlive() == true)
@@ -187,7 +103,7 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 		{
 			break;
 		}
-	}
+	}	
 	while (NumberUnitsToBeAttacked > 0)
 	{
 		if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ES") == true)
@@ -210,7 +126,31 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 			}
 			else
 			{
-				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				ES* UnitToBeAttackedES = (ES*)UnitToBeAttacked;
+				if (UnitToBeAttackedES->GetImmunity() == false)
+				{
+					if (UnitToBeAttackedES->GetIsInfected() == false)
+					{
+						if ((rand() % 100 + 1) <= GetGamePtr()->GetInfectionPer())
+						{
+							UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetOrignalHealth());
+							UnitToBeAttackedES->SetIsInfected(true);
+							Temp_List.enqueue(UnitToBeAttacked);
+						}
+						else
+						{
+							GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+						}
+					}
+					else
+					{
+						GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+					}
+				}
+				else
+				{
+					GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				}
 			}
 		}
 		else

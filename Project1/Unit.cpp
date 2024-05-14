@@ -205,7 +205,7 @@ void Unit::BeAttacked(int DAMGE, int currenttime)
 		SetTa(currenttime);
 	}
 	//SetHealth(Health - DAMGE);
-	if (!IsAlive())
+	if (IsAlive() == false)
 	{
 		DEATH(currenttime);
 	}
