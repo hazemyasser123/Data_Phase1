@@ -25,7 +25,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 		if (UnitToBeAttacked != nullptr)
 		{
 			IDSNeeded.enqueue(UnitToBeAttacked);
-			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
+			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeAttacked->GetHealth()))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
 			if (UnitToBeAttacked->IsAlive() == true)
@@ -35,6 +35,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 			else
 			{
 				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			}
 		}
 		else
@@ -62,6 +63,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 			else
 			{
 				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			}
 		}
 		if (UnitToBeAttacked2 != nullptr)
@@ -77,6 +79,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 			else
 			{
 				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked2);
+				UnitToBeAttacked2->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			}
 		}
 	}
@@ -96,6 +99,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 			else
 			{
 				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
+				UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			}
 		}
 		else

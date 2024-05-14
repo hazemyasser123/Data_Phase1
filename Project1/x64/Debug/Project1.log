@@ -1,2 +1,3 @@
-﻿  Alien_Monster.cpp
+﻿  Earth_Gunnery.cpp
+D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\Earth_Gunnery.cpp(28,62): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   Project1.vcxproj -> D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\x64\Debug\Project1.exe

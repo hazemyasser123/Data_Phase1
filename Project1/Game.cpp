@@ -432,7 +432,7 @@ void Game::Simulation()
 			g2->CreateUnits();
 			print();
 			Attack();
-			//system("pause");
+			system("pause");
 			cout << endl;
 		}
 
@@ -442,7 +442,7 @@ void Game::Simulation()
 			print();
 			Attack();
 			WhoWon();
-			//system("pause");
+			system("pause");
 			cout << endl;
 		}
 		DisplayResult();
