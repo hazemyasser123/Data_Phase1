@@ -14,157 +14,11 @@ Earth_Gunnery::Earth_Gunnery(int id, int tj, int h, int p, int ac, Game* Gp) :Un
 
 void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 {
-	//int NumberUnitsToBeAttacked;
-	//bool dont_Comma = true;
-	//Unit* UnitToBeAttacked = nullptr;
-	//Unit* UnitToBeAttacked2 = nullptr; // This is made for the case of attacking two drones
-	//cout << "EG " << GetID() << " shot [";
-	//if (GetAttackCap() % 2 == 0)
-	//{
-	//	NumberUnitsToBeAttacked = GetAttackCap() / 2;
-	//	for (int i = 0; i < NumberUnitsToBeAttacked; i++)
-	//	{
-	//		UnitToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAM();
-	//		if (UnitToBeAttacked != nullptr)
-	//		{
-	//			if (!dont_Comma)
-	//			{
-	//				cout << ", ";
-	//			}
-	//			dont_Comma = false;
-	//			cout << UnitToBeAttacked->GetID();
-	//			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
-	//			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
-	//			if (UnitToBeAttacked->IsAlive() == true)
-	//			{
-	//				Temp_List.enqueue(UnitToBeAttacked);
-	//			}
-	//			else
-	//			{
-	//				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
-	//			}
-	//		}
-	//	}
-	//	for (int i = 0; i < NumberUnitsToBeAttacked; i++)
-	//	{
-	//		GetGamePtr()->GetAlienArmy()->pickDrones(UnitToBeAttacked, UnitToBeAttacked2);
-	//		if (UnitToBeAttacked != nullptr)
-	//		{
-	//			if (!dont_Comma)
-	//			{
-	//				cout << ", ";
-	//			}
-	//			dont_Comma = false;
-	//			cout << UnitToBeAttacked->GetID();
-	//			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
-	//			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
-	//			if (UnitToBeAttacked->IsAlive() == true)
-	//			{
-	//				Temp_List.enqueue(UnitToBeAttacked);
-	//			}
-	//			else
-	//			{
-	//				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
-	//			}
-	//		}
-	//		if (UnitToBeAttacked2 != nullptr)
-	//		{
-	//			if (!dont_Comma)
-	//			{
-	//				cout << ", ";
-	//			}
-	//			dont_Comma = false;
-	//			cout << UnitToBeAttacked2->GetID();
-	//			UnitToBeAttacked2->SetHealth(UnitToBeAttacked2->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked2->GetHealth()) ^ (1 / 2))));
-	//			UnitToBeAttacked2->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
-	//			if (UnitToBeAttacked2->IsAlive() == true)
-	//			{
-	//				Temp_List.enqueue(UnitToBeAttacked2);
-	//			}
-	//			else
-	//			{
-	//				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked2);
-	//			}
-	//		}
-	//	}
-	//}
-	//else
-	//{
-	//	NumberUnitsToBeAttacked = GetAttackCap() / 2;
-	//	for (int i = 0; i < NumberUnitsToBeAttacked + 1; i++)
-	//	{
-	//		UnitToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAM();
-	//		if (UnitToBeAttacked != nullptr)
-	//		{
-	//			if (dont_Comma)
-	//			{
-	//				cout << ", ";
-	//			}
-	//			dont_Comma = false;
-	//			cout << UnitToBeAttacked->GetID();
-	//			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
-	//			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
-	//			if (UnitToBeAttacked->IsAlive() == true)
-	//			{
-	//				Temp_List.enqueue(UnitToBeAttacked);
-	//			}
-	//			else
-	//			{
-	//				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
-	//			}
-	//		}
-	//	}
-	//	for (int i = 0; i < NumberUnitsToBeAttacked; i++)
-	//	{
-	//		GetGamePtr()->GetAlienArmy()->pickDrones(UnitToBeAttacked, UnitToBeAttacked2);
-	//		if (UnitToBeAttacked != nullptr)
-	//		{
-	//			if (dont_Comma)
-	//			{
-	//				cout << ", ";
-	//			}
-	//			dont_Comma = false;
-	//			cout << UnitToBeAttacked->GetID();
-	//			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
-	//			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
-	//			if (UnitToBeAttacked->IsAlive() == true)
-	//			{
-	//				Temp_List.enqueue(UnitToBeAttacked);
-	//			}
-	//			else
-	//			{
-	//				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked);
-	//			}
-	//		}
-	//		if (UnitToBeAttacked2 != nullptr)
-	//		{
-	//			if (dont_Comma)
-	//			{
-	//				cout << ", ";
-	//			}
-	//			dont_Comma = false;
-	//			cout << UnitToBeAttacked2->GetID();
-	//			UnitToBeAttacked2->SetHealth(UnitToBeAttacked2->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked2->GetHealth()) ^ (1 / 2))));
-	//			UnitToBeAttacked2->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
-	//			if (UnitToBeAttacked2->IsAlive() == true)
-	//			{
-	//				Temp_List.enqueue(UnitToBeAttacked2);
-	//			}
-	//			else
-	//			{
-	//				GetGamePtr()->InsertInKilled_List(UnitToBeAttacked2);
-	//			}
-	//		}
-	//	}
-	//}
-	//cout << "]" << endl;
-	// if(getmode == true)
 	int NumberUnitsToBeAttacked;
 	Unit* UnitToBeAttacked;
 	Unit* UnitToBeAttacked2; // This is made for the case of attacking two drones 
 	NumberUnitsToBeAttacked = GetAttackCap();
 	UnitQueue IDSNeeded;
-	cout << "EG " << GetID() << " shot ";
 	while (NumberUnitsToBeAttacked > GetAttackCap() / 2)
 	{
 		UnitToBeAttacked = GetGamePtr()->GetAlienArmy()->PickAM();
@@ -249,5 +103,9 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 			break;
 		}
 	}
-	IDSNeeded.PrintQueue();
+	if (GetGamePtr()->Get_Interactive_true_silent_false())
+	{
+		cout << "EG " << GetID() << " shot ";
+		IDSNeeded.PrintQueue();
+	}
 }
