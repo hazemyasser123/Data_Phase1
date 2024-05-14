@@ -32,7 +32,7 @@ void UnitQueue::PrintQueue()
 float UnitQueue::getEarthDf(float& y)
 {
 	float x = 0;
-	y = 0;
+	//y = 0;
 	Node <Unit*>* follow = frontPtr;
 	while (follow)
 	{
@@ -49,7 +49,7 @@ float UnitQueue::getEarthDf(float& y)
 float UnitQueue::getEarthDd(float& y)
 {
 	float x = 0;
-	y = 0;
+	//y = 0;
 	Node <Unit*>* follow = frontPtr;
 	while (follow)
 	{
@@ -66,7 +66,7 @@ float UnitQueue::getEarthDd(float& y)
 float UnitQueue::getEarthDb(float& y)
 {
 	float x = 0;
-	y = 0;
+	//y = 0;
 	Node <Unit*>* follow = frontPtr;
 	while (follow) 
 	{
@@ -83,7 +83,7 @@ float UnitQueue::getEarthDb(float& y)
 float UnitQueue::getAlienDf(float& y)
 {
 	float x = 0;
-	y = 0;
+	//y = 0;
 	Node <Unit*>* follow = frontPtr;
 	while (follow)
 	{
@@ -100,7 +100,7 @@ float UnitQueue::getAlienDf(float& y)
 float UnitQueue::getAlienDd(float& y)
 {
 	float x = 0;
-	y = 0;
+	//y = 0;
 	Node <Unit*>* follow = frontPtr; 
 	while (follow) 
 	{
@@ -117,7 +117,7 @@ float UnitQueue::getAlienDd(float& y)
 float UnitQueue::getAlienDb(float& y)
 {
 	float x = 0;
-	y = 0;
+	//y = 0;
 	Node <Unit*>* follow = frontPtr; 
 	while (follow) 
 	{

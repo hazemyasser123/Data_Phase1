@@ -1,5 +1,2 @@
 ﻿  Game.cpp
-  earthArmy.cpp
-  Generating Code...
-D:\DS project\Data_Phase1\Project1\earthArmy.cpp(117,1): warning C4715: 'earthArmy::addUnit': not all control paths return a value
   Project1.vcxproj -> D:\DS project\Data_Phase1\Project1\x64\Debug\Project1.exe

@@ -369,13 +369,16 @@ void Game::WhoWon()
 void Game::generateOutputFile()
 {
 	ofstream outputFile;
-	outputFile.open("output.txt");
+	outputFile.open("output2.txt");
 	if (!outputFile.is_open())
 	{
 		cerr << "Error opening file." << endl;
 	}
 	Unit* unitptr;
-	while (KilledList.dequeue(unitptr))
+	Unit* check;
+	KilledList.dequeue(unitptr);
+	check = unitptr;
+	do
 	{
 		outputFile << "Td = " << unitptr->GetTd() << "\t\t";
 		if (unitptr->GetID() >= 2000)
@@ -390,7 +393,9 @@ void Game::generateOutputFile()
 		outputFile << "Df = " << unitptr->GetDf() << "\t\t";
 		outputFile << "Dd = " << unitptr->GetDd() << "\t\t";
 		outputFile << "Db = " << unitptr->GetDb() << "\n";
-	}
+		KilledList.enqueue(unitptr);
+	} while (KilledList.dequeue(unitptr) && unitptr != check);
+
 	outputFile << "\n\n";
 
 	outputFile << "Battle result: ";
