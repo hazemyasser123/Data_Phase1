@@ -23,12 +23,13 @@ void HU::Attack(UnitQueue& Temp_List)
 			if (timespentinUml >= 10) //if the soldier spent more than 10 time steps in the UML
 			{
 				// Kill the unit
+				UnitToBeHealed->BeAttacked(UnitToBeHealed->GetHealth(), GetGamePtr()->getCurrentTime());
 				GetGamePtr()->InsertInKilled_List(UnitToBeHealed);
 				
 			}
 			else //Heal the Unit
 			{
-				UnitToBeHealed->SetHealth((UnitToBeHealed->GetHealth()) + (GetPower() * GetHealth() / 100) / ((UnitToBeHealed->GetHealth()) ^ (1 / 2)));
+				UnitToBeHealed->SetHealth(UnitToBeHealed->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeHealed->GetHealth()))));
 				UnitToBeHealed->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				int OriginalHP = UnitToBeHealed->GetOrignalHealth();
 				IDSNeeded.enqueue(UnitToBeHealed);
@@ -49,10 +50,11 @@ void HU::Attack(UnitQueue& Temp_List)
 			if (timespentinUml >= 10)
 			{
 				GetGamePtr()->InsertInKilled_List(UnitToBeHealed);
+				UnitToBeHealed->BeAttacked(UnitToBeHealed->GetHealth(), GetGamePtr()->getCurrentTime());
 			}
 			else //Heal the Unit
 			{
-				UnitToBeHealed->SetHealth((UnitToBeHealed->GetHealth()) + (GetPower() * GetHealth() / 100) / ((UnitToBeHealed->GetHealth()) ^ (1 / 2)));
+				UnitToBeHealed->SetHealth(UnitToBeHealed->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeHealed->GetHealth()))));
 				UnitToBeHealed->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 				int OriginalHP = UnitToBeHealed->GetOrignalHealth();
 				if (UnitToBeHealed->GetHealth() >= 0.2 * OriginalHP) // if HP is now greater than 20% of its original
@@ -80,7 +82,7 @@ void HU::Attack(UnitQueue& Temp_List)
 			GetGamePtr()->GetEarthArmy()->AddToUML_Tanks(TempUnit);
 		}
 	}
-	GetGamePtr()->InsertInKilled_List(this);
+	BeAttacked(GetHealth(), GetGamePtr()->getCurrentTime());
 	if (GetGamePtr()->Get_Interactive_true_silent_false())
 	{
 		cout << "HU " << GetID() << " Healed ";

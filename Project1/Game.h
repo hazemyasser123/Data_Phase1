@@ -23,6 +23,12 @@ private:
 	int CurrentTime;
 	bool We_Are_Not_Done_Yet;
 	Result Whos_the_Winner;	//Will take earth army as the refernce of being won or lost in the outfile //From Omar
+	float ES_destructed;
+	float ET_destructed;
+	float EG_destructed;
+	float AS_destructed;
+	float AM_destructed;
+	float AD_destructed;
 public:
 	Game();
 	~Game();

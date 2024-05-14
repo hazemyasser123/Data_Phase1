@@ -17,6 +17,9 @@ private:
 	UnitStack HU_List;
 	UnitpriQueue UML_Soldiers;
 	UnitQueue UML_Tanks;
+	float ES_created = 0;
+	float ET_created = 0;
+	float EG_created = 0;
 public:
 	void Attack(UnitQueue& Temp_List);
 	void Print();
@@ -27,5 +30,9 @@ public:
 	void AddToUML_Soldiers(Unit* ArmyUnit);
 	void AddToUML_Tanks(Unit* ArmyUnit);
 	int GetESCount();
+	void calc_created(Unit* armyunit);
+	float getEScreated();
+	float getETcreated();
+	float getEGcreated();
 };
 

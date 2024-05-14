@@ -84,6 +84,7 @@ void randGen::CreateUnits()
 				UnitToinsert = new HU(ID, GamePtr->getCurrentTime(), HealthUnitHP, HealthUnitPower, HealthUnitCapacity, GamePtr);
 				GamePtr->GetEarthArmy()->addUnit(UnitToinsert);
 			}
+			GamePtr->GetEarthArmy()->calc_created(UnitToinsert);
 		}
 	}
 	//For Alien Army
@@ -142,6 +143,7 @@ void randGen::CreateUnits()
 				UnitToinsert = new Drone(ID, GamePtr->getCurrentTime(), DroneHP, DronePower, DroneCapacity, GamePtr);
 				GamePtr->GetAlienArmy()->addUnit(UnitToinsert);
 			}
+			GamePtr->GetAlienArmy()->calc_created(UnitToinsert);
 		}
 	}
 }

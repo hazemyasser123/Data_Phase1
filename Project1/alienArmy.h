@@ -19,11 +19,9 @@ private:
 	UnitAOP AM_List;
 	UnitDEQueue AD_List;
 	int armyCount;
-	/*int total_Td;
-	int total_Ta;
-	int total_Dd;
-	int total_Df;    
-	int total_Db;*/
+	float AS_created = 0;
+	float AM_created = 0;
+	float AD_created = 0;
 
 public:
 	void Attack(UnitQueue& Temp_List);
@@ -34,6 +32,9 @@ public:
 	bool addUnit(Unit* armyunit);
 	int getarmyCount();
 	int GetASCount();
-	double getAvgTj();
+	void calc_created(Unit* armyunit);
+	float getAScreated();
+	float getAMcreated();
+	float getADcreated();
 };
 

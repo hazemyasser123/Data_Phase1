@@ -81,7 +81,7 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 		if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ET") == true)
 		{
 			IDSNeeded.enqueue(UnitToBeAttacked);
-			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / ((UnitToBeAttacked->GetHealth()) ^ (1 / 2))));
+			UnitToBeAttacked->SetHealth(UnitToBeAttacked->GetHealth() - ((GetPower() * GetHealth() / 100) / sqrt((UnitToBeAttacked->GetHealth()))));
 			UnitToBeAttacked->BeAttacked(GetPower(), GetGamePtr()->getCurrentTime());
 			NumberUnitsToBeAttacked--;
 			if (UnitToBeAttacked->IsAlive() == true)
@@ -103,7 +103,7 @@ void Alien_Monster::Attack(UnitQueue& Temp_List)
 		{
 			break;
 		}
-	}
+	}	
 	while (NumberUnitsToBeAttacked > 0)
 	{
 		if (GetGamePtr()->GetEarthArmy()->pick(UnitToBeAttacked, "ES") == true)

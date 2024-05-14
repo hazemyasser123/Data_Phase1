@@ -17,6 +17,12 @@ Game::Game()
 	ReadParameters();
 	CurrentTime = 1;
 	We_Are_Not_Done_Yet = true;
+	float ES_destructed = 0;
+	float ET_destructed = 0;
+	float EG_destructed = 0;
+	float AS_destructed = 0;
+	float AM_destructed = 0;
+	float AD_destructed = 0;
 }
 
 Game::~Game()
@@ -27,6 +33,18 @@ Game::~Game()
 void Game::InsertInKilled_List(Unit* ToBeInserted)
 {
 	KilledList.enqueue(ToBeInserted);
+	if (ToBeInserted->GetType() == "ES")
+		ES_destructed = ES_destructed + 1;
+	else if (ToBeInserted->GetType() == "ET")
+		ET_destructed = ET_destructed + 1;
+	else if (ToBeInserted->GetType() == "Earth_Gunnery")
+		EG_destructed = EG_destructed + 1;
+	else if (ToBeInserted->GetType() == "AS")
+		AS_destructed = AS_destructed + 1;
+	else if (ToBeInserted->GetType() == "Alien_Monster")
+		AM_destructed = AM_destructed + 1;
+	else if (ToBeInserted->GetType() == "Drone")
+		AD_destructed = AD_destructed + 1;
 }
 
 void Game::ReadParameters()
@@ -351,13 +369,16 @@ void Game::WhoWon()
 void Game::generateOutputFile()
 {
 	ofstream outputFile;
-	outputFile.open("output.txt");
+	outputFile.open("output2.txt");
 	if (!outputFile.is_open())
 	{
 		cerr << "Error opening file." << endl;
 	}
 	Unit* unitptr;
-	while (KilledList.dequeue(unitptr))
+	Unit* check;
+	KilledList.dequeue(unitptr);
+	check = unitptr;
+	do
 	{
 		outputFile << "Td = " << unitptr->GetTd() << "\t\t";
 		if (unitptr->GetID() >= 2000)
@@ -372,7 +393,91 @@ void Game::generateOutputFile()
 		outputFile << "Df = " << unitptr->GetDf() << "\t\t";
 		outputFile << "Dd = " << unitptr->GetDd() << "\t\t";
 		outputFile << "Db = " << unitptr->GetDb() << "\n";
+		KilledList.enqueue(unitptr);
+	} while (KilledList.dequeue(unitptr) && unitptr != check);
+
+	outputFile << "\n\n";
+
+	outputFile << "Battle result: ";
+	switch (Whos_the_Winner)
+	{
+	case EARTHWON:
+		outputFile << "Win";
+		break;
+	case ALIENWON:
+		outputFile << "Loss";
+		break;
+	case DRAW:
+		outputFile << "Draw";
+		break;
+	default:
+		break;
 	}
+	outputFile << "\n\n";
+
+	outputFile << " ============ STATISTICS ============ " << "\n\n";
+
+	outputFile << " For Earth Army: " << "\n\t";
+	outputFile << " - Total ES: " << EarthArmy.getEScreated() << "\n\t";
+	outputFile << " - Total ET: " << EarthArmy.getETcreated() << "\n\t";
+	outputFile << " - Total EG: " << EarthArmy.getEGcreated() << "\n\n\t";
+	outputFile << " - ES destructed %: " << (ES_destructed / EarthArmy.getEScreated()) * 100 << "\n\t";
+	outputFile << " - ET destructed %: " << (ET_destructed / EarthArmy.getETcreated()) * 100 << "\n\t";
+	outputFile << " - EG destructed %: " << (EG_destructed / EarthArmy.getEGcreated()) * 100 << "\n\t";
+	outputFile << " - Total destructed %: " << (ES_destructed + ET_destructed + EG_destructed)/(EarthArmy.getEScreated() + EarthArmy.getETcreated() + EarthArmy.getEGcreated()) * 100 << "\n\n\t";
+	
+	float y = 0;
+	KilledList.getEarthDf(y);
+	if (y != 0)
+	{
+		outputFile << " - Average Df: " << KilledList.getEarthDf(y) / y << "\n\t";
+	}
+	else outputFile << " - Average Df: 0" << "\n\t";
+
+	KilledList.getEarthDd(y);
+	if (y != 0)
+	{
+		outputFile << " - Average Dd: " << KilledList.getEarthDd(y) / y << "\n\t";
+	}
+	else outputFile << " - Average Dd: 0" << "\n\t";
+
+	KilledList.getEarthDb(y);
+	if (y != 0)
+	{
+		outputFile << " - Average Db: " << KilledList.getEarthDb(y) / y << "\n\n\t";
+	}
+	else outputFile << " - Average Db: 0" << "\n\n\t";
+
+	if (y != 0)
+	{
+		outputFile << " - DF/Db %: " << (KilledList.getEarthDf(y) / KilledList.getEarthDb(y)) * 100 << "\n\t";
+	}
+	else outputFile << " - DF/Db %: 0" << "\n\t";
+
+	if (y != 0)
+	{
+		outputFile << " - Dd/Db %: " << (KilledList.getEarthDd(y) / KilledList.getEarthDb(y)) * 100 << "\n\n";
+	}
+	else outputFile << " - Dd/Db %: 0" << "\n\n";
+	//alien part
+	outputFile << " For Alien Army: " << "\n\t";
+	outputFile << " - Total AS: " << AlienArmy.getAScreated() << "\n\t";
+	outputFile << " - Total AM: " << AlienArmy.getAMcreated() << "\n\t";
+	outputFile << " - Total AD: " << AlienArmy.getADcreated() << "\n\n\t";
+	outputFile << " - AS destructed %: " << (AS_destructed / AlienArmy.getAScreated()) * 100 << "\n\t";
+	outputFile << " - AM destructed %: " << (AM_destructed / AlienArmy.getAMcreated()) * 100 << "\n\t";
+	outputFile << " - AD destructed %: " << (AD_destructed / AlienArmy.getADcreated()) * 100 << "\n\t";
+	outputFile << " - Total destructed %: " << (AS_destructed + AM_destructed + AD_destructed) / (AlienArmy.getAScreated() + AlienArmy.getAMcreated() + AlienArmy.getADcreated()) * 100 << "\n\n\t";
+
+	KilledList.getAlienDf(y);
+	outputFile << " - Average Df: " << KilledList.getAlienDf(y) / y << "\n\t";
+	KilledList.getAlienDd(y);
+	outputFile << " - Average Dd: " << KilledList.getAlienDd(y) / y << "\n\t";
+	KilledList.getAlienDb(y);
+	outputFile << " - Average Db: " << KilledList.getAlienDb(y) / y << "\n\n\t";
+
+	outputFile << " - DF/Db %: " << (KilledList.getAlienDf(y) / KilledList.getAlienDb(y)) * 100 << "\n\t";
+	outputFile << " - Dd/Db %: " << (KilledList.getAlienDd(y) / KilledList.getAlienDb(y)) * 100 << "\n\n";
 }
 
 void Game::DisplayResult()
@@ -432,7 +537,7 @@ void Game::Simulation()
 			g2->CreateUnits();
 			print();
 			Attack();
-			//system("pause");
+			system("pause");
 			cout << endl;
 		}
 
@@ -442,7 +547,7 @@ void Game::Simulation()
 			print();
 			Attack();
 			WhoWon();
-			//system("pause");
+			system("pause");
 			cout << endl;
 		}
 		DisplayResult();
