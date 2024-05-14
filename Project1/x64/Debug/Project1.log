@@ -1,6 +1,9 @@
 ﻿  AS.cpp
   Alien_Monster.cpp
   Drones.cpp
+<<<<<<< HEAD
+  Earth_Gunnery.cpp
+=======
   ES.cpp
   ET.cpp
   Earth_Gunnery.cpp
@@ -9,5 +12,6 @@
   Main.cpp
   randGen.cpp
 D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\randGen.cpp(8,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+>>>>>>> 03547b1e026548fa59506d148de9857b80581f14
   Generating Code...
   Project1.vcxproj -> D:\Documents\الكلية\Spring 2024\Data structures\Project\Data_Phase1\Project1\x64\Debug\Project1.exe
