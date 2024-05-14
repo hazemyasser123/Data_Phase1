@@ -158,7 +158,7 @@ void Earth_Gunnery::Attack(UnitQueue& Temp_List)
 	//	}
 	//}
 	//cout << "]" << endl;
-
+	// if(getmode == true)
 	int NumberUnitsToBeAttacked;
 	Unit* UnitToBeAttacked;
 	Unit* UnitToBeAttacked2; // This is made for the case of attacking two drones 
